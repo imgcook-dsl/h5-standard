@@ -1,13 +1,7 @@
-'use strict';
+{{{html}}}
 
-import { createElement, Component, render } from 'rax';
 
-{{{import}}}
+{{{js}}}
 
-{{{style}}}
 
-{{{mockData}}}
-
-{{{modClass}}}
-
-{{{export}}}
+{{{css}}}
