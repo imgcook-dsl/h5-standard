@@ -593,19 +593,24 @@ module.exports = function(layoutData, opts) {
         }
 
         for (let _o in v.styleValue) {
-          let classNameLow = camelTranslate(_o);
-          let classValue = valueTranslate(classNameLow, _o, v.styleValue[_o]);
-          let lineString = `${classNameLow}: ${classValue};`;
-          styleLine.push(_line(lineString, { indent: { tab: 1 } }));
-          if (htmlFontsize) {
-            let cssLineRemString = `${classNameLow}: ${cssValue(
-              _o,
-              classValue,
-              htmlFontsize
-            )};`;
-            styleRemCssLine.push(
-              _line(cssLineRemString, { indent: { tab: 1 } })
-            );
+          if ( _o === 'whiteSpace' ) {
+            // https://github.com/taofed/imgcook/issues/21
+            // 过滤whiteSpace
+          } else {
+            let classNameLow = camelTranslate(_o);
+            let classValue = valueTranslate(classNameLow, _o, v.styleValue[_o]);
+            let lineString = `${classNameLow}: ${classValue};`;
+            styleLine.push(_line(lineString, { indent: { tab: 1 } }));
+            if (htmlFontsize) {
+              let cssLineRemString = `${classNameLow}: ${cssValue(
+                _o,
+                classValue,
+                htmlFontsize
+              )};`;
+              styleRemCssLine.push(
+                _line(cssLineRemString, { indent: { tab: 1 } })
+              );
+            }
           }
         }
 
