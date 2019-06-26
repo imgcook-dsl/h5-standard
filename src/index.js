@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 const COMPONENT_TYPE_MAP = {
   link: 'a',
   video: 'video',
