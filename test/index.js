@@ -8,9 +8,8 @@ const { NodeVM } = require('vm2');
 const _ = require('lodash');
 const dslHelper = require('@imgcook/dsl-helper');
 
-// const data = require('./originLayout.min.json');
-const data = require('./originLayout.min.public.json');
-const originData = require('./origin.min.json');
+const data = require('./data.json');
+const originData = require('./origin.json');
 
 const vm = new NodeVM({
   console: 'inherit',
@@ -44,5 +43,4 @@ co(function*() {
   fs.writeFileSync(path.join(__dirname, '../test/template.result.html'), ret);
 
   console.log('代码生成成功');
-  // console.log(renderData.less);
 });

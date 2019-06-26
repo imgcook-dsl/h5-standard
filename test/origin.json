@@ -1,491 +1,778 @@
 {
-  "type":"Block",
-  "id":"Block-1",
-  "__VERSION__":"2.0",
-  "props":{
-      "style":{
-          "width":342,
-          "height":618
-      },
-      "attrs":{
-          "x":0,
-          "y":0
-      }
+  "type": "Block",
+  "id": "Block-1",
+  "__VERSION__": "2.0",
+  "props": {
+    "style": { "width": 996, "height": 392 },
+    "attrs": { "x": 0, "y": 0 }
   },
-  "children":[
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":342,
-                  "height":562,
-                  "overflow":"hidden"
-              },
-              "attrs":{
-                  "x":0,
-                  "y":56,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/90f050500e5811e990aa5d8f063678bd.png"
-              }
-          },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-0"
+  "children": [
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 996,
+          "height": 392,
+          "transform": "scaleY(-1)",
+          "backgroundColor": "rgba(255,255,255,1)",
+          "boxShadow": "0 2px 27px 0 #E5EFF6",
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderBottomLeftRadius": 4
+        },
+        "attrs": { "x": 0, "y": 0 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":342,
-                  "height":342,
-                  "overflow":"hidden"
-              },
-              "attrs":{
-                  "x":0,
-                  "y":56,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/912edff00e5811e9b297794c42a0fb99.png"
-              }
-          },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-1"
+      "selfId": "6B02923A-0518-4817-AEF3-0A19E9106BCE",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-0"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 64,
+          "height": 22,
+          "fontFamily": "PingFangSC",
+          "fontSize": "16",
+          "color": "#333B4E",
+          "textAlign": "center",
+          "lineHeight": "22rem",
+          "fontWeight": 400
+        },
+        "attrs": { "x": 133, "y": 199, "text": "开通服务", "lines": 1 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":342,
-                  "height":342
-              },
-              "attrs":{
-                  "x":0,
-                  "y":56,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/92321f200e5811e99d467fe7da0e4335.png"
-              }
-          },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-2"
+      "selfId": "8B46E265-6307-4505-B5EE-9B61CBEA7267",
+      "type": "Text",
+      "id": "Text-1"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 64,
+          "height": 22,
+          "fontFamily": "PingFangSC",
+          "fontSize": "16",
+          "color": "#333B4E",
+          "textAlign": "center",
+          "lineHeight": "22rem",
+          "fontWeight": 400
+        },
+        "attrs": { "x": 462, "y": 199, "text": "账单同步", "lines": 1 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":106,
-                  "height":46
-              },
-              "attrs":{
-                  "x":224,
-                  "y":68,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/929a7de00e5811e990aa5d8f063678bd.png"
-              }
-          },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-3"
+      "selfId": "8C7F1859-774C-4F37-9ADE-9DC5D2169A94",
+      "type": "Text",
+      "id": "Text-2"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 228,
+          "height": 40,
+          "fontFamily": "PingFangSC",
+          "fontSize": "12",
+          "color": "#666F80",
+          "textAlign": "center",
+          "lineHeight": "20rem",
+          "fontWeight": 300
+        },
+        "attrs": {
+          "x": 384,
+          "y": 227,
+          "text": "经回款宝服务商审核通过&#10;优酷内容开放平台同步月账单至回款宝平台",
+          "lines": 2
+        }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":60,
-                  "height":28,
-                  "fontFamily":"PingFangSC",
-                  "fontSize":"20",
-                  "color":"#FFFFFF",
-                  "lineHeight":"28rem",
-                  "fontWeight":400
-              },
-              "attrs":{
-                  "x":258,
-                  "y":77,
-                  "text":"直播中",
-                  "lines":1
-              }
-          },
-          "type":"Text",
-          "id":"Text-4"
+      "selfId": "8B04BE6C-ECB4-43D5-98F7-DFC203C00FFD",
+      "type": "Text",
+      "id": "Text-3"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": { "width": 56, "height": 56 },
+        "attrs": {
+          "x": 462,
+          "y": 116,
+          "source": "https://img.alicdn.com/tfs/TB1wxxxemWD3KVjSZSgXXcCxVXa-112-112.png"
+        }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":15,
-                  "height":15
-              },
-              "attrs":{
-                  "x":237,
-                  "y":84,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/92d5d9300e5811e9b297794c42a0fb99.png"
-              }
-          },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-5"
+      "selfId": "365515F0-453B-4C8B-B1C1-9B2394EC7C6F",
+      "children": [],
+      "type": "Image",
+      "id": "Image-4"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": { "width": 22, "height": 28 },
+        "attrs": {
+          "x": 794,
+          "y": 129,
+          "source": "https://img.alicdn.com/tfs/TB1X3huemSD3KVjSZFKXXb10VXa-46-56.png"
+        }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":175,
-                  "height":32
-              },
-              "attrs":{
-                  "x":167,
-                  "y":366,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/931d69800e5811e99d467fe7da0e4335.png"
-              }
-          },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-6"
+      "selfId": "BF0215A4-737B-455E-AEDB-A2EDAA6E206C",
+      "children": [],
+      "type": "Image",
+      "id": "Image-5"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 46,
+          "height": 43,
+          "borderWidth": "2",
+          "borderStyle": "solid",
+          "borderColor": "#FE5280",
+          "borderTopLeftRadius": 0,
+          "borderTopRightRadius": 0,
+          "borderBottomRightRadius": 0,
+          "borderBottomLeftRadius": 0
+        },
+        "attrs": { "x": 783, "y": 119 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":154,
-                  "height":22,
-                  "fontFamily":"PingFangSC",
-                  "fontSize":"22",
-                  "color":"#FFFFFF",
-                  "textAlign":"right",
-                  "lineHeight":"22rem",
-                  "fontWeight":400
-              },
-              "attrs":{
-                  "x":178,
-                  "y":370,
-                  "text":"想买人气28888",
-                  "lines":1
-              }
-          },
-          "type":"Text",
-          "id":"Text-7"
+      "selfId": "CBA73596-AA65-4E66-BD40-2F54D9093EEF",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-6"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 64,
+          "height": 22,
+          "fontFamily": "PingFangSC",
+          "fontSize": "16",
+          "color": "#333B4E",
+          "textAlign": "center",
+          "lineHeight": "22rem",
+          "fontWeight": 400
+        },
+        "attrs": { "x": 773, "y": 199, "text": "申请收款", "lines": 1 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":342,
-                  "height":56
-              },
-              "attrs":{
-                  "x":0,
-                  "y":0,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/935e91300e5811e990aa5d8f063678bd.png"
-              }
-          },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-8"
+      "selfId": "C35AFCFF-A63C-43F5-A2EE-45BA4A985750",
+      "type": "Text",
+      "id": "Text-7"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 120,
+          "height": 40,
+          "fontFamily": "PingFangSC",
+          "fontSize": "12",
+          "color": "#666F80",
+          "textAlign": "center",
+          "lineHeight": "20rem",
+          "fontWeight": 300
+        },
+        "attrs": {
+          "x": 105,
+          "y": 227,
+          "text": "已产生账单的用户&#10;可申请开通回款宝服务",
+          "lines": 2
+        }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":192,
-                  "height":24,
-                  "fontFamily":"PingFangSC",
-                  "fontSize":"24",
-                  "color":"#333333",
-                  "lineHeight":"24rem",
-                  "fontWeight":400
-              },
-              "attrs":{
-                  "x":20,
-                  "y":16,
-                  "text":"店铺名称八个字内",
-                  "lines":1
-              }
-          },
-          "type":"Text",
-          "id":"Text-9"
+      "selfId": "27084E97-C978-4126-9F5E-2D3C41B281F0",
+      "type": "Text",
+      "id": "Text-8"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 204,
+          "height": 40,
+          "fontFamily": "PingFangSC",
+          "fontSize": "12",
+          "color": "#666F80",
+          "textAlign": "center",
+          "lineHeight": "20rem",
+          "fontWeight": 300
+        },
+        "attrs": {
+          "x": 703,
+          "y": 227,
+          "text": "用户可根据展示的可提现金额内&#10;申请提前收款（即单笔应收账款融资）",
+          "lines": 2
+        }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":15,
-                  "height":15
-              },
-              "attrs":{
-                  "x":307,
-                  "y":26,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/939e0b300e5811e9b297794c42a0fb99.png"
-              }
-          },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-10"
+      "selfId": "822CB677-E38A-4853-BC4F-9474505BF6F7",
+      "type": "Text",
+      "id": "Text-9"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": { "width": 943, "height": 48 },
+        "attrs": { "x": 26, "y": 324 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":15,
-                  "height":15
-              },
-              "attrs":{
-                  "x":307,
-                  "y":15,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/93da77f00e5811e99d467fe7da0e4335.png"
-              }
+      "children": [
+        {
+          "__VERSION__": "2.0",
+          "props": {
+            "style": {
+              "width": 476,
+              "height": 20,
+              "fontFamily": "PingFangSC",
+              "fontSize": "14",
+              "color": "#A6AEB5",
+              "textAlign": "left",
+              "lineHeight": "20rem",
+              "fontWeight": 300
+            },
+            "attrs": {
+              "x": 26,
+              "y": 326,
+              "text": "商通过回款宝平台按照回款宝平台相关规则以及协议向客户进行结算和支付。",
+              "lines": 1
+            }
           },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-11"
+          "selfId": "80BC7C94-0E0A-4DBC-937A-1D09B4394309",
+          "type": "Text",
+          "id": "Text-10_0"
+        },
+        {
+          "__VERSION__": "2.0",
+          "props": {
+            "style": {
+              "width": 868,
+              "height": 20,
+              "fontFamily": "PingFangSC",
+              "fontSize": "14",
+              "color": "#A6AEB5",
+              "textAlign": "left",
+              "lineHeight": "20rem",
+              "fontWeight": 300
+            },
+            "attrs": {
+              "x": 96,
+              "y": 326,
+              "text": "客户首次成功提前收款后，优酷内容开放平台应向客户支付的全部费用将直接支付至回款宝服务商开设的针对客户的回款账户，由回款宝服务",
+              "lines": 1
+            }
+          },
+          "selfId": "A0B22F24-1BDA-4AB4-BB75-64FB2550357E",
+          "type": "Text",
+          "id": "Text-10_1"
+        },
+        {
+          "__VERSION__": "2.0",
+          "props": {
+            "style": {
+              "width": 70,
+              "height": 20,
+              "fontFamily": "PingFangSC",
+              "fontSize": "14",
+              "color": "#666F80",
+              "textAlign": "left",
+              "lineHeight": "20rem",
+              "fontWeight": 400
+            },
+            "attrs": { "x": 26, "y": 326, "text": "特别说明：", "lines": 1 }
+          },
+          "selfId": "70B8309D-7F28-4009-9A46-6F3B0AA070D7",
+          "type": "Text",
+          "id": "Text-10_2"
+        }
+      ],
+      "type": "Repeat",
+      "repeatId": "",
+      "id": "Repeat-10"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 54,
+          "height": 24,
+          "fontFamily": "PingFangSC",
+          "fontSize": "18",
+          "color": "#333B4E",
+          "lineHeight": "24rem",
+          "fontWeight": 400
+        },
+        "attrs": { "x": 24, "y": 23, "text": "回款宝", "lines": 1 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":146,
-                  "height":60
-              },
-              "attrs":{
-                  "x":20,
-                  "y":534,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/943bf8e00e5811e990aa5d8f063678bd.png"
-              }
-          },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-12"
+      "selfId": "2381C02E-71EC-4956-9845-77FAA211A34E",
+      "type": "Text",
+      "id": "Text-11"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 602, "y": 141 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":146,
-                  "height":60
-              },
-              "attrs":{
-                  "x":176,
-                  "y":534,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/946e7a900e5811e9b297794c42a0fb99.png"
-              }
-          },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-13"
+      "selfId": "6F0A3408-6440-45D5-8437-8916D93B9651",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-12"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 610, "y": 141 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":180,
-                  "height":24
-              },
-              "attrs":{
-                  "x":20,
-                  "y":453
-              }
-          },
-          "children":[
-              {
-                  "__VERSION__":"2.0",
-                  "props":{
-                      "style":{
-                          "width":114,
-                          "height":24,
-                          "fontFamily":"PingFangSC",
-                          "fontSize":"22",
-                          "color":"#999999",
-                          "textAlign":"left",
-                          "lineHeight":"30rem",
-                          "textDecoration":"line-through",
-                          "fontWeight":400
-                      },
-                      "attrs":{
-                          "x":86,
-                          "y":450,
-                          "text":"¥12345678",
-                          "lines":1
-                      }
-                  },
-                  "type":"Text",
-                  "id":"Text-14_0"
-              },
-              {
-                  "__VERSION__":"2.0",
-                  "props":{
-                      "style":{
-                          "width":66,
-                          "height":24,
-                          "fontFamily":"PingFangSC",
-                          "fontSize":"22",
-                          "color":"#999999",
-                          "textAlign":"left",
-                          "lineHeight":"30rem",
-                          "fontWeight":400
-                      },
-                      "attrs":{
-                          "x":20,
-                          "y":450,
-                          "text":"价格：",
-                          "lines":1
-                      }
-                  },
-                  "type":"Text",
-                  "id":"Text-14_1"
-              }
-          ],
-          "type":"Repeat",
-          "repeatId":"",
-          "id":"Repeat-14"
+      "selfId": "3524C0FE-91E5-47DE-80F8-3D9F8313D218",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-13"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 618, "y": 141 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":313,
-                  "height":26,
-                  "fontFamily":"PingFangSC",
-                  "fontSize":"26",
-                  "color":"#333333",
-                  "lineHeight":"26rem",
-                  "fontWeight":400
-              },
-              "attrs":{
-                  "x":20,
-                  "y":418,
-                  "text":"产品产品名称最多十二个字",
-                  "lines":1
-              }
-          },
-          "type":"Text",
-          "id":"Text-15"
+      "selfId": "6BAA9A9F-36C3-4C4F-AB31-AB450AADBD19",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-14"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 626, "y": 141 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":96,
-                  "height":33,
-                  "fontFamily":"PingFangSC",
-                  "fontSize":"24",
-                  "color":"#FFFFFF",
-                  "lineHeight":"33rem",
-                  "fontWeight":400
-              },
-              "attrs":{
-                  "x":201,
-                  "y":548,
-                  "text":"加购物车",
-                  "lines":1
-              }
-          },
-          "type":"Text",
-          "id":"Text-16"
+      "selfId": "DACC6E26-7BEB-4A4B-B6FA-FA14FC690189",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-15"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 634, "y": 141 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":120,
-                  "height":33,
-                  "fontFamily":"PingFangSC",
-                  "fontSize":"24",
-                  "color":"#FF5000",
-                  "lineHeight":"33rem",
-                  "fontWeight":400
-              },
-              "attrs":{
-                  "x":33,
-                  "y":548,
-                  "text":"进店抢红包",
-                  "lines":1
-              }
-          },
-          "type":"Text",
-          "id":"Text-17"
+      "selfId": "C0784EB9-2373-4D14-9014-C9330E558DAA",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-16"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 642, "y": 141 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":97,
-                  "height":24,
-                  "fontFamily":"PingFangSC",
-                  "fontSize":"30",
-                  "color":"#FF5000",
-                  "lineHeight":"24rem",
-                  "fontWeight":500
-              },
-              "attrs":{
-                  "x":118,
-                  "y":490,
-                  "text":"6?6.00",
-                  "lines":1
-              }
-          },
-          "type":"Text",
-          "id":"Text-18"
+      "selfId": "4A485F5D-6976-4429-8FE7-F4331538CD10",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-17"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 650, "y": 141 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":20,
-                  "height":20,
-                  "fontFamily":"PingFangSC",
-                  "fontSize":"20",
-                  "color":"#FF5000",
-                  "lineHeight":"20rem",
-                  "fontWeight":500
-              },
-              "attrs":{
-                  "x":98,
-                  "y":494,
-                  "text":"￥",
-                  "lines":1
-              }
-          },
-          "type":"Text",
-          "id":"Text-19"
+      "selfId": "A7539BEC-A3E4-431C-BF68-2F91138DA953",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-18"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 658, "y": 141 }
       },
-      {
-          "__VERSION__":"2.0",
-          "props":{
-              "style":{
-                  "width":72,
-                  "height":24
-              },
-              "attrs":{
-                  "x":21,
-                  "y":489,
-                  "source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/94cc03e00e5811e99d467fe7da0e4335.png"
-              }
-          },
-          "children":[
-
-          ],
-          "type":"Image",
-          "id":"Image-20"
-      }
+      "selfId": "BDCE49D8-3621-429A-B83C-E3743A282B9B",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-19"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 666, "y": 141 }
+      },
+      "selfId": "086558E8-2DC9-468F-AF60-4CB27E17269C",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-20"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 674, "y": 141 }
+      },
+      "selfId": "E132BBC1-6598-4355-B8A2-49480F673AEB",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-21"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 682, "y": 141 }
+      },
+      "selfId": "C693A742-EC31-441F-9044-94C6447820BC",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-22"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 286, "y": 141 }
+      },
+      "selfId": "AB422D89-261A-420F-909D-2E2C29F178C8",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-23"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 294, "y": 141 }
+      },
+      "selfId": "D0827D4D-CF64-403B-B413-0277BFD7A8F3",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-24"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 302, "y": 141 }
+      },
+      "selfId": "D65EB852-7890-4114-B946-8FCF4934D123",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-25"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 310, "y": 141 }
+      },
+      "selfId": "55E1943E-03B2-4329-A237-8D41629015E7",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-26"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 318, "y": 141 }
+      },
+      "selfId": "4B6ADC5F-1CC4-465F-ADE0-BCD53FC5CCCB",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-27"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 326, "y": 141 }
+      },
+      "selfId": "5D6C5B18-F056-4056-8CD2-76D8049456C0",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-28"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 334, "y": 141 }
+      },
+      "selfId": "6E88E17F-3B8D-4C66-8596-DB6099C9B11A",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-29"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 342, "y": 141 }
+      },
+      "selfId": "C47378B5-7AC1-4E33-AE09-6C378626A398",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-30"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 350, "y": 141 }
+      },
+      "selfId": "A7AAB1C2-5EC4-416A-8493-F114D098BEE6",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-31"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 358, "y": 141 }
+      },
+      "selfId": "EBC14AD5-F3F6-44C6-BCD9-4D43DC9B8B18",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-32"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 5,
+          "height": 5,
+          "backgroundColor": "rgba(213,221,225,1)",
+          "borderRadius": 5
+        },
+        "attrs": { "x": 366, "y": 141 }
+      },
+      "selfId": "A3C0BE04-99F1-4CA4-AD6B-112075972EEF",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-33"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": { "width": 996, "height": 1 },
+        "attrs": {
+          "x": 0,
+          "y": 70,
+          "source": "https://img.alicdn.com/tfs/TB1KGlCeaSs3KVjSZPiXXcsiVXa-1996-2.png"
+        }
+      },
+      "selfId": "05B2C802-C292-431B-8384-E3AF9BA960FA",
+      "children": [],
+      "type": "Image",
+      "id": "Image-34"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": { "width": 996, "height": 1 },
+        "attrs": {
+          "x": 0,
+          "y": 305,
+          "source": "https://img.alicdn.com/tfs/TB12alCeaSs3KVjSZPiXXcsiVXa-1996-2.png"
+        }
+      },
+      "selfId": "73B7BD46-A241-4F81-A5E8-687568BC31C4",
+      "children": [],
+      "type": "Image",
+      "id": "Image-35"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": { "width": 56, "height": 69 },
+        "attrs": {
+          "x": 136,
+          "y": 107,
+          "source": "https://img.alicdn.com/tfs/TB1IZJteoGF3KVjSZFmXXbqPXXa-112-138.png"
+        }
+      },
+      "selfId": "449854D7-C558-496D-B5EF-EF92F0FAC62C",
+      "children": [],
+      "type": "Image",
+      "id": "Image-36"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": { "width": 64, "height": 13 },
+        "attrs": {
+          "x": 772,
+          "y": 158,
+          "source": "https://img.alicdn.com/tfs/TB1phlCea1s3KVjSZFAXXX_ZXXa-132-34.png"
+        }
+      },
+      "selfId": "6217A075-7A24-40AC-8D80-1699491D9897",
+      "children": [],
+      "type": "Image",
+      "id": "Image-37"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": { "width": 16, "height": 10 },
+        "attrs": {
+          "x": 157,
+          "y": 122,
+          "source": "https://img.alicdn.com/tfs/TB1G75GbvBj_uVjSZFpXXc0SXXa-36-26.png"
+        }
+      },
+      "selfId": "839DB742-C9A3-41A8-92A1-E83EFB1B0F61",
+      "children": [],
+      "type": "Image",
+      "id": "Image-38"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 105,
+          "height": 34,
+          "backgroundColor": "rgba(254,82,128,1)",
+          "borderTopLeftRadius": 2,
+          "borderTopRightRadius": 2,
+          "borderBottomRightRadius": 2,
+          "borderBottomLeftRadius": 2
+        },
+        "attrs": { "x": 861, "y": 19 }
+      },
+      "selfId": "D2118F5E-8675-4C30-B37D-2227E2343994",
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-39"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 70,
+          "height": 20,
+          "fontFamily": "PingFangSC",
+          "fontSize": "14",
+          "color": "#FFFFFF",
+          "lineHeight": "20rem",
+          "fontWeight": 400
+        },
+        "attrs": { "x": 878, "y": 26, "text": "申请回款宝", "lines": 1 }
+      },
+      "selfId": "7FEFDA9E-7F22-429B-AAFB-18464D73F064",
+      "type": "Text",
+      "id": "Text-40"
+    }
   ],
-  "artboardImg":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/954fd9e00e5811e990aa5d8f063678bd.png",
-  "name":"Group 3 Copy 8"
+  "artboardImg": "https://img.alicdn.com/tfs/TB1fB0uelOD3KVjSZFFXXcn9pXa-1992-784.png",
+  "taskId": "F45C2DE1E2E15815B61959D53C47660E-1561533088521",
+  "name": "编组 3",
+  "pluginVersion": "1.7.3",
+  "reference": "sketch"
 }
