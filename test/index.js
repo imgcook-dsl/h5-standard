@@ -39,7 +39,6 @@ co(function*() {
     path.join(__dirname, '../test/template.result.json'),
     JSON.stringify(renderInfo, null, 2)
   );
-
   fs.writeFileSync(path.join(__dirname, '../test/template.result.html'), ret);
 
   console.log('代码生成成功');
