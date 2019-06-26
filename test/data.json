@@ -1,70 +1,324 @@
 {
-  "selfId": "6B02923A-0518-4817-AEF3-0A19E9106BCE",
+  "id": "Shape-0",
+  "__VERSION__": "2.0",
+  "type": "Shape",
   "children": [
     {
       "props": {
-        "attrs": { "x": 0, "y": 19, "className": "block-309449" },
+        "attrs": { "x": 0, "y": 0, "fixed": true, "className": "block-636750" },
         "style": {
           "boxSizing": "border-box",
           "display": "flex",
           "position": "relative",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "marginTop": 19,
-          "paddingRight": 29,
-          "paddingLeft": 24,
-          "width": 996
+          "alignItems": "flex-start",
+          "marginBottom": -36,
+          "paddingBottom": 36,
+          "width": 714,
+          "height": 393
         }
       },
       "type": "Block",
-      "id": "Block-309449",
+      "id": "Block-636750",
+      "__VERSION__": "2.0",
+      "children": [
+        {
+          "id": "Image-2",
+          "__VERSION__": "2.0",
+          "type": "Image",
+          "children": [],
+          "props": {
+            "style": { "position": "relative", "width": 714, "height": 357 },
+            "attrs": {
+              "y": 0,
+              "x": 0,
+              "source": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png",
+              "src": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png",
+              "className": "image-2"
+            }
+          },
+          "__ADAPT__": true,
+          "componentType": "picture",
+          "_jsonId": "Image-2",
+          "_jsonElementId": "Image-2",
+          "title": "Image",
+          "attrs": {
+            "y": 0,
+            "x": 0,
+            "source": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png",
+            "src": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png",
+            "className": "banner"
+          },
+          "style": { "position": "relative", "width": 714, "height": 357 },
+          "semantic": {
+            "dvc_default": [
+              {
+                "name": "dvc_default",
+                "level": 100,
+                "result": "pic",
+                "prefix": "",
+                "id": 597232
+              }
+            ],
+            "dvc_picture": [
+              {
+                "name": "dvc_picture",
+                "level": 60,
+                "result": "banner",
+                "prefix": "",
+                "id": 723552,
+                "choose": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "Shape-14",
+          "__VERSION__": "2.0",
+          "type": "Shape",
+          "children": [
+            {
+              "id": "Image-15",
+              "__VERSION__": "2.0",
+              "type": "Image",
+              "children": [],
+              "props": {
+                "style": {
+                  "marginTop": 5,
+                  "marginLeft": 6,
+                  "width": 126,
+                  "height": 52
+                },
+                "attrs": {
+                  "y": 329,
+                  "x": 26,
+                  "source": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png",
+                  "src": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png",
+                  "className": "image-15"
+                }
+              },
+              "componentType": "picture",
+              "_jsonId": "Image-15",
+              "_jsonElementId": "Image-15",
+              "title": "Image",
+              "attrs": {
+                "y": 329,
+                "x": 26,
+                "source": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png",
+                "src": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png",
+                "className": "logo"
+              },
+              "style": {
+                "marginTop": 5,
+                "marginLeft": 6,
+                "width": 126,
+                "height": 52
+              },
+              "semantic": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "img",
+                    "prefix": "",
+                    "id": 855253
+                  }
+                ],
+                "dvc_picture": [
+                  {
+                    "name": "dvc_picture",
+                    "level": 35,
+                    "result": "logo",
+                    "prefix": "",
+                    "id": 334576,
+                    "choose": true
+                  }
+                ]
+              }
+            }
+          ],
+          "props": {
+            "style": {
+              "display": "flex",
+              "position": "absolute",
+              "bottom": 0,
+              "left": 19,
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+              "borderWidth": "1",
+              "borderStyle": "solid",
+              "borderRadius": 35,
+              "borderColor": "rgba(204,204,204,1)",
+              "backgroundColor": "#ffffff",
+              "width": 140,
+              "height": 70,
+              "overflow": "hidden"
+            },
+            "attrs": { "y": 323, "x": 19, "className": "shape-14" }
+          },
+          "__ADAPT__": true,
+          "componentType": "view",
+          "_jsonId": "Shape-14",
+          "_jsonElementId": "Shape-14",
+          "title": "Shape",
+          "attrs": { "y": 323, "x": 19, "className": "wrap" },
+          "style": {
+            "display": "flex",
+            "position": "absolute",
+            "bottom": 0,
+            "left": 19,
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "borderWidth": "1",
+            "borderStyle": "solid",
+            "borderRadius": 35,
+            "borderColor": "rgba(204,204,204,1)",
+            "backgroundColor": "#ffffff",
+            "width": 140,
+            "height": 70,
+            "overflow": "hidden"
+          },
+          "semantic": {
+            "dvc_default": [
+              {
+                "name": "dvc_default",
+                "level": 100,
+                "result": "block",
+                "prefix": "",
+                "id": 384345
+              }
+            ],
+            "dvc_view": [
+              {
+                "name": "dvc_view",
+                "level": 95,
+                "result": "wrap",
+                "prefix": "",
+                "id": 638182,
+                "choose": true
+              }
+            ]
+          }
+        }
+      ],
+      "__ADAPT__": true,
+      "componentType": "view",
+      "_jsonId": "Block-636750",
+      "_jsonElementId": "Block-636750",
+      "title": "Block",
+      "attrs": { "x": 0, "y": 0, "fixed": true, "className": "bd" },
+      "style": {
+        "boxSizing": "border-box",
+        "display": "flex",
+        "position": "relative",
+        "alignItems": "flex-start",
+        "marginBottom": -36,
+        "paddingBottom": 36,
+        "width": 714,
+        "height": 393
+      },
+      "semantic": {
+        "dvc_layout": [
+          {
+            "name": "dvc_layout",
+            "level": 100,
+            "result": "bd",
+            "prefix": "",
+            "id": 659811,
+            "choose": true
+          }
+        ],
+        "dvc_default": [
+          {
+            "name": "dvc_default",
+            "level": 100,
+            "result": "view",
+            "prefix": "",
+            "id": 84456
+          }
+        ],
+        "dvc_view": [
+          {
+            "name": "dvc_view",
+            "level": 95,
+            "result": "outer",
+            "prefix": "",
+            "id": 720948
+          }
+        ],
+        "dvc_picture": [
+          {
+            "name": "dvc_picture",
+            "level": 60,
+            "result": "bannerWrap",
+            "prefix": "",
+            "id": 113569
+          }
+        ]
+      }
+    },
+    {
+      "props": {
+        "attrs": { "x": 0, "y": 383, "className": "block-549748" },
+        "style": {
+          "boxSizing": "border-box",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginTop": 26,
+          "paddingRight": 15,
+          "paddingLeft": 15,
+          "width": 714,
+          "height": 62
+        }
+      },
+      "type": "Block",
+      "id": "Block-549748",
       "__VERSION__": "2.0",
       "__GRID__": "NEWROW",
       "children": [
         {
-          "selfId": "2381C02E-71EC-4956-9845-77FAA211A34E",
-          "id": "Text-11",
+          "__VERSION__": "2.0",
+          "type": "Text",
+          "id": "Text-3",
           "props": {
             "style": {
-              "marginTop": 4,
-              "width": 54,
-              "height": 24,
-              "lineHeight": 24,
-              "whiteSpace": "nowrap",
-              "color": "#333b4e",
-              "fontSize": 18,
+              "marginTop": 18,
+              "width": 407,
+              "height": 40,
+              "lineHeight": 40,
+              "whiteSpace": "pre",
+              "color": "#333333",
+              "fontSize": 28,
               "fontWeight": 400,
               "lines": 1
             },
             "attrs": {
-              "y": 23,
-              "x": 24,
+              "y": 401,
+              "x": 15,
               "lines": 1,
-              "text": "回款宝",
-              "className": "text-11"
+              "text": "高端定制2018开叉设计羊毛衬衫 ",
+              "className": "text-3"
             }
           },
-          "__VERSION__": "2.0",
-          "type": "Text",
-          "children": [],
+          "__ADAPT__": true,
           "componentType": "text",
-          "innerText": "回款宝",
-          "_jsonId": "Text-11",
-          "_jsonElementId": "Text-11",
+          "innerText": "高端定制2018开叉设计羊毛衬衫 ",
+          "_jsonId": "Text-3",
+          "_jsonElementId": "Text-3",
           "title": "Text",
           "attrs": {
-            "y": 23,
-            "x": 24,
+            "y": 401,
+            "x": 15,
             "lines": 1,
-            "text": "回款宝",
-            "className": "returnTreasure"
+            "text": "高端定制2018开叉设计羊毛衬衫 ",
+            "className": "title"
           },
           "style": {
-            "marginTop": 4,
-            "lineHeight": "24px",
-            "whiteSpace": "nowrap",
-            "color": "#333b4e",
-            "fontSize": 18,
+            "marginTop": 18,
+            "lineHeight": "40px",
+            "whiteSpace": "pre",
+            "color": "#333333",
+            "fontSize": 28,
             "fontWeight": 400,
             "lines": 1
           },
@@ -73,73 +327,71 @@
               {
                 "name": "dvc_default",
                 "level": 100,
-                "result": "word",
+                "result": "txt",
                 "prefix": "",
-                "id": 916121
+                "id": 617124
               }
             ],
             "dvc_text": [
               {
                 "name": "dvc_text",
-                "level": 55,
-                "result": "returnTreasure",
+                "level": 20,
+                "result": "title",
                 "prefix": "",
-                "id": 159000,
+                "id": 463655,
                 "choose": true
               }
             ]
           }
         },
         {
+          "id": "Shape-10",
+          "__VERSION__": "2.0",
+          "type": "Shape",
           "children": [
             {
-              "selfId": "7FEFDA9E-7F22-429B-AAFB-18464D73F064",
-              "id": "Text-40",
+              "__VERSION__": "2.0",
+              "type": "Text",
+              "id": "Text-11",
               "props": {
                 "style": {
-                  "width": 70,
-                  "maxWidth": 93,
-                  "height": 20,
-                  "overflow": "hidden",
-                  "textOverflow": "ellipsis",
-                  "lineHeight": 20,
+                  "marginTop": 13,
+                  "width": 24,
+                  "height": 33,
+                  "lineHeight": 33,
                   "whiteSpace": "nowrap",
-                  "color": "#ffffff",
-                  "fontSize": 14,
+                  "color": "#ff0036",
+                  "fontSize": 24,
                   "fontWeight": 400,
                   "lines": 1
                 },
                 "attrs": {
-                  "y": 26,
-                  "x": 878,
+                  "y": 397,
+                  "x": 518,
                   "lines": 1,
-                  "text": "申请回款宝",
-                  "className": "text-40"
+                  "text": "券",
+                  "className": "text-11"
                 }
               },
-              "__VERSION__": "2.0",
-              "type": "Text",
-              "children": [],
+              "__ADAPT__": true,
               "componentType": "text",
-              "innerText": "申请回款宝",
-              "_jsonId": "Text-40",
-              "_jsonElementId": "Text-40",
+              "innerText": "券",
+              "_jsonId": "Text-11",
+              "_jsonElementId": "Text-11",
               "title": "Text",
               "attrs": {
-                "y": 26,
-                "x": 878,
+                "y": 397,
+                "x": 518,
                 "lines": 1,
-                "text": "申请回款宝",
-                "className": "tag"
+                "text": "券",
+                "className": "coupons"
               },
               "style": {
-                "maxWidth": 93,
-                "overflow": "hidden",
-                "textOverflow": "ellipsis",
-                "lineHeight": "20px",
+                "marginTop": 13,
+                "lineHeight": "33px",
                 "whiteSpace": "nowrap",
-                "color": "#ffffff",
-                "fontSize": 14,
+                "color": "#ff0036",
+                "fontSize": 24,
                 "fontWeight": 400,
                 "lines": 1
               },
@@ -150,123 +402,240 @@
                     "level": 100,
                     "result": "word",
                     "prefix": "",
-                    "id": 35415
+                    "id": 144389
                   }
                 ],
                 "dvc_text": [
                   {
                     "name": "dvc_text",
-                    "level": 65,
-                    "result": "tag",
+                    "level": 55,
+                    "result": "coupons",
                     "prefix": "",
-                    "id": 658820,
+                    "id": 823465,
+                    "choose": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Image-13",
+              "__VERSION__": "2.0",
+              "type": "Image",
+              "children": [],
+              "props": {
+                "style": {
+                  "marginTop": 4,
+                  "marginLeft": 19,
+                  "width": 2,
+                  "height": 54
+                },
+                "attrs": {
+                  "y": 388,
+                  "x": 561,
+                  "source": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png",
+                  "src": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png",
+                  "className": "image-13"
+                }
+              },
+              "__ADAPT__": true,
+              "componentType": "picture",
+              "_jsonId": "Image-13",
+              "_jsonElementId": "Image-13",
+              "title": "Image",
+              "attrs": {
+                "y": 388,
+                "x": 561,
+                "source": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png",
+                "src": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png",
+                "className": "verticalLine"
+              },
+              "style": {
+                "marginTop": 4,
+                "marginLeft": 19,
+                "width": 2,
+                "height": 54
+              },
+              "semantic": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "image",
+                    "prefix": "",
+                    "id": 528667
+                  }
+                ],
+                "dvc_picture": [
+                  {
+                    "name": "dvc_picture",
+                    "level": 85,
+                    "result": "verticalLine",
+                    "prefix": "",
+                    "id": 186723,
+                    "choose": true
+                  }
+                ]
+              }
+            },
+            {
+              "__VERSION__": "2.0",
+              "type": "Text",
+              "id": "Text-12",
+              "props": {
+                "style": {
+                  "marginTop": 14,
+                  "marginLeft": 28,
+                  "width": 82,
+                  "height": 33,
+                  "lineHeight": 33,
+                  "whiteSpace": "nowrap",
+                  "color": "#ff0036",
+                  "fontSize": 24,
+                  "fontWeight": 400,
+                  "lines": 1
+                },
+                "attrs": {
+                  "y": 398,
+                  "x": 591,
+                  "lines": 1,
+                  "text": "¥10000",
+                  "className": "text-12"
+                }
+              },
+              "__ADAPT__": true,
+              "componentType": "text",
+              "innerText": "¥10000",
+              "_jsonId": "Text-12",
+              "_jsonElementId": "Text-12",
+              "title": "Text",
+              "attrs": {
+                "y": 398,
+                "x": 591,
+                "lines": 1,
+                "text": "¥10000",
+                "className": "price"
+              },
+              "style": {
+                "marginTop": 14,
+                "marginLeft": 28,
+                "lineHeight": "33px",
+                "whiteSpace": "nowrap",
+                "color": "#ff0036",
+                "fontSize": 24,
+                "fontWeight": 400,
+                "lines": 1
+              },
+              "semantic": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "text",
+                    "prefix": "",
+                    "id": 986491
+                  }
+                ],
+                "dvc_text": [
+                  {
+                    "name": "dvc_text",
+                    "level": 80,
+                    "result": "price",
+                    "prefix": "",
+                    "dataSuggest": {
+                      "source": "data",
+                      "sourceValue": "item_current_price",
+                      "matchRule": "CURRENT_PRCIE"
+                    },
+                    "id": 469046,
                     "choose": true
                   }
                 ]
               }
             }
           ],
-          "type": "block",
-          "id": "Shape-39",
-          "componentType": "link",
-          "title": "link",
-          "attrs": { "className": "tagWrap", "href": "" },
+          "props": {
+            "style": {
+              "display": "flex",
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "borderWidth": "1",
+              "borderStyle": "solid",
+              "borderRadius": 4,
+              "borderColor": "rgba(255,0,54,1)",
+              "backgroundColor": "rgba(255,0,54,0.10)",
+              "width": 200,
+              "height": 60
+            },
+            "attrs": { "y": 383, "x": 498, "className": "shape-10" }
+          },
+          "__ADAPT__": true,
+          "componentType": "view",
+          "_jsonId": "Shape-10",
+          "_jsonElementId": "Shape-10",
+          "title": "Shape",
+          "attrs": { "y": 383, "x": 498, "className": "priceWrap" },
           "style": {
             "display": "flex",
-            "alignItems": "center",
+            "alignItems": "flex-start",
             "flexDirection": "row",
             "justifyContent": "center",
-            "borderRadius": 2,
-            "backgroundColor": "#fe5280",
-            "width": 105,
-            "height": 34
+            "borderWidth": "1",
+            "borderStyle": "solid",
+            "borderRadius": 4,
+            "borderColor": "rgba(255,0,54,1)",
+            "backgroundColor": "rgba(255,0,54,0.10)",
+            "width": 200,
+            "height": 60
+          },
+          "semantic": {
+            "dvc_default": [
+              {
+                "name": "dvc_default",
+                "level": 100,
+                "result": "view",
+                "prefix": "",
+                "id": 110610
+              }
+            ],
+            "dvc_view": [
+              {
+                "name": "dvc_view",
+                "level": 95,
+                "result": "block",
+                "prefix": "",
+                "id": 830656
+              }
+            ],
+            "dvc_text": [
+              {
+                "name": "dvc_text",
+                "level": 80,
+                "result": "priceWrap",
+                "prefix": "",
+                "id": 556103,
+                "choose": true
+              }
+            ]
           }
         }
       ],
+      "__ADAPT__": true,
       "componentType": "view",
-      "_jsonId": "Block-309449",
-      "_jsonElementId": "Block-309449",
+      "_jsonId": "Block-549748",
+      "_jsonElementId": "Block-549748",
       "title": "Block",
-      "attrs": { "x": 0, "y": 19, "className": "hd" },
+      "attrs": { "x": 0, "y": 383, "className": "main" },
       "style": {
         "boxSizing": "border-box",
         "display": "flex",
-        "position": "relative",
         "flexDirection": "row",
         "justifyContent": "space-between",
-        "marginTop": 19,
-        "paddingRight": 29,
-        "paddingLeft": 24,
-        "width": 996
-      },
-      "semantic": {
-        "dvc_layout": [
-          {
-            "name": "dvc_layout",
-            "level": 100,
-            "result": "hd",
-            "prefix": "",
-            "id": 566661,
-            "choose": true
-          }
-        ],
-        "dvc_default": [
-          {
-            "name": "dvc_default",
-            "level": 100,
-            "result": "view",
-            "prefix": "",
-            "id": 69574
-          }
-        ],
-        "dvc_view": [
-          {
-            "name": "dvc_view",
-            "level": 95,
-            "result": "outer",
-            "prefix": "",
-            "id": 959660
-          }
-        ]
-      }
-    },
-    {
-      "selfId": "05B2C802-C292-431B-8384-E3AF9BA960FA",
-      "children": [],
-      "props": {
-        "style": {
-          "position": "relative",
-          "marginTop": 17,
-          "width": 996,
-          "height": 1
-        },
-        "attrs": {
-          "y": 70,
-          "x": 0,
-          "source": "https://img.alicdn.com/tfs/TB1KGlCeaSs3KVjSZPiXXcsiVXa-1996-2.png",
-          "src": "https://img.alicdn.com/tfs/TB1KGlCeaSs3KVjSZPiXXcsiVXa-1996-2.png",
-          "className": "image-34"
-        }
-      },
-      "__VERSION__": "2.0",
-      "type": "Image",
-      "id": "Image-34",
-      "componentType": "picture",
-      "_jsonId": "Image-34",
-      "_jsonElementId": "Image-34",
-      "title": "Image",
-      "attrs": {
-        "y": 70,
-        "x": 0,
-        "source": "https://img.alicdn.com/tfs/TB1KGlCeaSs3KVjSZPiXXcsiVXa-1996-2.png",
-        "src": "https://img.alicdn.com/tfs/TB1KGlCeaSs3KVjSZPiXXcsiVXa-1996-2.png",
-        "className": "main"
-      },
-      "style": {
-        "position": "relative",
-        "marginTop": 17,
-        "width": 996,
-        "height": 1
+        "marginTop": 26,
+        "paddingRight": 15,
+        "paddingLeft": 15,
+        "width": 714,
+        "height": 62
       },
       "semantic": {
         "dvc_layout": [
@@ -275,7 +644,7 @@
             "level": 100,
             "result": "main",
             "prefix": "",
-            "id": 633220,
+            "id": 854194,
             "choose": true
           }
         ],
@@ -283,1548 +652,378 @@
           {
             "name": "dvc_default",
             "level": 100,
-            "result": "pic",
+            "result": "block",
             "prefix": "",
-            "id": 753097
+            "id": 796295
           }
         ],
-        "dvc_picture": [
+        "dvc_view": [
           {
-            "name": "dvc_picture",
-            "level": 100,
-            "result": "line",
+            "name": "dvc_view",
+            "level": 95,
+            "result": "block",
             "prefix": "",
-            "id": 594238
+            "id": 542398
           }
         ]
       }
     },
     {
       "props": {
-        "attrs": { "x": 0, "y": 107, "className": "block-891140" },
+        "attrs": { "x": 0, "y": 445, "className": "block-111179" },
         "style": {
           "display": "flex",
           "position": "relative",
           "flexDirection": "row",
-          "marginTop": 36,
-          "width": 995
+          "marginTop": 1,
+          "width": 714,
+          "height": 77
         }
       },
       "type": "Block",
-      "id": "Block-891140",
+      "id": "Block-111179",
       "__VERSION__": "2.0",
       "__GRID__": "NEWROW",
       "children": [
         {
           "props": {
-            "attrs": { "x": 136, "y": 107, "className": "block-390582" },
+            "attrs": { "x": 16, "y": 445, "className": "block-501162" },
             "style": {
               "display": "flex",
-              "position": "relative",
               "alignItems": "flex-start",
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "marginLeft": 136,
-              "width": 56,
-              "height": 69
+              "flexDirection": "column",
+              "marginLeft": 16,
+              "width": 10,
+              "height": 77
             }
           },
           "type": "Block",
-          "id": "Block-390582",
+          "id": "Block-501162",
           "__VERSION__": "2.0",
           "children": [
             {
-              "selfId": "449854D7-C558-496D-B5EF-EF92F0FAC62C",
-              "children": [],
-              "props": {
-                "style": { "position": "relative", "width": 56, "height": 69 },
-                "attrs": {
-                  "y": 107,
-                  "x": 136,
-                  "source": "https://img.alicdn.com/tfs/TB1IZJteoGF3KVjSZFmXXbqPXXa-112-138.png",
-                  "src": "https://img.alicdn.com/tfs/TB1IZJteoGF3KVjSZFmXXbqPXXa-112-138.png",
-                  "className": "image-36"
-                }
-              },
+              "id": "Shape-6",
               "__VERSION__": "2.0",
-              "type": "Image",
-              "id": "Image-36",
-              "componentType": "picture",
-              "_jsonId": "Image-36",
-              "_jsonElementId": "Image-36",
-              "title": "Image",
-              "attrs": {
-                "y": 107,
-                "x": 136,
-                "source": "https://img.alicdn.com/tfs/TB1IZJteoGF3KVjSZFmXXbqPXXa-112-138.png",
-                "src": "https://img.alicdn.com/tfs/TB1IZJteoGF3KVjSZFmXXbqPXXa-112-138.png",
-                "className": "largeIcon"
-              },
-              "style": { "position": "relative", "width": 56, "height": 69 },
-              "semantic": {
-                "dvc_default": [
-                  {
-                    "name": "dvc_default",
-                    "level": 100,
-                    "result": "pic",
-                    "prefix": "",
-                    "id": 151934
-                  }
-                ],
-                "dvc_picture": [
-                  {
-                    "name": "dvc_picture",
-                    "level": 38,
-                    "result": "largeIcon",
-                    "prefix": "",
-                    "id": 908648,
-                    "choose": true
-                  }
-                ]
-              }
-            },
-            {
-              "selfId": "839DB742-C9A3-41A8-92A1-E83EFB1B0F61",
+              "type": "Shape",
               "children": [],
               "props": {
                 "style": {
-                  "position": "absolute",
-                  "top": 15,
-                  "left": 21,
-                  "width": 16,
-                  "height": 10
+                  "display": "flex",
+                  "alignItems": "flex-start",
+                  "marginTop": 17,
+                  "borderRadius": 8,
+                  "backgroundColor": "#999999",
+                  "width": 8,
+                  "height": 8
                 },
-                "attrs": {
-                  "y": 122,
-                  "x": 157,
-                  "source": "https://img.alicdn.com/tfs/TB1G75GbvBj_uVjSZFpXXc0SXXa-36-26.png",
-                  "src": "https://img.alicdn.com/tfs/TB1G75GbvBj_uVjSZFpXXc0SXXa-36-26.png",
-                  "className": "image-38"
-                }
+                "attrs": { "y": 462, "x": 16, "className": "shape-6" }
               },
-              "__VERSION__": "2.0",
-              "type": "Image",
-              "id": "Image-38",
-              "componentType": "picture",
-              "_jsonId": "Image-38",
-              "_jsonElementId": "Image-38",
-              "title": "Image",
-              "attrs": {
-                "y": 122,
-                "x": 157,
-                "source": "https://img.alicdn.com/tfs/TB1G75GbvBj_uVjSZFpXXc0SXXa-36-26.png",
-                "src": "https://img.alicdn.com/tfs/TB1G75GbvBj_uVjSZFpXXc0SXXa-36-26.png",
-                "className": "queren"
-              },
+              "__ADAPT__": true,
+              "componentType": "view",
+              "_jsonId": "Shape-6",
+              "_jsonElementId": "Shape-6",
+              "title": "Shape",
+              "attrs": { "y": 462, "x": 16, "className": "color" },
               "style": {
-                "position": "absolute",
-                "top": 15,
-                "left": 21,
-                "width": 16,
-                "height": 10
+                "display": "flex",
+                "alignItems": "flex-start",
+                "marginTop": 17,
+                "borderRadius": 8,
+                "backgroundColor": "#999999",
+                "width": 8,
+                "height": 8
               },
               "semantic": {
                 "dvc_default": [
                   {
                     "name": "dvc_default",
                     "level": 100,
-                    "result": "img",
+                    "result": "block",
                     "prefix": "",
-                    "id": 754377
+                    "id": 21771
                   }
                 ],
-                "dvc_picture": [
+                "dvc_view": [
                   {
-                    "name": "dvc_picture",
-                    "level": 88,
-                    "result": "queren",
+                    "name": "dvc_view",
+                    "level": 100,
+                    "result": "color",
                     "prefix": "",
-                    "id": 166368,
+                    "id": 815170,
                     "choose": true
                   }
                 ]
               }
-            }
-          ],
-          "componentType": "view",
-          "_jsonId": "Block-390582",
-          "_jsonElementId": "Block-390582",
-          "title": "Block",
-          "attrs": { "x": 136, "y": 107, "className": "wrap" },
-          "style": {
-            "display": "flex",
-            "position": "relative",
-            "alignItems": "flex-start",
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "marginLeft": 136,
-            "width": 56,
-            "height": 69
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 209497
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 95,
-                "result": "wrap",
-                "prefix": "",
-                "id": 117916,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "AB422D89-261A-420F-909D-2E2C29F178C8",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 94,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
             },
-            "attrs": { "y": 141, "x": 286, "className": "shape-23" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-23",
-          "componentType": "view",
-          "_jsonId": "Shape-23",
-          "_jsonElementId": "Shape-23",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 286, "className": "color" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 94,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 714270
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "color",
-                "prefix": "",
-                "id": 468904,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "D0827D4D-CF64-403B-B413-0277BFD7A8F3",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 294, "className": "shape-24" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-24",
-          "componentType": "view",
-          "_jsonId": "Shape-24",
-          "_jsonElementId": "Shape-24",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 294, "className": "colorDiv" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 901998
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "colorDiv",
-                "prefix": "",
-                "id": 86952,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "D65EB852-7890-4114-B946-8FCF4934D123",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 302, "className": "shape-25" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-25",
-          "componentType": "view",
-          "_jsonId": "Shape-25",
-          "_jsonElementId": "Shape-25",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 302, "className": "color_2" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 866196
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "color",
-                "prefix": "",
-                "id": 75258,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "55E1943E-03B2-4329-A237-8D41629015E7",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 310, "className": "shape-26" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-26",
-          "componentType": "view",
-          "_jsonId": "Shape-26",
-          "_jsonElementId": "Shape-26",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 310, "className": "colorDiv_2" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 954837
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "colorDiv",
-                "prefix": "",
-                "id": 329703,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "4B6ADC5F-1CC4-465F-ADE0-BCD53FC5CCCB",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 318, "className": "shape-27" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-27",
-          "componentType": "view",
-          "_jsonId": "Shape-27",
-          "_jsonElementId": "Shape-27",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 318, "className": "color_3" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 576947
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "color",
-                "prefix": "",
-                "id": 653654,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "5D6C5B18-F056-4056-8CD2-76D8049456C0",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 326, "className": "shape-28" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-28",
-          "componentType": "view",
-          "_jsonId": "Shape-28",
-          "_jsonElementId": "Shape-28",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 326, "className": "colorDiv_3" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 819328
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "colorDiv",
-                "prefix": "",
-                "id": 106677,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "6E88E17F-3B8D-4C66-8596-DB6099C9B11A",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 334, "className": "shape-29" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-29",
-          "componentType": "view",
-          "_jsonId": "Shape-29",
-          "_jsonElementId": "Shape-29",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 334, "className": "color_4" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 126292
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "color",
-                "prefix": "",
-                "id": 893491,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "C47378B5-7AC1-4E33-AE09-6C378626A398",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 342, "className": "shape-30" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-30",
-          "componentType": "view",
-          "_jsonId": "Shape-30",
-          "_jsonElementId": "Shape-30",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 342, "className": "colorDiv_4" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 636569
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "colorDiv",
-                "prefix": "",
-                "id": 472897,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "A7AAB1C2-5EC4-416A-8493-F114D098BEE6",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 350, "className": "shape-31" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-31",
-          "componentType": "view",
-          "_jsonId": "Shape-31",
-          "_jsonElementId": "Shape-31",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 350, "className": "color_5" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 30098
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "color",
-                "prefix": "",
-                "id": 134079,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "EBC14AD5-F3F6-44C6-BCD9-4D43DC9B8B18",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 358, "className": "shape-32" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-32",
-          "componentType": "view",
-          "_jsonId": "Shape-32",
-          "_jsonElementId": "Shape-32",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 358, "className": "colorDiv_5" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 947814
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "colorDiv",
-                "prefix": "",
-                "id": 451930,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "A3C0BE04-99F1-4CA4-AD6B-112075972EEF",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 366, "className": "shape-33" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-33",
-          "componentType": "view",
-          "_jsonId": "Shape-33",
-          "_jsonElementId": "Shape-33",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 366, "className": "color_6" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 435266
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "color",
-                "prefix": "",
-                "id": 388695,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "365515F0-453B-4C8B-B1C1-9B2394EC7C6F",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 9,
-              "marginLeft": 91,
-              "width": 56,
-              "height": 56
-            },
-            "attrs": {
-              "y": 116,
-              "x": 462,
-              "source": "https://img.alicdn.com/tfs/TB1wxxxemWD3KVjSZSgXXcCxVXa-112-112.png",
-              "src": "https://img.alicdn.com/tfs/TB1wxxxemWD3KVjSZSgXXcCxVXa-112-112.png",
-              "className": "image-4"
-            }
-          },
-          "__VERSION__": "2.0",
-          "type": "Image",
-          "id": "Image-4",
-          "componentType": "picture",
-          "_jsonId": "Image-4",
-          "_jsonElementId": "Image-4",
-          "title": "Image",
-          "attrs": {
-            "y": 116,
-            "x": 462,
-            "source": "https://img.alicdn.com/tfs/TB1wxxxemWD3KVjSZSgXXcCxVXa-112-112.png",
-            "src": "https://img.alicdn.com/tfs/TB1wxxxemWD3KVjSZSgXXcCxVXa-112-112.png",
-            "className": "largeIcon_2"
-          },
-          "style": {
-            "position": "relative",
-            "marginTop": 9,
-            "marginLeft": 91,
-            "width": 56,
-            "height": 56
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "image",
-                "prefix": "",
-                "id": 893878
-              }
-            ],
-            "dvc_picture": [
-              {
-                "name": "dvc_picture",
-                "level": 38,
-                "result": "largeIcon",
-                "prefix": "",
-                "id": 414105,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "6F0A3408-6440-45D5-8437-8916D93B9651",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 84,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 602, "className": "shape-12" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-12",
-          "componentType": "view",
-          "_jsonId": "Shape-12",
-          "_jsonElementId": "Shape-12",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 602, "className": "colorDiv_6" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 84,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 596335
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "colorDiv",
-                "prefix": "",
-                "id": 925647,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "3524C0FE-91E5-47DE-80F8-3D9F8313D218",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 610, "className": "shape-13" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-13",
-          "componentType": "view",
-          "_jsonId": "Shape-13",
-          "_jsonElementId": "Shape-13",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 610, "className": "color_7" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 677583
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "color",
-                "prefix": "",
-                "id": 99062,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "6BAA9A9F-36C3-4C4F-AB31-AB450AADBD19",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 618, "className": "shape-14" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-14",
-          "componentType": "view",
-          "_jsonId": "Shape-14",
-          "_jsonElementId": "Shape-14",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 618, "className": "colorDiv_7" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 440151
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "colorDiv",
-                "prefix": "",
-                "id": 655182,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "DACC6E26-7BEB-4A4B-B6FA-FA14FC690189",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 626, "className": "shape-15" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-15",
-          "componentType": "view",
-          "_jsonId": "Shape-15",
-          "_jsonElementId": "Shape-15",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 626, "className": "color_8" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 917556
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "color",
-                "prefix": "",
-                "id": 640049,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "C0784EB9-2373-4D14-9014-C9330E558DAA",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 634, "className": "shape-16" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-16",
-          "componentType": "view",
-          "_jsonId": "Shape-16",
-          "_jsonElementId": "Shape-16",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 634, "className": "colorDiv_8" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 885040
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "colorDiv",
-                "prefix": "",
-                "id": 326893,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "4A485F5D-6976-4429-8FE7-F4331538CD10",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 642, "className": "shape-17" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-17",
-          "componentType": "view",
-          "_jsonId": "Shape-17",
-          "_jsonElementId": "Shape-17",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 642, "className": "color_9" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 570748
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "color",
-                "prefix": "",
-                "id": 789880,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "A7539BEC-A3E4-431C-BF68-2F91138DA953",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 650, "className": "shape-18" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-18",
-          "componentType": "view",
-          "_jsonId": "Shape-18",
-          "_jsonElementId": "Shape-18",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 650, "className": "colorDiv_9" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 865754
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "colorDiv",
-                "prefix": "",
-                "id": 681579,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "BDCE49D8-3621-429A-B83C-E3743A282B9B",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 658, "className": "shape-19" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-19",
-          "componentType": "view",
-          "_jsonId": "Shape-19",
-          "_jsonElementId": "Shape-19",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 658, "className": "color_10" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 177102
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "color",
-                "prefix": "",
-                "id": 136736,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "086558E8-2DC9-468F-AF60-4CB27E17269C",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 666, "className": "shape-20" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-20",
-          "componentType": "view",
-          "_jsonId": "Shape-20",
-          "_jsonElementId": "Shape-20",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 666, "className": "colorDiv_10" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 605764
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "colorDiv",
-                "prefix": "",
-                "id": 242675,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "E132BBC1-6598-4355-B8A2-49480F673AEB",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 674, "className": "shape-21" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-21",
-          "componentType": "view",
-          "_jsonId": "Shape-21",
-          "_jsonElementId": "Shape-21",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 674, "className": "color_11" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 297359
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "color",
-                "prefix": "",
-                "id": 404416,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "C693A742-EC31-441F-9044-94C6447820BC",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "relative",
-              "marginTop": 34,
-              "marginLeft": 3,
-              "borderRadius": 5,
-              "backgroundColor": "#d5dde1",
-              "width": 5,
-              "height": 5
-            },
-            "attrs": { "y": 141, "x": 682, "className": "shape-22" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-22",
-          "componentType": "view",
-          "_jsonId": "Shape-22",
-          "_jsonElementId": "Shape-22",
-          "title": "Shape",
-          "attrs": { "y": 141, "x": 682, "className": "colorDiv_11" },
-          "style": {
-            "position": "relative",
-            "marginTop": 34,
-            "marginLeft": 3,
-            "borderRadius": 5,
-            "backgroundColor": "#d5dde1",
-            "width": 5,
-            "height": 5
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 988905
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 100,
-                "result": "colorDiv",
-                "prefix": "",
-                "id": 923677,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "CBA73596-AA65-4E66-BD40-2F54D9093EEF",
-          "children": [
             {
-              "selfId": "BF0215A4-737B-455E-AEDB-A2EDAA6E206C",
+              "id": "Shape-7",
+              "__VERSION__": "2.0",
+              "type": "Shape",
               "children": [],
               "props": {
-                "style": { "marginTop": 8, "width": 22, "height": 28 },
-                "attrs": {
-                  "y": 129,
-                  "x": 794,
-                  "source": "https://img.alicdn.com/tfs/TB1X3huemSD3KVjSZFKXXb10VXa-46-56.png",
-                  "src": "https://img.alicdn.com/tfs/TB1X3huemSD3KVjSZFKXXb10VXa-46-56.png",
-                  "className": "image-5"
-                }
+                "style": {
+                  "display": "flex",
+                  "alignItems": "flex-start",
+                  "marginTop": 26,
+                  "borderRadius": 8,
+                  "backgroundColor": "#999999",
+                  "width": 8,
+                  "height": 8
+                },
+                "attrs": { "y": 496, "x": 16, "className": "shape-7" }
               },
-              "__VERSION__": "2.0",
-              "type": "Image",
-              "id": "Image-5",
-              "componentType": "picture",
-              "_jsonId": "Image-5",
-              "_jsonElementId": "Image-5",
-              "title": "Image",
-              "attrs": {
-                "y": 129,
-                "x": 794,
-                "source": "https://img.alicdn.com/tfs/TB1X3huemSD3KVjSZFKXXb10VXa-46-56.png",
-                "src": "https://img.alicdn.com/tfs/TB1X3huemSD3KVjSZFKXXb10VXa-46-56.png",
-                "className": "renminbi"
+              "__ADAPT__": true,
+              "componentType": "view",
+              "_jsonId": "Shape-7",
+              "_jsonElementId": "Shape-7",
+              "title": "Shape",
+              "attrs": { "y": 496, "x": 16, "className": "colorDiv" },
+              "style": {
+                "display": "flex",
+                "alignItems": "flex-start",
+                "marginTop": 26,
+                "borderRadius": 8,
+                "backgroundColor": "#999999",
+                "width": 8,
+                "height": 8
               },
-              "style": { "marginTop": 8, "width": 22, "height": 28 },
               "semantic": {
                 "dvc_default": [
                   {
                     "name": "dvc_default",
                     "level": 100,
-                    "result": "image",
+                    "result": "view",
                     "prefix": "",
-                    "id": 116888
+                    "id": 157926
                   }
                 ],
-                "dvc_picture": [
+                "dvc_view": [
                   {
-                    "name": "dvc_picture",
-                    "level": 88,
-                    "result": "renminbi",
+                    "name": "dvc_view",
+                    "level": 100,
+                    "result": "colorDiv",
                     "prefix": "",
-                    "id": 521181,
+                    "id": 90987,
                     "choose": true
                   }
                 ]
               }
             }
           ],
-          "props": {
-            "style": {
-              "display": "flex",
-              "position": "relative",
-              "alignItems": "flex-start",
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "marginTop": 12,
-              "marginLeft": 96,
-              "borderWidth": 2,
-              "borderStyle": "solid",
-              "borderColor": "rgba(254,82,128,1)",
-              "width": 46,
-              "height": 43
-            },
-            "attrs": { "y": 119, "x": 783, "className": "shape-6" }
-          },
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "id": "Shape-6",
+          "__ADAPT__": true,
           "componentType": "view",
-          "_jsonId": "Shape-6",
-          "_jsonElementId": "Shape-6",
-          "title": "Shape",
-          "attrs": { "y": 119, "x": 783, "className": "renminbiWrap" },
+          "_jsonId": "Block-501162",
+          "_jsonElementId": "Block-501162",
+          "title": "Block",
+          "attrs": { "x": 16, "y": 445, "className": "group" },
           "style": {
             "display": "flex",
-            "position": "relative",
             "alignItems": "flex-start",
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "marginTop": 12,
-            "marginLeft": 96,
-            "borderWidth": 2,
-            "borderStyle": "solid",
-            "borderColor": "rgba(254,82,128,1)",
-            "width": 46,
-            "height": 43
+            "flexDirection": "column",
+            "marginLeft": 16,
+            "width": 10,
+            "height": 77
+          },
+          "semantic": {
+            "dvc_default": [
+              {
+                "name": "dvc_default",
+                "level": 100,
+                "result": "block",
+                "prefix": "",
+                "id": 298553
+              }
+            ],
+            "dvc_view": [
+              {
+                "name": "dvc_view",
+                "level": 95,
+                "result": "group",
+                "prefix": "",
+                "id": 674213,
+                "choose": true
+              }
+            ]
+          }
+        },
+        {
+          "props": {
+            "attrs": { "x": 33, "y": 445, "className": "block-304419" },
+            "style": {
+              "display": "flex",
+              "alignItems": "flex-start",
+              "flexDirection": "column",
+              "marginLeft": 8,
+              "width": 665,
+              "height": 77
+            }
+          },
+          "type": "Block",
+          "id": "Block-304419",
+          "__VERSION__": "2.0",
+          "children": [
+            {
+              "__VERSION__": "2.0",
+              "type": "Text",
+              "id": "Text-4",
+              "props": {
+                "style": {
+                  "width": 196,
+                  "maxWidth": 442,
+                  "height": 40,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "lineHeight": 40,
+                  "whiteSpace": "nowrap",
+                  "color": "#ff0036",
+                  "fontSize": 28,
+                  "fontWeight": 400,
+                  "lines": 1
+                },
+                "attrs": {
+                  "y": 445,
+                  "x": 33,
+                  "lines": 1,
+                  "text": "全场满500减20",
+                  "fixed": true,
+                  "className": "text-4"
+                }
+              },
+              "__ADAPT__": true,
+              "componentType": "text",
+              "innerText": "全场满500减20",
+              "_jsonId": "Text-4",
+              "_jsonElementId": "Text-4",
+              "title": "Text",
+              "attrs": {
+                "y": 445,
+                "x": 33,
+                "lines": 1,
+                "text": "全场满500减20",
+                "fixed": true,
+                "className": "fullReductionAudience"
+              },
+              "style": {
+                "maxWidth": 442,
+                "overflow": "hidden",
+                "textOverflow": "ellipsis",
+                "lineHeight": "40px",
+                "whiteSpace": "nowrap",
+                "color": "#ff0036",
+                "fontSize": 28,
+                "fontWeight": 400,
+                "lines": 1
+              },
+              "semantic": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "txt",
+                    "prefix": "",
+                    "id": 640140
+                  }
+                ],
+                "dvc_text": [
+                  {
+                    "name": "dvc_text",
+                    "level": 55,
+                    "result": "fullReductionAudience",
+                    "prefix": "",
+                    "id": 941820,
+                    "choose": true
+                  }
+                ]
+              }
+            },
+            {
+              "__VERSION__": "2.0",
+              "type": "Text",
+              "id": "Text-5",
+              "props": {
+                "style": {
+                  "width": 269,
+                  "maxWidth": 442,
+                  "height": 35,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "lineHeight": 40,
+                  "whiteSpace": "nowrap",
+                  "color": "#ff0036",
+                  "fontSize": 28,
+                  "fontWeight": 400,
+                  "lines": 1
+                },
+                "attrs": {
+                  "y": 485,
+                  "x": 33,
+                  "lines": 1,
+                  "text": "部分新品折扣季5折起",
+                  "fixed": true,
+                  "className": "text-5"
+                }
+              },
+              "__ADAPT__": true,
+              "componentType": "text",
+              "innerText": "部分新品折扣季5折起",
+              "_jsonId": "Text-5",
+              "_jsonElementId": "Text-5",
+              "title": "Text",
+              "attrs": {
+                "y": 485,
+                "x": 33,
+                "lines": 1,
+                "text": "部分新品折扣季5折起",
+                "fixed": true,
+                "className": "title_2"
+              },
+              "style": {
+                "maxWidth": 442,
+                "overflow": "hidden",
+                "textOverflow": "ellipsis",
+                "lineHeight": "40px",
+                "whiteSpace": "nowrap",
+                "color": "#ff0036",
+                "fontSize": 28,
+                "fontWeight": 400,
+                "lines": 1
+              },
+              "semantic": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "word",
+                    "prefix": "",
+                    "id": 335309
+                  }
+                ],
+                "dvc_text": [
+                  {
+                    "name": "dvc_text",
+                    "level": 20,
+                    "result": "title",
+                    "prefix": "",
+                    "id": 278974,
+                    "choose": true
+                  }
+                ]
+              }
+            }
+          ],
+          "__ADAPT__": true,
+          "componentType": "view",
+          "_jsonId": "Block-304419",
+          "_jsonElementId": "Block-304419",
+          "title": "Block",
+          "attrs": { "x": 33, "y": 445, "className": "container" },
+          "style": {
+            "display": "flex",
+            "alignItems": "flex-start",
+            "flexDirection": "column",
+            "marginLeft": 8,
+            "width": 665,
+            "height": 77
           },
           "semantic": {
             "dvc_default": [
@@ -1833,1038 +1032,134 @@
                 "level": 100,
                 "result": "view",
                 "prefix": "",
-                "id": 987382
+                "id": 90014
               }
             ],
             "dvc_view": [
               {
                 "name": "dvc_view",
                 "level": 95,
-                "result": "block",
+                "result": "container",
                 "prefix": "",
-                "id": 444760
-              }
-            ],
-            "dvc_picture": [
-              {
-                "name": "dvc_picture",
-                "level": 88,
-                "result": "renminbiWrap",
-                "prefix": "",
-                "id": 224425,
+                "id": 859159,
                 "choose": true
               }
             ]
           }
         },
         {
-          "selfId": "6217A075-7A24-40AC-8D80-1699491D9897",
-          "children": [],
-          "props": {
-            "style": {
-              "position": "absolute",
-              "top": 51,
-              "left": 772,
-              "width": 64,
-              "height": 13
-            },
-            "attrs": {
-              "y": 158,
-              "x": 772,
-              "source": "https://img.alicdn.com/tfs/TB1phlCea1s3KVjSZFAXXX_ZXXa-132-34.png",
-              "src": "https://img.alicdn.com/tfs/TB1phlCea1s3KVjSZFAXXX_ZXXa-132-34.png",
-              "className": "image-37"
+          "id": "Shape-8",
+          "type": "block",
+          "children": [
+            {
+              "__VERSION__": "2.0",
+              "type": "Text",
+              "id": "Text-9",
+              "props": {
+                "style": {
+                  "marginTop": 15,
+                  "width": 96,
+                  "maxWidth": 188,
+                  "height": 33,
+                  "overflow": "hidden",
+                  "textAlign": "center",
+                  "textOverflow": "ellipsis",
+                  "lineHeight": 33,
+                  "whiteSpace": "nowrap",
+                  "color": "#ffffff",
+                  "fontSize": 24,
+                  "fontWeight": 400,
+                  "lines": 1
+                },
+                "attrs": {
+                  "y": 468,
+                  "x": 550,
+                  "lines": 1,
+                  "text": "进入店铺",
+                  "fixed": true,
+                  "className": "text-9"
+                }
+              },
+              "componentType": "text",
+              "innerText": "进入店铺",
+              "_jsonId": "Text-9",
+              "_jsonElementId": "Text-9",
+              "title": "Text",
+              "attrs": {
+                "y": 468,
+                "x": 550,
+                "lines": 1,
+                "text": "进入店铺",
+                "fixed": true,
+                "className": "tag"
+              },
+              "style": {
+                "marginTop": 15,
+                "maxWidth": 188,
+                "overflow": "hidden",
+                "textAlign": "center",
+                "textOverflow": "ellipsis",
+                "lineHeight": "33px",
+                "whiteSpace": "nowrap",
+                "color": "#ffffff",
+                "fontSize": 24,
+                "fontWeight": 400,
+                "lines": 1
+              },
+              "semantic": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "text",
+                    "prefix": "",
+                    "id": 597301
+                  }
+                ],
+                "dvc_text": [
+                  {
+                    "name": "dvc_text",
+                    "level": 65,
+                    "result": "tag",
+                    "prefix": "",
+                    "id": 160197,
+                    "choose": true
+                  }
+                ]
+              }
             }
-          },
-          "__VERSION__": "2.0",
-          "type": "Image",
-          "id": "Image-37",
-          "componentType": "picture",
-          "_jsonId": "Image-37",
-          "_jsonElementId": "Image-37",
-          "title": "Image",
-          "attrs": {
-            "y": 158,
-            "x": 772,
-            "source": "https://img.alicdn.com/tfs/TB1phlCea1s3KVjSZFAXXX_ZXXa-132-34.png",
-            "src": "https://img.alicdn.com/tfs/TB1phlCea1s3KVjSZFAXXX_ZXXa-132-34.png",
-            "className": "largeIcon_3"
-          },
+          ],
+          "componentType": "link",
+          "title": "link",
+          "attrs": { "className": "tagWrap", "href": "" },
           "style": {
+            "display": "flex",
             "position": "absolute",
-            "top": 51,
-            "left": 772,
-            "width": 64,
-            "height": 13
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "picture",
-                "prefix": "",
-                "id": 86009
-              }
-            ],
-            "dvc_picture": [
-              {
-                "name": "dvc_picture",
-                "level": 38,
-                "result": "largeIcon",
-                "prefix": "",
-                "id": 601647,
-                "choose": true
-              }
-            ]
+            "top": 8,
+            "right": 16,
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "borderRadius": 4,
+            "backgroundColor": "#ff0036",
+            "width": 200,
+            "height": 60
           }
         }
       ],
+      "__ADAPT__": true,
       "componentType": "view",
-      "_jsonId": "Block-891140",
-      "_jsonElementId": "Block-891140",
+      "_jsonId": "Block-111179",
+      "_jsonElementId": "Block-111179",
       "title": "Block",
-      "attrs": { "x": 0, "y": 107, "className": "submain" },
+      "attrs": { "x": 0, "y": 445, "className": "ft" },
       "style": {
         "display": "flex",
         "position": "relative",
         "flexDirection": "row",
-        "marginTop": 36,
-        "width": 995
-      },
-      "semantic": {
-        "dvc_layout": [
-          {
-            "name": "dvc_layout",
-            "level": 100,
-            "result": "submain",
-            "prefix": "",
-            "id": 503100,
-            "choose": true
-          }
-        ],
-        "dvc_default": [
-          {
-            "name": "dvc_default",
-            "level": 100,
-            "result": "block",
-            "prefix": "",
-            "id": 334421
-          }
-        ],
-        "dvc_view": [
-          {
-            "name": "dvc_view",
-            "level": 95,
-            "result": "block",
-            "prefix": "",
-            "id": 692761
-          }
-        ]
-      }
-    },
-    {
-      "props": {
-        "attrs": { "x": 0, "y": 199, "className": "block-884822" },
-        "style": {
-          "display": "flex",
-          "position": "relative",
-          "flexDirection": "row",
-          "marginTop": 23,
-          "width": 995
-        }
-      },
-      "type": "Block",
-      "id": "Block-884822",
-      "__VERSION__": "2.0",
-      "__GRID__": "NEWROW",
-      "children": [
-        {
-          "selfId": "8B46E265-6307-4505-B5EE-9B61CBEA7267",
-          "id": "Text-1",
-          "props": {
-            "style": {
-              "marginLeft": 133,
-              "width": 64,
-              "height": 22,
-              "lineHeight": 22,
-              "whiteSpace": "nowrap",
-              "color": "#333b4e",
-              "fontSize": 16,
-              "fontWeight": 400,
-              "lines": 1
-            },
-            "attrs": {
-              "y": 199,
-              "x": 133,
-              "lines": 1,
-              "text": "开通服务",
-              "className": "text-1"
-            }
-          },
-          "__VERSION__": "2.0",
-          "type": "Text",
-          "children": [],
-          "componentType": "text",
-          "innerText": "开通服务",
-          "_jsonId": "Text-1",
-          "_jsonElementId": "Text-1",
-          "title": "Text",
-          "attrs": {
-            "y": 199,
-            "x": 133,
-            "lines": 1,
-            "text": "开通服务",
-            "className": "openService"
-          },
-          "style": {
-            "marginLeft": 133,
-            "lineHeight": "22px",
-            "whiteSpace": "nowrap",
-            "color": "#333b4e",
-            "fontSize": 16,
-            "fontWeight": 400,
-            "lines": 1
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "text",
-                "prefix": "",
-                "id": 243620
-              }
-            ],
-            "dvc_text": [
-              {
-                "name": "dvc_text",
-                "level": 55,
-                "result": "openService",
-                "prefix": "",
-                "id": 764688,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "8C7F1859-774C-4F37-9ADE-9DC5D2169A94",
-          "id": "Text-2",
-          "props": {
-            "style": {
-              "marginLeft": 265,
-              "width": 64,
-              "height": 22,
-              "lineHeight": 22,
-              "whiteSpace": "nowrap",
-              "color": "#333b4e",
-              "fontSize": 16,
-              "fontWeight": 400,
-              "lines": 1
-            },
-            "attrs": {
-              "y": 199,
-              "x": 462,
-              "lines": 1,
-              "text": "账单同步",
-              "className": "text-2"
-            }
-          },
-          "__VERSION__": "2.0",
-          "type": "Text",
-          "children": [],
-          "componentType": "text",
-          "innerText": "账单同步",
-          "_jsonId": "Text-2",
-          "_jsonElementId": "Text-2",
-          "title": "Text",
-          "attrs": {
-            "y": 199,
-            "x": 462,
-            "lines": 1,
-            "text": "账单同步",
-            "className": "billSync"
-          },
-          "style": {
-            "marginLeft": 265,
-            "lineHeight": "22px",
-            "whiteSpace": "nowrap",
-            "color": "#333b4e",
-            "fontSize": 16,
-            "fontWeight": 400,
-            "lines": 1
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "txt",
-                "prefix": "",
-                "id": 960317
-              }
-            ],
-            "dvc_text": [
-              {
-                "name": "dvc_text",
-                "level": 55,
-                "result": "billSync",
-                "prefix": "",
-                "id": 951350,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "C35AFCFF-A63C-43F5-A2EE-45BA4A985750",
-          "id": "Text-7",
-          "props": {
-            "style": {
-              "marginLeft": 247,
-              "width": 64,
-              "maxWidth": 210,
-              "height": 22,
-              "overflow": "hidden",
-              "textOverflow": "ellipsis",
-              "lineHeight": 22,
-              "whiteSpace": "nowrap",
-              "color": "#333b4e",
-              "fontSize": 16,
-              "fontWeight": 400,
-              "lines": 1
-            },
-            "attrs": {
-              "y": 199,
-              "x": 773,
-              "lines": 1,
-              "text": "申请收款",
-              "className": "text-7"
-            }
-          },
-          "__VERSION__": "2.0",
-          "type": "Text",
-          "children": [],
-          "componentType": "text",
-          "innerText": "申请收款",
-          "_jsonId": "Text-7",
-          "_jsonElementId": "Text-7",
-          "title": "Text",
-          "attrs": {
-            "y": 199,
-            "x": 773,
-            "lines": 1,
-            "text": "申请收款",
-            "className": "applicationForCollection"
-          },
-          "style": {
-            "marginLeft": 247,
-            "maxWidth": 210,
-            "overflow": "hidden",
-            "textOverflow": "ellipsis",
-            "lineHeight": "22px",
-            "whiteSpace": "nowrap",
-            "color": "#333b4e",
-            "fontSize": 16,
-            "fontWeight": 400,
-            "lines": 1
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "word",
-                "prefix": "",
-                "id": 719145
-              }
-            ],
-            "dvc_text": [
-              {
-                "name": "dvc_text",
-                "level": 55,
-                "result": "applicationForCollection",
-                "prefix": "",
-                "id": 312730,
-                "choose": true
-              }
-            ]
-          }
-        }
-      ],
-      "componentType": "view",
-      "_jsonId": "Block-884822",
-      "_jsonElementId": "Block-884822",
-      "title": "Block",
-      "attrs": { "x": 0, "y": 199, "className": "row" },
-      "style": {
-        "display": "flex",
-        "position": "relative",
-        "flexDirection": "row",
-        "marginTop": 23,
-        "width": 995
-      },
-      "semantic": {
-        "dvc_layout": [
-          {
-            "name": "dvc_layout",
-            "level": 100,
-            "result": "row",
-            "prefix": "",
-            "id": 720325,
-            "choose": true
-          }
-        ],
-        "dvc_default": [
-          {
-            "name": "dvc_default",
-            "level": 100,
-            "result": "view",
-            "prefix": "",
-            "id": 727031
-          }
-        ],
-        "dvc_view": [
-          {
-            "name": "dvc_view",
-            "level": 95,
-            "result": "group",
-            "prefix": "",
-            "id": 933822
-          }
-        ]
-      }
-    },
-    {
-      "props": {
-        "attrs": { "x": 0, "y": 227, "className": "block-894410" },
-        "style": {
-          "display": "flex",
-          "position": "relative",
-          "flexDirection": "row",
-          "marginTop": 6,
-          "width": 995
-        }
-      },
-      "type": "Block",
-      "id": "Block-894410",
-      "__VERSION__": "2.0",
-      "__GRID__": "NEWROW",
-      "children": [
-        {
-          "selfId": "27084E97-C978-4126-9F5E-2D3C41B281F0",
-          "id": "Text-8",
-          "props": {
-            "style": {
-              "marginLeft": 105,
-              "width": 120,
-              "height": 40,
-              "overflow": "hidden",
-              "textAlign": "center",
-              "textOverflow": "ellipsis",
-              "lineHeight": 20,
-              "whiteSpace": "pre-wrap",
-              "color": "#666f80",
-              "fontSize": 12,
-              "fontWeight": 300,
-              "lines": 2
-            },
-            "attrs": {
-              "y": 227,
-              "x": 105,
-              "lines": 2,
-              "text": "已产生账单的用户&#10;可申请开通回款宝服务",
-              "className": "text-8"
-            }
-          },
-          "__VERSION__": "2.0",
-          "type": "Text",
-          "children": [],
-          "componentType": "text",
-          "innerText": "已产生账单的用户&#10;可申请开通回款宝服务",
-          "_jsonId": "Text-8",
-          "_jsonElementId": "Text-8",
-          "title": "Text",
-          "attrs": {
-            "y": 227,
-            "x": 105,
-            "lines": 2,
-            "text": "已产生账单的用户&#10;可申请开通回款宝服务",
-            "className": "desc"
-          },
-          "style": {
-            "marginLeft": 105,
-            "width": 120,
-            "height": 40,
-            "overflow": "hidden",
-            "textAlign": "center",
-            "textOverflow": "ellipsis",
-            "lineHeight": "20px",
-            "whiteSpace": "pre-wrap",
-            "color": "#666f80",
-            "fontSize": 12,
-            "fontWeight": 300,
-            "lines": 2
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "text",
-                "prefix": "",
-                "id": 945548
-              }
-            ],
-            "dvc_text": [
-              {
-                "name": "dvc_text",
-                "level": 20,
-                "result": "desc",
-                "prefix": "",
-                "id": 366508,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "8B04BE6C-ECB4-43D5-98F7-DFC203C00FFD",
-          "id": "Text-3",
-          "props": {
-            "style": {
-              "marginLeft": 159,
-              "width": 228,
-              "height": 40,
-              "overflow": "hidden",
-              "textAlign": "center",
-              "textOverflow": "ellipsis",
-              "lineHeight": 20,
-              "whiteSpace": "pre-wrap",
-              "color": "#666f80",
-              "fontSize": 12,
-              "fontWeight": 300,
-              "lines": 2
-            },
-            "attrs": {
-              "y": 227,
-              "x": 384,
-              "lines": 2,
-              "text": "经回款宝服务商审核通过&#10;优酷内容开放平台同步月账单至回款宝平台",
-              "className": "text-3"
-            }
-          },
-          "__VERSION__": "2.0",
-          "type": "Text",
-          "children": [],
-          "componentType": "text",
-          "innerText": "经回款宝服务商审核通过&#10;优酷内容开放平台同步月账单至回款宝平台",
-          "_jsonId": "Text-3",
-          "_jsonElementId": "Text-3",
-          "title": "Text",
-          "attrs": {
-            "y": 227,
-            "x": 384,
-            "lines": 2,
-            "text": "经回款宝服务商审核通过&#10;优酷内容开放平台同步月账单至回款宝平台",
-            "className": "summary"
-          },
-          "style": {
-            "marginLeft": 159,
-            "width": 228,
-            "height": 40,
-            "overflow": "hidden",
-            "textAlign": "center",
-            "textOverflow": "ellipsis",
-            "lineHeight": "20px",
-            "whiteSpace": "pre-wrap",
-            "color": "#666f80",
-            "fontSize": 12,
-            "fontWeight": 300,
-            "lines": 2
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "txt",
-                "prefix": "",
-                "id": 799440
-              }
-            ],
-            "dvc_text": [
-              {
-                "name": "dvc_text",
-                "level": 20,
-                "result": "summary",
-                "prefix": "",
-                "id": 171091,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "822CB677-E38A-4853-BC4F-9474505BF6F7",
-          "id": "Text-9",
-          "props": {
-            "style": {
-              "marginLeft": 91,
-              "width": 204,
-              "height": 40,
-              "overflow": "hidden",
-              "textAlign": "center",
-              "textOverflow": "ellipsis",
-              "lineHeight": 20,
-              "whiteSpace": "pre-wrap",
-              "color": "#666f80",
-              "fontSize": 12,
-              "fontWeight": 300,
-              "lines": 2
-            },
-            "attrs": {
-              "y": 227,
-              "x": 703,
-              "lines": 2,
-              "text": "用户可根据展示的可提现金额内&#10;申请提前收款（即单笔应收账款融资）",
-              "className": "text-9"
-            }
-          },
-          "__VERSION__": "2.0",
-          "type": "Text",
-          "children": [],
-          "componentType": "text",
-          "innerText": "用户可根据展示的可提现金额内&#10;申请提前收款（即单笔应收账款融资）",
-          "_jsonId": "Text-9",
-          "_jsonElementId": "Text-9",
-          "title": "Text",
-          "attrs": {
-            "y": 227,
-            "x": 703,
-            "lines": 2,
-            "text": "用户可根据展示的可提现金额内&#10;申请提前收款（即单笔应收账款融资）",
-            "className": "summary_2"
-          },
-          "style": {
-            "marginLeft": 91,
-            "width": 204,
-            "height": 40,
-            "overflow": "hidden",
-            "textAlign": "center",
-            "textOverflow": "ellipsis",
-            "lineHeight": "20px",
-            "whiteSpace": "pre-wrap",
-            "color": "#666f80",
-            "fontSize": 12,
-            "fontWeight": 300,
-            "lines": 2
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "word",
-                "prefix": "",
-                "id": 138400
-              }
-            ],
-            "dvc_text": [
-              {
-                "name": "dvc_text",
-                "level": 20,
-                "result": "summary",
-                "prefix": "",
-                "id": 115846,
-                "choose": true
-              }
-            ]
-          }
-        }
-      ],
-      "componentType": "view",
-      "_jsonId": "Block-894410",
-      "_jsonElementId": "Block-894410",
-      "title": "Block",
-      "attrs": { "x": 0, "y": 227, "className": "row1" },
-      "style": {
-        "display": "flex",
-        "position": "relative",
-        "flexDirection": "row",
-        "marginTop": 6,
-        "width": 995
-      },
-      "semantic": {
-        "dvc_layout": [
-          {
-            "name": "dvc_layout",
-            "level": 100,
-            "result": "row1",
-            "prefix": "",
-            "id": 865126,
-            "choose": true
-          }
-        ],
-        "dvc_default": [
-          {
-            "name": "dvc_default",
-            "level": 100,
-            "result": "block",
-            "prefix": "",
-            "id": 341164
-          }
-        ],
-        "dvc_view": [
-          {
-            "name": "dvc_view",
-            "level": 95,
-            "result": "container",
-            "prefix": "",
-            "id": 68715
-          }
-        ]
-      }
-    },
-    {
-      "selfId": "73B7BD46-A241-4F81-A5E8-687568BC31C4",
-      "children": [],
-      "props": {
-        "style": {
-          "position": "relative",
-          "marginTop": 38,
-          "width": 996,
-          "height": 1
-        },
-        "attrs": {
-          "y": 305,
-          "x": 0,
-          "source": "https://img.alicdn.com/tfs/TB12alCeaSs3KVjSZPiXXcsiVXa-1996-2.png",
-          "src": "https://img.alicdn.com/tfs/TB12alCeaSs3KVjSZPiXXcsiVXa-1996-2.png",
-          "className": "image-35"
-        }
-      },
-      "__VERSION__": "2.0",
-      "type": "Image",
-      "id": "Image-35",
-      "componentType": "picture",
-      "_jsonId": "Image-35",
-      "_jsonElementId": "Image-35",
-      "title": "Image",
-      "attrs": {
-        "y": 305,
-        "x": 0,
-        "source": "https://img.alicdn.com/tfs/TB12alCeaSs3KVjSZPiXXcsiVXa-1996-2.png",
-        "src": "https://img.alicdn.com/tfs/TB12alCeaSs3KVjSZPiXXcsiVXa-1996-2.png",
-        "className": "row2"
-      },
-      "style": {
-        "position": "relative",
-        "marginTop": 38,
-        "width": 996,
-        "height": 1
-      },
-      "semantic": {
-        "dvc_layout": [
-          {
-            "name": "dvc_layout",
-            "level": 100,
-            "result": "row2",
-            "prefix": "",
-            "id": 749189,
-            "choose": true
-          }
-        ],
-        "dvc_default": [
-          {
-            "name": "dvc_default",
-            "level": 100,
-            "result": "img",
-            "prefix": "",
-            "id": 620140
-          }
-        ],
-        "dvc_picture": [
-          {
-            "name": "dvc_picture",
-            "level": 100,
-            "result": "line",
-            "prefix": "",
-            "id": 215016
-          }
-        ]
-      }
-    },
-    {
-      "props": {
-        "attrs": { "x": 26, "y": 326, "className": "block-548133" },
-        "style": {
-          "display": "flex",
-          "position": "absolute",
-          "top": 326,
-          "left": 26,
-          "alignItems": "flex-start",
-          "flexDirection": "row",
-          "width": 476,
-          "height": 20,
-          "lineHeight": 20,
-          "color": "#a6aeb5",
-          "fontFamily": "PingFangSC",
-          "fontSize": 14,
-          "fontWeight": 300
-        }
-      },
-      "type": "Block",
-      "id": "Block-548133",
-      "__VERSION__": "2.0",
-      "children": [
-        {
-          "selfId": "70B8309D-7F28-4009-9A46-6F3B0AA070D7",
-          "id": "Text-10_2",
-          "props": {
-            "style": {
-              "position": "absolute",
-              "top": 0,
-              "left": 0,
-              "width": 70,
-              "height": 20,
-              "lineHeight": 20,
-              "whiteSpace": "nowrap",
-              "color": "#666f80",
-              "fontSize": 14,
-              "fontWeight": 400,
-              "lines": 1
-            },
-            "attrs": {
-              "y": 326,
-              "x": 26,
-              "lines": 1,
-              "text": "特别说明：",
-              "className": "text-10_2"
-            }
-          },
-          "__VERSION__": "2.0",
-          "type": "Text",
-          "children": [],
-          "componentType": "text",
-          "innerText": "特别说明：",
-          "_jsonId": "Text-10_2",
-          "_jsonElementId": "Text-10_2",
-          "title": "Text",
-          "attrs": {
-            "y": 326,
-            "x": 26,
-            "lines": 1,
-            "text": "特别说明：",
-            "className": "specialNote"
-          },
-          "style": {
-            "position": "absolute",
-            "top": 0,
-            "left": 0,
-            "lineHeight": "20px",
-            "whiteSpace": "nowrap",
-            "color": "#666f80",
-            "fontSize": 14,
-            "fontWeight": 400,
-            "lines": 1
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "text",
-                "prefix": "",
-                "id": 758386
-              }
-            ],
-            "dvc_text": [
-              {
-                "name": "dvc_text",
-                "level": 55,
-                "result": "specialNote",
-                "prefix": "",
-                "id": 728819,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "selfId": "80BC7C94-0E0A-4DBC-937A-1D09B4394309",
-          "id": "Text-10_0",
-          "props": {
-            "style": {
-              "position": "absolute",
-              "top": 0,
-              "left": 0,
-              "width": 476,
-              "height": 20,
-              "lineHeight": 20,
-              "whiteSpace": "nowrap",
-              "color": "#a6aeb5",
-              "fontSize": 14,
-              "fontWeight": 300,
-              "lines": 1
-            },
-            "attrs": {
-              "y": 326,
-              "x": 26,
-              "lines": 1,
-              "text": "商通过回款宝平台按照回款宝平台相关规则以及协议向客户进行结算和支付。",
-              "className": "text-10_0"
-            }
-          },
-          "__VERSION__": "2.0",
-          "type": "Text",
-          "children": [],
-          "componentType": "text",
-          "innerText": "商通过回款宝平台按照回款宝平台相关规则以及协议向客户进行结算和支付。",
-          "_jsonId": "Text-10_0",
-          "_jsonElementId": "Text-10_0",
-          "title": "Text",
-          "attrs": {
-            "y": 326,
-            "x": 26,
-            "lines": 1,
-            "text": "商通过回款宝平台按照回款宝平台相关规则以及协议向客户进行结算和支付。",
-            "className": "summary_3"
-          },
-          "style": {
-            "position": "absolute",
-            "top": 0,
-            "left": 0,
-            "lineHeight": "20px",
-            "whiteSpace": "nowrap",
-            "color": "#a6aeb5",
-            "fontSize": 14,
-            "fontWeight": 300,
-            "lines": 1
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "txt",
-                "prefix": "",
-                "id": 847419
-              }
-            ],
-            "dvc_text": [
-              {
-                "name": "dvc_text",
-                "level": 20,
-                "result": "summary",
-                "prefix": "",
-                "id": 427309,
-                "choose": true
-              }
-            ]
-          }
-        }
-      ],
-      "componentType": "view",
-      "_jsonId": "Block-548133",
-      "_jsonElementId": "Block-548133",
-      "title": "Block",
-      "attrs": { "x": 26, "y": 326, "className": "outer" },
-      "style": {
-        "display": "flex",
-        "position": "absolute",
-        "top": 326,
-        "left": 26,
-        "alignItems": "flex-start",
-        "flexDirection": "row",
-        "width": 476,
-        "height": 20,
-        "lineHeight": 20,
-        "color": "#a6aeb5",
-        "fontFamily": "PingFangSC",
-        "fontSize": 14,
-        "fontWeight": 300
-      },
-      "semantic": {
-        "dvc_default": [
-          {
-            "name": "dvc_default",
-            "level": 100,
-            "result": "view",
-            "prefix": "",
-            "id": 5351
-          }
-        ],
-        "dvc_view": [
-          {
-            "name": "dvc_view",
-            "level": 95,
-            "result": "outer",
-            "prefix": "",
-            "id": 243186,
-            "choose": true
-          }
-        ]
-      }
-    },
-    {
-      "selfId": "A0B22F24-1BDA-4AB4-BB75-64FB2550357E",
-      "id": "Text-10_1",
-      "props": {
-        "style": {
-          "position": "relative",
-          "marginTop": 20,
-          "marginLeft": 96,
-          "width": 868,
-          "maxWidth": 888,
-          "height": 20,
-          "overflow": "hidden",
-          "textOverflow": "ellipsis",
-          "lineHeight": 20,
-          "whiteSpace": "nowrap",
-          "color": "#a6aeb5",
-          "fontSize": 14,
-          "fontWeight": 300,
-          "lines": 1
-        },
-        "attrs": {
-          "y": 326,
-          "x": 96,
-          "lines": 1,
-          "text": "客户首次成功提前收款后，优酷内容开放平台应向客户支付的全部费用将直接支付至回款宝服务商开设的针对客户的回款账户，由回款宝服务",
-          "className": "text-10_1"
-        }
-      },
-      "__VERSION__": "2.0",
-      "type": "Text",
-      "children": [],
-      "__reverse__": true,
-      "componentType": "text",
-      "innerText": "客户首次成功提前收款后，优酷内容开放平台应向客户支付的全部费用将直接支付至回款宝服务商开设的针对客户的回款账户，由回款宝服务",
-      "_jsonId": "Text-10_1",
-      "_jsonElementId": "Text-10_1",
-      "title": "Text",
-      "attrs": {
-        "y": 326,
-        "x": 96,
-        "lines": 1,
-        "text": "客户首次成功提前收款后，优酷内容开放平台应向客户支付的全部费用将直接支付至回款宝服务商开设的针对客户的回款账户，由回款宝服务",
-        "className": "ft"
-      },
-      "style": {
-        "position": "relative",
-        "marginTop": 20,
-        "marginLeft": 96,
-        "maxWidth": 888,
-        "overflow": "hidden",
-        "textOverflow": "ellipsis",
-        "lineHeight": "20px",
-        "whiteSpace": "nowrap",
-        "color": "#a6aeb5",
-        "fontSize": 14,
-        "fontWeight": 300,
-        "lines": 1
+        "marginTop": 1,
+        "width": 714,
+        "height": 77
       },
       "semantic": {
         "dvc_layout": [
@@ -2873,7 +1168,7 @@
             "level": 100,
             "result": "ft",
             "prefix": "",
-            "id": 316127,
+            "id": 936071,
             "choose": true
           }
         ],
@@ -2881,18 +1176,18 @@
           {
             "name": "dvc_default",
             "level": 100,
-            "result": "txt",
+            "result": "view",
             "prefix": "",
-            "id": 310055
+            "id": 582334
           }
         ],
-        "dvc_text": [
+        "dvc_view": [
           {
-            "name": "dvc_text",
-            "level": 20,
-            "result": "article",
+            "name": "dvc_view",
+            "level": 95,
+            "result": "group",
             "prefix": "",
-            "id": 661086
+            "id": 300868
           }
         ]
       }
@@ -2900,36 +1195,31 @@
   ],
   "props": {
     "style": {
-      "backgroundColor": "#ffffff",
-      "height": 392,
-      "boxShadow": "0 2px 27px 0 #E5EFF6",
       "display": "flex",
-      "position": "relative",
       "alignItems": "flex-start",
       "flexDirection": "column",
-      "borderRadius": 4
+      "backgroundColor": "#ffffff",
+      "width": 714,
+      "height": 537,
+      "overflow": "hidden"
     },
     "attrs": { "y": 0, "x": 0, "className": "shape-0" }
   },
-  "__VERSION__": "2.0",
-  "type": "Shape",
-  "id": "Shape-0",
-  "artboardImg": "https://img.alicdn.com/tfs/TB1fB0uelOD3KVjSZFFXXcn9pXa-1992-784.png",
-  "name": "编组 3",
+  "artboardImg": "https://img.alicdn.com/tfs/TB1OULFQCzqK1RjSZPcXXbTepXa-1428-1074.png",
+  "name": "模版2",
   "componentType": "view",
   "_jsonId": "Shape-0",
   "_jsonElementId": "Shape-0",
   "title": "Shape",
   "attrs": { "y": 0, "x": 0, "className": "box" },
   "style": {
-    "backgroundColor": "#ffffff",
-    "height": 392,
-    "boxShadow": "0 2px 27px 0 #E5EFF6",
     "display": "flex",
-    "position": "relative",
     "alignItems": "flex-start",
     "flexDirection": "column",
-    "borderRadius": 4
+    "backgroundColor": "#ffffff",
+    "width": 714,
+    "height": 537,
+    "overflow": "hidden"
   },
   "dataConfig": {
     "customerAttrs": {},
@@ -2938,532 +1228,49 @@
         "name": "data",
         "origin": {
           "type": "expression",
-          "expression": "let data = this.props.data && this.props.data.$data || {};"
+          "expression": "let data = this.props && this.props.data;"
+        },
+        "merge": [{ "type": "schemaApp", "appId": "dvc-7565" }]
+      },
+      {
+        "name": "attrs",
+        "origin": {
+          "type": "expression",
+          "expression": "let attrs = this.props && this.props.attrs;"
+        },
+        "merge": [{ "type": "schemaApp", "appId": "dvc-7565" }]
+      },
+      {
+        "name": "pageInfo",
+        "origin": {
+          "type": "expression",
+          "expression": "let pageInfo = this.props && this.props.pageInfo;"
         },
         "merge": []
-      },
-      {
-        "name": "$attr",
-        "origin": {
-          "type": "expression",
-          "expression": "let $attr = this.props.data && this.props.data.$attr || {};"
-        },
-        "merge": [{ "type": "schemaApp", "appId": "dvc-14289" }]
-      },
-      {
-        "name": "$theme",
-        "origin": {
-          "type": "expression",
-          "expression": "let $theme = this.props.data && this.props.data.$theme || {};"
-        },
-        "merge": [{ "type": "schemaApp", "appId": "dvc-14289" }]
       }
-    ],
-    "schema": {
-      "type": "object",
-      "title": "商品模型",
-      "properties": {
-        "items": {
-          "type": "array",
-          "title": "商品列表",
-          "description": "商品列表",
-          "items": {
-            "type": "object",
-            "properties": {
-              "streamLineLongTitle": {
-                "title": "SCM_素材库精简长标题",
-                "description": "SCM_素材库精简长标题"
-              },
-              "marketSellPoint": {
-                "title": "SCM_素材库营销卖点",
-                "description": "SCM_素材库营销卖点"
-              },
-              "pictureTransparentBackGround": {
-                "title": "SCM_素材商品透明底图",
-                "description": "SCM_素材商品透明底图"
-              },
-              "pictureScene": {
-                "title": "SCM_素材商品氛围图",
-                "description": "SCM_素材商品氛围图"
-              },
-              "itemDiscountFeeTitle": {
-                "title": "定金立减文案",
-                "description": "定金立减文案",
-                "type": "string",
-                "x-format": "@string()",
-                "x-required:": false
-              },
-              "itemPreSaleDiscountFee": {
-                "title": "定金立减的金额",
-                "description": "定金立减金额",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": false
-              },
-              "prepSaleHandsel": {
-                "title": "预售定金",
-                "description": "预售定金",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)\t",
-                "x-required:": false
-              },
-              "preSalePrice": {
-                "title": "预售价",
-                "description": "预售价",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": false
-              },
-              "preSaleExpandPriceTitleM": {
-                "title": "Mobile定金膨胀额\t",
-                "description": "Mobile定金膨胀额",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": true
-              },
-              "preSaleExpandPriceTitlePC": {
-                "title": "PC定金膨胀额",
-                "description": "PC定金膨胀额",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": true
-              },
-              "interestFreePeriodIcon": {
-                "title": "最高免息分期角标",
-                "description": "最高免息分期角标",
-                "type": "string",
-                "x-format": "@image('60x60','jpg|png',0,5)",
-                "x-required:": false
-              },
-              "isWuyougou": {
-                "title": "是否为无忧购商品",
-                "description": "是否为无忧购商品",
-                "type": "string",
-                "x-format": "@string()",
-                "x-required:": false
-              },
-              "btnText": { "title": "行动点", "description": "行动点" },
-              "itemInfo": {
-                "title": "商品简介",
-                "description": "≤40个字(不区分中英文)，含标点",
-                "type": "string",
-                "x-format": "@string(0,40)",
-                "x-required:": true
-              },
-              "iconImg": {
-                "title": "坑位标图片",
-                "description": "坑位标图片",
-                "type": "string",
-                "x-format": "@image('60x60','jpg|png',0,5)",
-                "x-required:": false
-              },
-              "o2oDeductionPrice": {
-                "title": "订金抵用价格",
-                "description": "订金抵用价格",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": false
-              },
-              "unitPrice": {
-                "title": "商品单位面积价格",
-                "description": "分期数",
-                "type": "string",
-                "x-format": "@string()",
-                "x-required:": false
-              },
-              "itemCarSellPrice": {
-                "title": "商品特卖一口价",
-                "description": "商品特卖一口价",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": false
-              },
-              "itemCarFactoryPrice": {
-                "title": "商品厂商指导价",
-                "description": "商品厂商指导价",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": false
-              },
-              "periodPrices": {
-                "title": "商品分期价格",
-                "description": "商品分期价格",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": false
-              },
-              "period": {
-                "title": "分期数",
-                "description": "分期数",
-                "type": "string",
-                "x-format": "@string()",
-                "x-required:": false
-              },
-              "presentDesc": {
-                "title": "赠品描述",
-                "description": "赠品描述，最多8个字",
-                "type": "string",
-                "x-format": "@string(0,8)",
-                "x-required:": true
-              },
-              "presentImg": {
-                "title": "赠品图片",
-                "description": "赠品图，格式：jpg，体积：20kb",
-                "type": "string",
-                "x-format": "@image('100x100', 'jpg|png', 0, 20)",
-                "x-required:": true
-              },
-              "itemMonthSoldCount": {
-                "title": "商品月销量",
-                "description": "商品月销量",
-                "type": "number",
-                "x-format": "@integer(0)",
-                "x-required:": false
-              },
-              "brandLogo": {
-                "title": "品牌LOGO",
-                "description": "品牌LOGO（140x70），格式：png，体积：<5kb",
-                "type": "string",
-                "x-format": "@image('140x70','png',0,5)",
-                "x-required:": true
-              },
-              "brandName": {
-                "title": "品牌名称",
-                "description": "品牌名称",
-                "type": "string",
-                "x-format": "@string()",
-                "x-required:": false
-              },
-              "brandId": {
-                "title": "品牌ID",
-                "description": "品牌ID",
-                "type": "string",
-                "x-format": "@string()",
-                "x-required:": false
-              },
-              "shopActUrl": {
-                "title": "店铺承接页链接",
-                "description": "店铺承接页链接",
-                "type": "string",
-                "x-format": "@url()",
-                "x-required:": true
-              },
-              "shopFpUrl": {
-                "title": "店铺首页链接",
-                "description": "店铺首页链接",
-                "type": "string",
-                "x-format": "@url()",
-                "x-required:": false
-              },
-              "shopName": {
-                "title": "店铺名称",
-                "description": "店铺名称(5-10个字)",
-                "type": "string",
-                "x-format": "@string(5,10)",
-                "x-required:": true
-              },
-              "shopId": {
-                "title": "店铺ID",
-                "description": "店铺ID",
-                "type": "string",
-                "x-format": "@string()",
-                "x-required:": false
-              },
-              "inventoryQuantity": {
-                "title": "商品库存",
-                "description": "商品库存",
-                "type": "number",
-                "x-format": "@integer(0)",
-                "x-required:": false
-              },
-              "couponUrl": {
-                "title": "优惠券领取链接",
-                "description": "优惠券链接",
-                "type": "string",
-                "x-format": "@url()",
-                "x-required:": false
-              },
-              "couponValue": {
-                "title": "优惠券面额",
-                "description": "优惠券面额",
-                "type": "number",
-                "x-format": "@integer(0)",
-                "x-required:": false
-              },
-              "itemPaidCouponId": {
-                "title": "有偿优惠券宝贝ID",
-                "description": "有偿优惠券宝贝ID",
-                "type": "string",
-                "x-format": "@string()",
-                "x-required:": false
-              },
-              "itemMPrice": {
-                "title": "商品手机专享价",
-                "description": "商品手机专享价",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": false
-              },
-              "itemTagPriceTitle": {
-                "title": "商品标签价标题",
-                "description": "商品标签价标题",
-                "type": "string",
-                "x-format": "@string()",
-                "x-required:": false
-              },
-              "itemTagPrice": {
-                "title": "商品标签价",
-                "description": "商品标签价",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": false
-              },
-              "itemActPriceTitle": {
-                "title": "商品活动价标题",
-                "description": "商品活动价标题",
-                "type": "string",
-                "x-format": "@string()",
-                "x-required:": false
-              },
-              "itemActPrice": {
-                "title": "商品活动价",
-                "description": "商品活动价",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": false
-              },
-              "itemPsoriasisPrice": {
-                "title": "牛皮癣到手价",
-                "description": "牛皮癣价格",
-                "type": "number",
-                "x-format": "@float(0,9999999,0,2)",
-                "x-required:": true
-              },
-              "itemPsoriasisText": {
-                "title": "牛皮癣文案",
-                "description": "大促氛围图利益点（5-8个字）",
-                "type": "string",
-                "x-format": "@string(5,8)",
-                "x-required:": true
-              },
-              "itemDesc2": {
-                "title": "商品利益点二",
-                "description": "商品利益点二（5-8个字）",
-                "type": "string",
-                "x-format": "@string(5,8)",
-                "x-required:": true
-              },
-              "itemDesc1": {
-                "title": "商品利益点一",
-                "description": "商品利益点一（5-8个字）",
-                "type": "string",
-                "x-format": "@string(5,8)",
-                "x-required:": true
-              },
-              "itemDesc": {
-                "title": "商品利益点",
-                "description": "商品利益点（5-8个字）",
-                "type": "string",
-                "x-format": "@string(5,8)",
-                "x-required:": true
-              },
-              "itemUrl": {
-                "title": "商品链接",
-                "description": "商品链接",
-                "type": "string",
-                "x-format": "@url()",
-                "x-required:": true
-              },
-              "itemTitle": {
-                "title": "商品标题",
-                "description": "商品短标题（6-10个字）",
-                "type": "string",
-                "x-format": "@string(6,10)",
-                "x-required:": true
-              },
-              "itemId": {
-                "title": "商品ID",
-                "description": "商品ID",
-                "type": "string",
-                "x-format": "@string()",
-                "x-required:": false,
-                "x-rmc": true
-              },
-              "itemImg": {
-                "title": "商品图片",
-                "description": "商品图片（800x800），格式jpg、png，体积：<500kb",
-                "type": "string",
-                "x-format": "@image('800x800', 'jpg|png', 0, 3000)",
-                "x-required:": true
-              }
-            },
-            "title": "商品信息",
-            "description": "商品信息"
-          }
-        },
-        "$config": {
-          "title": "投放配置",
-          "type": "object",
-          "description": "投放配置",
-          "properties": {
-            "$dynamic": {
-              "type": "boolean",
-              "title": "个性化推荐配置",
-              "default": true,
-              "x-rmc": true
-            }
-          }
-        },
-        "config": {
-          "title": "模块配置",
-          "type": "object",
-          "description": "模块配置",
-          "properties": {
-            "hideLogo": {
-              "title": "是否隐藏LOGO",
-              "type": "boolean",
-              "description": "是否隐藏LOGO"
-            },
-            "loadmore": {
-              "title": "是否开启loadmore",
-              "type": "boolean",
-              "description": "是否开启loadmore"
-            }
-          }
-        }
-      }
-    },
-    "schemaConfigId": 96170,
-    "schemaConfigSelf": null,
-    "schemaConfigExtend": []
+    ]
   },
   "dataBindingStore": [
     {
-      "belongId": "Text-11",
-      "target": ["innerText"],
-      "value": { "isStatic": true, "staticType": "STRING", "value": "回款宝" },
-      "defaultValue": "回款宝",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Text-40",
-      "target": ["innerText"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "申请回款宝"
-      },
-      "defaultValue": "申请回款宝",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Image-34",
+      "belongId": "Image-2",
       "target": ["source"],
       "value": {
         "isStatic": true,
         "staticType": "STRING",
-        "value": "https://img.alicdn.com/tfs/TB1KGlCeaSs3KVjSZPiXXcsiVXa-1996-2.png"
+        "value": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png"
       },
-      "defaultValue": "https://img.alicdn.com/tfs/TB1KGlCeaSs3KVjSZPiXXcsiVXa-1996-2.png",
+      "defaultValue": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png",
       "smart": { "type": "dynamic", "rule": "default" }
     },
     {
-      "belongId": "Image-36",
+      "belongId": "Image-15",
       "target": ["source"],
       "value": {
         "isStatic": true,
         "staticType": "STRING",
-        "value": "https://img.alicdn.com/tfs/TB1IZJteoGF3KVjSZFmXXbqPXXa-112-138.png"
+        "value": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png"
       },
-      "defaultValue": "https://img.alicdn.com/tfs/TB1IZJteoGF3KVjSZFmXXbqPXXa-112-138.png",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Image-38",
-      "target": ["source"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "https://img.alicdn.com/tfs/TB1G75GbvBj_uVjSZFpXXc0SXXa-36-26.png"
-      },
-      "defaultValue": "https://img.alicdn.com/tfs/TB1G75GbvBj_uVjSZFpXXc0SXXa-36-26.png",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Image-4",
-      "target": ["source"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "https://img.alicdn.com/tfs/TB1wxxxemWD3KVjSZSgXXcCxVXa-112-112.png"
-      },
-      "defaultValue": "https://img.alicdn.com/tfs/TB1wxxxemWD3KVjSZSgXXcCxVXa-112-112.png",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Image-5",
-      "target": ["source"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "https://img.alicdn.com/tfs/TB1X3huemSD3KVjSZFKXXb10VXa-46-56.png"
-      },
-      "defaultValue": "https://img.alicdn.com/tfs/TB1X3huemSD3KVjSZFKXXb10VXa-46-56.png",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Image-37",
-      "target": ["source"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "https://img.alicdn.com/tfs/TB1phlCea1s3KVjSZFAXXX_ZXXa-132-34.png"
-      },
-      "defaultValue": "https://img.alicdn.com/tfs/TB1phlCea1s3KVjSZFAXXX_ZXXa-132-34.png",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Text-1",
-      "target": ["innerText"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "开通服务"
-      },
-      "defaultValue": "开通服务",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Text-2",
-      "target": ["innerText"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "账单同步"
-      },
-      "defaultValue": "账单同步",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Text-7",
-      "target": ["innerText"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "申请收款"
-      },
-      "defaultValue": "申请收款",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Text-8",
-      "target": ["innerText"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "已产生账单的用户&#10;可申请开通回款宝服务"
-      },
-      "defaultValue": "已产生账单的用户&#10;可申请开通回款宝服务",
+      "defaultValue": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png",
       "smart": { "type": "dynamic", "rule": "default" }
     },
     {
@@ -3472,9 +1279,74 @@
       "value": {
         "isStatic": true,
         "staticType": "STRING",
-        "value": "经回款宝服务商审核通过&#10;优酷内容开放平台同步月账单至回款宝平台"
+        "value": "高端定制2018开叉设计羊毛衬衫 "
       },
-      "defaultValue": "经回款宝服务商审核通过&#10;优酷内容开放平台同步月账单至回款宝平台",
+      "defaultValue": "高端定制2018开叉设计羊毛衬衫 ",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Text-11",
+      "target": ["innerText"],
+      "value": { "isStatic": true, "staticType": "STRING", "value": "券" },
+      "defaultValue": "券",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Image-13",
+      "target": ["source"],
+      "value": {
+        "isStatic": true,
+        "staticType": "STRING",
+        "value": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png"
+      },
+      "defaultValue": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "value": {
+        "isStatic": false,
+        "isHandEdit": true,
+        "source": "data",
+        "sourceValue": "item_current_price",
+        "helperScriptName": null
+      },
+      "smart": { "rule": "CURRENT_PRCIE", "type": "dynamic" },
+      "schema": {
+        "schemaProps": {
+          "description": "dvc schema描述",
+          "properties": {
+            "item_current_price": {
+              "title": "item_current_price",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "belongId": "Text-12",
+      "defaultValue": "¥10000",
+      "target": ["innerText"]
+    },
+    {
+      "belongId": "Text-4",
+      "target": ["innerText"],
+      "value": {
+        "isStatic": true,
+        "staticType": "STRING",
+        "value": "全场满500减20"
+      },
+      "defaultValue": "全场满500减20",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Text-5",
+      "target": ["innerText"],
+      "value": {
+        "isStatic": true,
+        "staticType": "STRING",
+        "value": "部分新品折扣季5折起"
+      },
+      "defaultValue": "部分新品折扣季5折起",
       "smart": { "type": "dynamic", "rule": "default" }
     },
     {
@@ -3483,57 +1355,13 @@
       "value": {
         "isStatic": true,
         "staticType": "STRING",
-        "value": "用户可根据展示的可提现金额内&#10;申请提前收款（即单笔应收账款融资）"
+        "value": "进入店铺"
       },
-      "defaultValue": "用户可根据展示的可提现金额内&#10;申请提前收款（即单笔应收账款融资）",
+      "defaultValue": "进入店铺",
       "smart": { "type": "dynamic", "rule": "default" }
     },
     {
-      "belongId": "Image-35",
-      "target": ["source"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "https://img.alicdn.com/tfs/TB12alCeaSs3KVjSZPiXXcsiVXa-1996-2.png"
-      },
-      "defaultValue": "https://img.alicdn.com/tfs/TB12alCeaSs3KVjSZPiXXcsiVXa-1996-2.png",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Text-10_2",
-      "target": ["innerText"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "特别说明："
-      },
-      "defaultValue": "特别说明：",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Text-10_0",
-      "target": ["innerText"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "商通过回款宝平台按照回款宝平台相关规则以及协议向客户进行结算和支付。"
-      },
-      "defaultValue": "商通过回款宝平台按照回款宝平台相关规则以及协议向客户进行结算和支付。",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Text-10_1",
-      "target": ["innerText"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "客户首次成功提前收款后，优酷内容开放平台应向客户支付的全部费用将直接支付至回款宝服务商开设的针对客户的回款账户，由回款宝服务"
-      },
-      "defaultValue": "客户首次成功提前收款后，优酷内容开放平台应向客户支付的全部费用将直接支付至回款宝服务商开设的针对客户的回款账户，由回款宝服务",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Shape-39",
+      "belongId": "Shape-8",
       "target": ["href"],
       "value": {
         "isStatic": true,
@@ -3544,50 +1372,58 @@
   ],
   "rootProps": {
     "JSONSchema": {
-      "title": "静态属性",
-      "description": "不同开发场景下可配置的属性不同，这里配置的是淘宝命运石RAX链路下的模块静态属性",
+      "title": "根节点属性",
+      "description": "不同营销场景下配置不同，这里配置的是淘宝命运石RAX链路下的模块根节点属性",
       "type": "object",
       "required": ["gSize", "marginRight", "marginTop"],
       "properties": {
-        "disableModuleDataAutoFetch": {
-          "type": "boolean",
-          "title": "禁用自动请求",
-          "default": false
+        "gSize": { "type": "integer", "title": "一行几个", "default": 2 },
+        "marginRight": {
+          "type": "integer",
+          "title": "模块横向间距",
+          "default": 24
         },
-        "moduleRenderMode": {
-          "type": "string",
-          "title": "模块渲染模式",
-          "default": "cell",
-          "enum": ["cell", "header", "repeat"]
-        }
+        "marginTop": {
+          "type": "integer",
+          "title": "模块纵向间距",
+          "default": 24
+        },
+        "backup": {
+          "type": "boolean",
+          "title": "启用空坑处理",
+          "default": true
+        },
+        "tracker": { "type": "boolean", "title": "启用埋点", "default": false }
       }
     },
     "UISchema": {
-      "disableModuleDataAutoFetch": {
-        "ui:widget": "switch",
-        "ui:title": "禁用自动请求"
-      },
-      "moduleRenderMode": { "ui:widget": "select", "ui:title": "模块渲染模式" }
+      "gSize": { "ui:title": "一行几个" },
+      "marginRight": { "ui:title": "模块横向间距" },
+      "marginTop": { "ui:title": "模块纵向间距" },
+      "backup": { "ui:widget": "switch", "ui:title": "启用空坑处理" },
+      "tracker": { "ui:widget": "switch", "ui:title": "启用埋点" }
     },
     "formData": {
-      "disableModuleDataAutoFetch": false,
-      "moduleRenderMode": "cell"
+      "gSize": 2,
+      "marginRight": 24,
+      "marginTop": 24,
+      "backup": true,
+      "tracker": false
     }
   },
-  "loops": [],
-  "scriptStore": [
-    {
-      "id": "0d8096a6a4e9",
-      "name": "getData",
-      "content": "/**\n * @author 笑翟\n * @version 1.0\n * @param value 入参\n * @return value 出参\n */\nexport default function(){\n  let data = this.props.data && this.props.data.$data || {};\n  let $attr = this.props.data && this.props.data.$attr || {};\n  let $theme = this.props.data && this.props.data.$theme || {};\n  return {\n    data,\n    $attr,\n    $theme,\n  };\n};",
-      "type": "system"
-    }
-  ],
   "modStyleConfig": {
     "designWidth": 750,
     "designHeight": 1334,
     "viewportWidth": 375
   },
+  "scriptStore": [
+    {
+      "id": "35a572d71019",
+      "name": "getData",
+      "content": "/**\n * @author 笑翟\n * @version 1.0\n * @param value 入参\n * @return value 出参\n */\nexport default function(){\n  let data = this.props && this.props.data;\n  let attrs = this.props && this.props.attrs;\n  let pageInfo = this.props && this.props.pageInfo;\n  return {\n    data,\n    attrs,\n    pageInfo,\n  };\n};",
+      "type": "system"
+    }
+  ],
   "semantic": {
     "dvc_default": [
       {
@@ -3595,7 +1431,7 @@
         "level": 100,
         "result": "block",
         "prefix": "",
-        "id": 380412
+        "id": 872423
       }
     ],
     "dvc_layout": [
@@ -3604,7 +1440,7 @@
         "level": 100,
         "result": "box",
         "prefix": "",
-        "id": 353053,
+        "id": 87802,
         "choose": true
       }
     ]
