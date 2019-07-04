@@ -3,7 +3,7 @@
   "id": "Block-1",
   "__VERSION__": "2.0",
   "props": {
-    "style": { "width": 714, "height": 537 },
+    "style": { "width": 750, "height": 348 },
     "attrs": { "x": 0, "y": 0 }
   },
   "children": [
@@ -11,14 +11,13 @@
       "__VERSION__": "2.0",
       "props": {
         "style": {
-          "width": 714,
-          "height": 537,
+          "width": 750,
+          "height": 348,
           "backgroundColor": "rgba(255,255,255,1)",
           "borderTopLeftRadius": 0,
           "borderTopRightRadius": 0,
           "borderBottomRightRadius": 0,
-          "borderBottomLeftRadius": 0,
-          "overflow": "hidden"
+          "borderBottomLeftRadius": 0
         },
         "attrs": { "x": 0, "y": 0 }
       },
@@ -29,30 +28,25 @@
     {
       "__VERSION__": "2.0",
       "props": {
-        "style": {
-          "width": 714,
-          "height": 357,
-          "backgroundColor": "rgba(238,238,238,1)",
-          "borderTopLeftRadius": 0,
-          "borderTopRightRadius": 0,
-          "borderBottomRightRadius": 0,
-          "borderBottomLeftRadius": 0,
-          "overflow": "hidden"
-        },
-        "attrs": { "x": 0, "y": 0 }
+        "style": { "width": 100, "height": 100, "overflow": "hidden" },
+        "attrs": {
+          "x": 348,
+          "y": 92,
+          "source": "https://img.alicdn.com/tfs/TB1xxAMi_Zmx1VjSZFGXXax2XXa-200-200.png"
+        }
       },
       "children": [],
-      "type": "Shape",
-      "id": "Shape-1"
+      "type": "Image",
+      "id": "Image-1"
     },
     {
       "__VERSION__": "2.0",
       "props": {
-        "style": { "width": 714, "height": 357 },
+        "style": { "width": 100, "height": 100, "overflow": "hidden" },
         "attrs": {
-          "x": 0,
-          "y": 0,
-          "source": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png"
+          "x": 348,
+          "y": 92,
+          "source": "https://img.alicdn.com/tfs/TB1KKRaQBLoK1RjSZFuXXXn0XXa-200-200.png"
         }
       },
       "children": [],
@@ -62,165 +56,145 @@
     {
       "__VERSION__": "2.0",
       "props": {
-        "style": {
-          "width": 407,
-          "height": 40,
-          "fontFamily": "PingFangSC",
-          "fontSize": "28",
-          "color": "#333333",
-          "lineHeight": "40rem",
-          "fontWeight": 400
-        },
+        "style": { "width": 100, "height": 100, "overflow": "hidden" },
         "attrs": {
-          "x": 15,
-          "y": 401,
-          "text": "高端定制2018开叉设计羊毛衬衫 ",
-          "lines": 1
+          "x": 458,
+          "y": 92,
+          "source": "https://img.alicdn.com/tfs/TB1tNEMi_Zmx1VjSZFGXXax2XXa-200-200.png"
         }
       },
-      "type": "Text",
-      "id": "Text-3"
+      "children": [],
+      "type": "Image",
+      "id": "Image-3"
     },
     {
       "__VERSION__": "2.0",
       "props": {
         "style": {
-          "width": 196,
-          "height": 40,
-          "fontFamily": "PingFangSC",
-          "fontSize": "28",
-          "color": "#FF0036",
-          "lineHeight": "40rem",
-          "fontWeight": 400
+          "width": 702,
+          "height": 1,
+          "backgroundColor": "rgba(238,238,238,1)",
+          "borderTopLeftRadius": 0,
+          "borderTopRightRadius": 0,
+          "borderBottomRightRadius": 0,
+          "borderBottomLeftRadius": 0
         },
-        "attrs": { "x": 33, "y": 445, "text": "全场满500减20", "lines": 1 }
+        "attrs": { "x": 24, "y": 347 }
+      },
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-4"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 119,
+          "height": 40,
+          "backgroundColor": "rgba(255,255,255,1)",
+          "borderTopLeftRadius": 0,
+          "borderTopRightRadius": 0,
+          "borderBottomRightRadius": 0,
+          "borderBottomLeftRadius": 0
+        },
+        "attrs": { "x": 631, "y": 272 }
+      },
+      "children": [],
+      "type": "Shape",
+      "id": "Shape-5"
+    },
+    {
+      "__VERSION__": "2.0",
+      "props": {
+        "style": {
+          "width": 44,
+          "height": 24,
+          "fontFamily": "PingFangSC",
+          "fontSize": "24",
+          "color": "#999999",
+          "letterSpacing": "0",
+          "lineHeight": "24rem",
+          "fontWeight": 300
+        },
+        "attrs": { "x": 682, "y": 280, "text": "524", "lines": 1 }
       },
       "type": "Text",
-      "id": "Text-4"
+      "id": "Text-6"
     },
     {
       "__VERSION__": "2.0",
       "props": {
-        "style": {
-          "width": 269,
-          "height": 40,
-          "fontFamily": "PingFangSC",
-          "fontSize": "28",
-          "color": "#FF0036",
-          "lineHeight": "40rem",
-          "fontWeight": 400
-        },
+        "style": { "width": 26, "height": 18 },
         "attrs": {
-          "x": 33,
-          "y": 480,
-          "text": "部分新品折扣季5折起",
-          "lines": 1
+          "x": 650,
+          "y": 283,
+          "source": "https://img.alicdn.com/tfs/TB1KhEMi_Zmx1VjSZFGXXax2XXa-52-38.png"
         }
       },
-      "type": "Text",
-      "id": "Text-5"
+      "children": [],
+      "type": "Image",
+      "id": "Image-7"
     },
     {
       "__VERSION__": "2.0",
       "props": {
-        "style": {
-          "width": 8,
-          "height": 8,
-          "backgroundColor": "rgba(153,153,153,1)",
-          "borderRadius": 8
-        },
-        "attrs": { "x": 16, "y": 462 }
+        "style": { "width": 8, "height": 8 },
+        "attrs": {
+          "x": 659,
+          "y": 288,
+          "source": "https://img.alicdn.com/tfs/TB1NFJcQyrpK1RjSZFhXXXSdXXa-18-18.png"
+        }
       },
       "children": [],
-      "type": "Shape",
-      "id": "Shape-6"
+      "type": "Image",
+      "id": "Image-8"
     },
     {
       "__VERSION__": "2.0",
       "props": {
-        "style": {
-          "width": 8,
-          "height": 8,
-          "backgroundColor": "rgba(153,153,153,1)",
-          "borderRadius": 8
-        },
-        "attrs": { "x": 16, "y": 496 }
+        "style": { "width": 40, "height": 40 },
+        "attrs": {
+          "x": 348,
+          "y": 272,
+          "source": "https://img.alicdn.com/tfs/TB1aglDQxjaK1RjSZKzXXXVwXXa-80-80.png"
+        }
       },
       "children": [],
-      "type": "Shape",
-      "id": "Shape-7"
+      "type": "Image",
+      "id": "Image-9"
     },
     {
       "__VERSION__": "2.0",
       "props": {
         "style": {
-          "width": 200,
-          "height": 60,
-          "backgroundColor": "rgba(255,0,54,1)",
-          "borderTopLeftRadius": 4,
-          "borderTopRightRadius": 4,
-          "borderBottomRightRadius": 4,
-          "borderBottomLeftRadius": 4
-        },
-        "attrs": { "x": 498, "y": 453 }
-      },
-      "children": [],
-      "type": "Shape",
-      "id": "Shape-8"
-    },
-    {
-      "__VERSION__": "2.0",
-      "props": {
-        "style": {
-          "width": 96,
+          "width": 120,
           "height": 33,
           "fontFamily": "PingFangSC",
           "fontSize": "24",
-          "color": "#FFFFFF",
-          "textAlign": "center",
+          "color": "#999999",
+          "textAlign": "justify",
           "lineHeight": "33rem",
           "fontWeight": 400
         },
-        "attrs": { "x": 550, "y": 468, "text": "进入店铺", "lines": 1 }
+        "attrs": { "x": 398, "y": 276, "text": "列腾不在线", "lines": 1 }
       },
       "type": "Text",
-      "id": "Text-9"
+      "id": "Text-10"
     },
     {
       "__VERSION__": "2.0",
       "props": {
         "style": {
-          "width": 200,
-          "height": 60,
-          "backgroundColor": "rgba(255,0,54,0.1)",
-          "borderWidth": "1",
-          "borderStyle": "solid",
-          "borderColor": "#FF0036",
-          "borderTopLeftRadius": 4,
-          "borderTopRightRadius": 4,
-          "borderBottomRightRadius": 4,
-          "borderBottomLeftRadius": 4
-        },
-        "attrs": { "x": 498, "y": 383 }
-      },
-      "children": [],
-      "type": "Shape",
-      "id": "Shape-10"
-    },
-    {
-      "__VERSION__": "2.0",
-      "props": {
-        "style": {
-          "width": 24,
-          "height": 33,
+          "width": 280,
+          "height": 44,
           "fontFamily": "PingFangSC",
-          "fontSize": "24",
-          "color": "#FF0036",
-          "textAlign": "center",
-          "lineHeight": "33rem",
-          "fontWeight": 400
+          "fontSize": "30",
+          "color": "#222222",
+          "letterSpacing": "0",
+          "lineHeight": "44rem",
+          "fontWeight": 500
         },
-        "attrs": { "x": 518, "y": 397, "text": "券", "lines": 1 }
+        "attrs": { "x": 348, "y": 36, "text": "GENTLE 文艺手机壳", "lines": 1 }
       },
       "type": "Text",
       "id": "Text-11"
@@ -228,75 +202,20 @@
     {
       "__VERSION__": "2.0",
       "props": {
-        "style": {
-          "width": 82,
-          "height": 33,
-          "fontFamily": "PingFangSC",
-          "fontSize": "24",
-          "color": "#FF0036",
-          "textAlign": "center",
-          "lineHeight": "33rem",
-          "fontWeight": 400
-        },
-        "attrs": { "x": 591, "y": 398, "text": "¥10000", "lines": 1 }
-      },
-      "type": "Text",
-      "id": "Text-12"
-    },
-    {
-      "__VERSION__": "2.0",
-      "props": {
-        "style": { "width": 2, "height": 54 },
+        "style": { "width": 300, "height": 300, "overflow": "hidden" },
         "attrs": {
-          "x": 561,
-          "y": 388,
-          "source": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png"
+          "x": 24,
+          "y": 24,
+          "source": "https://img.alicdn.com/tfs/TB1hC0lQwHqK1RjSZFkXXX.WFXa-600-600.png"
         }
       },
       "children": [],
       "type": "Image",
-      "id": "Image-13"
-    },
-    {
-      "__VERSION__": "2.0",
-      "props": {
-        "style": {
-          "width": 140,
-          "height": 70,
-          "backgroundColor": "rgba(255,255,255,1)",
-          "borderWidth": "1",
-          "borderStyle": "solid",
-          "borderColor": "#CCCCCC",
-          "borderTopLeftRadius": 35,
-          "borderTopRightRadius": 35,
-          "borderBottomRightRadius": 35,
-          "borderBottomLeftRadius": 35,
-          "overflow": "hidden"
-        },
-        "attrs": { "x": 19, "y": 323 }
-      },
-      "children": [],
-      "type": "Shape",
-      "id": "Shape-14"
-    },
-    {
-      "__VERSION__": "2.0",
-      "props": {
-        "style": { "width": 126, "height": 52 },
-        "attrs": {
-          "x": 26,
-          "y": 329,
-          "source": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png"
-        }
-      },
-      "children": [],
-      "type": "Image",
-      "id": "Image-15"
+      "id": "Image-12"
     }
   ],
-  "artboardImg": "https://img.alicdn.com/tfs/TB1OULFQCzqK1RjSZPcXXbTepXa-1428-1074.png",
-  "taskId": "F45C2DE1E2E15815B61959D53C47660E-1554983953353",
-  "name": "模版2",
-  "pluginVersion": "1.6.9",
-  "reference": "sketch"
+  "artboardImg": "https://img.alicdn.com/tfs/TB1bKBdQAvoK1RjSZFDXXXY3pXa-750-348.png",
+  "taskId": "0892F6F5AB7157FF993377498307F2FE-1554888386721",
+  "name": "Group 11 Copy 115",
+  "pluginVersion": "1.6.7"
 }

@@ -5,176 +5,57 @@
   "children": [
     {
       "props": {
-        "attrs": { "x": 0, "y": 0, "fixed": true, "className": "block-636750" },
+        "attrs": { "x": 0, "y": 24, "className": "block-697039" },
         "style": {
-          "boxSizing": "border-box",
           "display": "flex",
           "position": "relative",
-          "alignItems": "flex-start",
-          "marginBottom": -36,
-          "paddingBottom": 36,
-          "width": 714,
-          "height": 393
+          "flexDirection": "row",
+          "marginTop": 24,
+          "width": 750,
+          "height": 302
         }
       },
       "type": "Block",
-      "id": "Block-636750",
+      "id": "Block-697039",
       "__VERSION__": "2.0",
+      "__GRID__": "NEWROW",
       "children": [
         {
-          "id": "Image-2",
+          "id": "Image-12",
           "__VERSION__": "2.0",
           "type": "Image",
           "children": [],
           "props": {
-            "style": { "position": "relative", "width": 714, "height": 357 },
+            "style": {
+              "marginLeft": 24,
+              "width": 300,
+              "height": 300,
+              "overflow": "hidden"
+            },
             "attrs": {
-              "y": 0,
-              "x": 0,
-              "source": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png",
-              "src": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png",
-              "className": "image-2"
+              "y": 24,
+              "x": 24,
+              "source": "https://img.alicdn.com/tfs/TB1hC0lQwHqK1RjSZFkXXX.WFXa-600-600.png",
+              "src": "https://img.alicdn.com/tfs/TB1hC0lQwHqK1RjSZFkXXX.WFXa-600-600.png",
+              "className": "image-12"
             }
           },
           "__ADAPT__": true,
           "componentType": "picture",
-          "_jsonId": "Image-2",
-          "_jsonElementId": "Image-2",
+          "_jsonId": "Image-12",
+          "_jsonElementId": "Image-12",
           "title": "Image",
           "attrs": {
-            "y": 0,
-            "x": 0,
-            "source": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png",
-            "src": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png",
-            "className": "banner"
+            "y": 24,
+            "x": 24,
+            "source": "https://img.alicdn.com/tfs/TB1hC0lQwHqK1RjSZFkXXX.WFXa-600-600.png",
+            "src": "https://img.alicdn.com/tfs/TB1hC0lQwHqK1RjSZFkXXX.WFXa-600-600.png",
+            "className": "item"
           },
-          "style": { "position": "relative", "width": 714, "height": 357 },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "pic",
-                "prefix": "",
-                "id": 597232
-              }
-            ],
-            "dvc_picture": [
-              {
-                "name": "dvc_picture",
-                "level": 60,
-                "result": "banner",
-                "prefix": "",
-                "id": 723552,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "id": "Shape-14",
-          "__VERSION__": "2.0",
-          "type": "Shape",
-          "children": [
-            {
-              "id": "Image-15",
-              "__VERSION__": "2.0",
-              "type": "Image",
-              "children": [],
-              "props": {
-                "style": {
-                  "marginTop": 5,
-                  "marginLeft": 6,
-                  "width": 126,
-                  "height": 52
-                },
-                "attrs": {
-                  "y": 329,
-                  "x": 26,
-                  "source": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png",
-                  "src": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png",
-                  "className": "image-15"
-                }
-              },
-              "componentType": "picture",
-              "_jsonId": "Image-15",
-              "_jsonElementId": "Image-15",
-              "title": "Image",
-              "attrs": {
-                "y": 329,
-                "x": 26,
-                "source": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png",
-                "src": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png",
-                "className": "logo"
-              },
-              "style": {
-                "marginTop": 5,
-                "marginLeft": 6,
-                "width": 126,
-                "height": 52
-              },
-              "semantic": {
-                "dvc_default": [
-                  {
-                    "name": "dvc_default",
-                    "level": 100,
-                    "result": "img",
-                    "prefix": "",
-                    "id": 855253
-                  }
-                ],
-                "dvc_picture": [
-                  {
-                    "name": "dvc_picture",
-                    "level": 35,
-                    "result": "logo",
-                    "prefix": "",
-                    "id": 334576,
-                    "choose": true
-                  }
-                ]
-              }
-            }
-          ],
-          "props": {
-            "style": {
-              "display": "flex",
-              "position": "absolute",
-              "bottom": 0,
-              "left": 19,
-              "alignItems": "flex-start",
-              "flexDirection": "row",
-              "borderWidth": "1",
-              "borderStyle": "solid",
-              "borderRadius": 35,
-              "borderColor": "rgba(204,204,204,1)",
-              "backgroundColor": "#ffffff",
-              "width": 140,
-              "height": 70,
-              "overflow": "hidden"
-            },
-            "attrs": { "y": 323, "x": 19, "className": "shape-14" }
-          },
-          "__ADAPT__": true,
-          "componentType": "view",
-          "_jsonId": "Shape-14",
-          "_jsonElementId": "Shape-14",
-          "title": "Shape",
-          "attrs": { "y": 323, "x": 19, "className": "wrap" },
           "style": {
-            "display": "flex",
-            "position": "absolute",
-            "bottom": 0,
-            "left": 19,
-            "alignItems": "flex-start",
-            "flexDirection": "row",
-            "borderWidth": "1",
-            "borderStyle": "solid",
-            "borderRadius": 35,
-            "borderColor": "rgba(204,204,204,1)",
-            "backgroundColor": "#ffffff",
-            "width": 140,
-            "height": 70,
+            "marginLeft": 24,
+            "width": 300,
+            "height": 300,
             "overflow": "hidden"
           },
           "semantic": {
@@ -182,172 +63,43 @@
               {
                 "name": "dvc_default",
                 "level": 100,
-                "result": "block",
+                "result": "pic",
                 "prefix": "",
-                "id": 384345
+                "id": 187157
               }
             ],
-            "dvc_view": [
+            "dvc_picture": [
               {
-                "name": "dvc_view",
-                "level": 95,
-                "result": "wrap",
+                "name": "dvc_picture",
+                "level": 55,
+                "result": "item",
                 "prefix": "",
-                "id": 638182,
-                "choose": true
-              }
-            ]
-          }
-        }
-      ],
-      "__ADAPT__": true,
-      "componentType": "view",
-      "_jsonId": "Block-636750",
-      "_jsonElementId": "Block-636750",
-      "title": "Block",
-      "attrs": { "x": 0, "y": 0, "fixed": true, "className": "bd" },
-      "style": {
-        "boxSizing": "border-box",
-        "display": "flex",
-        "position": "relative",
-        "alignItems": "flex-start",
-        "marginBottom": -36,
-        "paddingBottom": 36,
-        "width": 714,
-        "height": 393
-      },
-      "semantic": {
-        "dvc_layout": [
-          {
-            "name": "dvc_layout",
-            "level": 100,
-            "result": "bd",
-            "prefix": "",
-            "id": 659811,
-            "choose": true
-          }
-        ],
-        "dvc_default": [
-          {
-            "name": "dvc_default",
-            "level": 100,
-            "result": "view",
-            "prefix": "",
-            "id": 84456
-          }
-        ],
-        "dvc_view": [
-          {
-            "name": "dvc_view",
-            "level": 95,
-            "result": "outer",
-            "prefix": "",
-            "id": 720948
-          }
-        ],
-        "dvc_picture": [
-          {
-            "name": "dvc_picture",
-            "level": 60,
-            "result": "bannerWrap",
-            "prefix": "",
-            "id": 113569
-          }
-        ]
-      }
-    },
-    {
-      "props": {
-        "attrs": { "x": 0, "y": 383, "className": "block-549748" },
-        "style": {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "marginTop": 26,
-          "paddingRight": 15,
-          "paddingLeft": 15,
-          "width": 714,
-          "height": 62
-        }
-      },
-      "type": "Block",
-      "id": "Block-549748",
-      "__VERSION__": "2.0",
-      "__GRID__": "NEWROW",
-      "children": [
-        {
-          "__VERSION__": "2.0",
-          "type": "Text",
-          "id": "Text-3",
-          "props": {
-            "style": {
-              "marginTop": 18,
-              "width": 407,
-              "height": 40,
-              "lineHeight": 40,
-              "whiteSpace": "pre",
-              "color": "#333333",
-              "fontSize": 28,
-              "fontWeight": 400,
-              "lines": 1
-            },
-            "attrs": {
-              "y": 401,
-              "x": 15,
-              "lines": 1,
-              "text": "高端定制2018开叉设计羊毛衬衫 ",
-              "className": "text-3"
-            }
-          },
-          "__ADAPT__": true,
-          "componentType": "text",
-          "innerText": "高端定制2018开叉设计羊毛衬衫 ",
-          "_jsonId": "Text-3",
-          "_jsonElementId": "Text-3",
-          "title": "Text",
-          "attrs": {
-            "y": 401,
-            "x": 15,
-            "lines": 1,
-            "text": "高端定制2018开叉设计羊毛衬衫 ",
-            "className": "title"
-          },
-          "style": {
-            "marginTop": 18,
-            "lineHeight": "40px",
-            "whiteSpace": "pre",
-            "color": "#333333",
-            "fontSize": 28,
-            "fontWeight": 400,
-            "lines": 1
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "txt",
-                "prefix": "",
-                "id": 617124
-              }
-            ],
-            "dvc_text": [
-              {
-                "name": "dvc_text",
-                "level": 20,
-                "result": "title",
-                "prefix": "",
-                "id": 463655,
+                "dataSuggest": {
+                  "source": "data",
+                  "sourceValue": "item_pic",
+                  "matchRule": "ITEM_PIC"
+                },
+                "id": 218941,
                 "choose": true
               }
             ]
           }
         },
         {
-          "id": "Shape-10",
+          "props": {
+            "attrs": { "x": 348, "y": 24, "className": "block-104834" },
+            "style": {
+              "display": "flex",
+              "alignItems": "flex-start",
+              "flexDirection": "column",
+              "marginLeft": 24,
+              "width": 404,
+              "height": 302
+            }
+          },
+          "type": "Block",
+          "id": "Block-104834",
           "__VERSION__": "2.0",
-          "type": "Shape",
           "children": [
             {
               "__VERSION__": "2.0",
@@ -355,563 +107,52 @@
               "id": "Text-11",
               "props": {
                 "style": {
-                  "marginTop": 13,
-                  "width": 24,
-                  "height": 33,
-                  "lineHeight": 33,
-                  "whiteSpace": "nowrap",
-                  "color": "#ff0036",
-                  "fontSize": 24,
-                  "fontWeight": 400,
+                  "marginTop": 12,
+                  "width": 280,
+                  "maxWidth": 390,
+                  "height": 44,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "lineHeight": 44,
+                  "whiteSpace": "pre",
+                  "color": "#222222",
+                  "fontSize": 30,
+                  "fontWeight": 500,
                   "lines": 1
                 },
                 "attrs": {
-                  "y": 397,
-                  "x": 518,
+                  "y": 36,
+                  "x": 348,
                   "lines": 1,
-                  "text": "券",
+                  "text": "GENTLE 文艺手机壳",
+                  "fixed": true,
                   "className": "text-11"
                 }
               },
               "__ADAPT__": true,
               "componentType": "text",
-              "innerText": "券",
+              "innerText": "GENTLE 文艺手机壳",
               "_jsonId": "Text-11",
               "_jsonElementId": "Text-11",
               "title": "Text",
               "attrs": {
-                "y": 397,
-                "x": 518,
+                "y": 36,
+                "x": 348,
                 "lines": 1,
-                "text": "券",
-                "className": "coupons"
-              },
-              "style": {
-                "marginTop": 13,
-                "lineHeight": "33px",
-                "whiteSpace": "nowrap",
-                "color": "#ff0036",
-                "fontSize": 24,
-                "fontWeight": 400,
-                "lines": 1
-              },
-              "semantic": {
-                "dvc_default": [
-                  {
-                    "name": "dvc_default",
-                    "level": 100,
-                    "result": "word",
-                    "prefix": "",
-                    "id": 144389
-                  }
-                ],
-                "dvc_text": [
-                  {
-                    "name": "dvc_text",
-                    "level": 55,
-                    "result": "coupons",
-                    "prefix": "",
-                    "id": 823465,
-                    "choose": true
-                  }
-                ]
-              }
-            },
-            {
-              "id": "Image-13",
-              "__VERSION__": "2.0",
-              "type": "Image",
-              "children": [],
-              "props": {
-                "style": {
-                  "marginTop": 4,
-                  "marginLeft": 19,
-                  "width": 2,
-                  "height": 54
-                },
-                "attrs": {
-                  "y": 388,
-                  "x": 561,
-                  "source": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png",
-                  "src": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png",
-                  "className": "image-13"
-                }
-              },
-              "__ADAPT__": true,
-              "componentType": "picture",
-              "_jsonId": "Image-13",
-              "_jsonElementId": "Image-13",
-              "title": "Image",
-              "attrs": {
-                "y": 388,
-                "x": 561,
-                "source": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png",
-                "src": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png",
-                "className": "verticalLine"
-              },
-              "style": {
-                "marginTop": 4,
-                "marginLeft": 19,
-                "width": 2,
-                "height": 54
-              },
-              "semantic": {
-                "dvc_default": [
-                  {
-                    "name": "dvc_default",
-                    "level": 100,
-                    "result": "image",
-                    "prefix": "",
-                    "id": 528667
-                  }
-                ],
-                "dvc_picture": [
-                  {
-                    "name": "dvc_picture",
-                    "level": 85,
-                    "result": "verticalLine",
-                    "prefix": "",
-                    "id": 186723,
-                    "choose": true
-                  }
-                ]
-              }
-            },
-            {
-              "__VERSION__": "2.0",
-              "type": "Text",
-              "id": "Text-12",
-              "props": {
-                "style": {
-                  "marginTop": 14,
-                  "marginLeft": 28,
-                  "width": 82,
-                  "height": 33,
-                  "lineHeight": 33,
-                  "whiteSpace": "nowrap",
-                  "color": "#ff0036",
-                  "fontSize": 24,
-                  "fontWeight": 400,
-                  "lines": 1
-                },
-                "attrs": {
-                  "y": 398,
-                  "x": 591,
-                  "lines": 1,
-                  "text": "¥10000",
-                  "className": "text-12"
-                }
-              },
-              "__ADAPT__": true,
-              "componentType": "text",
-              "innerText": "¥10000",
-              "_jsonId": "Text-12",
-              "_jsonElementId": "Text-12",
-              "title": "Text",
-              "attrs": {
-                "y": 398,
-                "x": 591,
-                "lines": 1,
-                "text": "¥10000",
-                "className": "price"
-              },
-              "style": {
-                "marginTop": 14,
-                "marginLeft": 28,
-                "lineHeight": "33px",
-                "whiteSpace": "nowrap",
-                "color": "#ff0036",
-                "fontSize": 24,
-                "fontWeight": 400,
-                "lines": 1
-              },
-              "semantic": {
-                "dvc_default": [
-                  {
-                    "name": "dvc_default",
-                    "level": 100,
-                    "result": "text",
-                    "prefix": "",
-                    "id": 986491
-                  }
-                ],
-                "dvc_text": [
-                  {
-                    "name": "dvc_text",
-                    "level": 80,
-                    "result": "price",
-                    "prefix": "",
-                    "dataSuggest": {
-                      "source": "data",
-                      "sourceValue": "item_current_price",
-                      "matchRule": "CURRENT_PRCIE"
-                    },
-                    "id": 469046,
-                    "choose": true
-                  }
-                ]
-              }
-            }
-          ],
-          "props": {
-            "style": {
-              "display": "flex",
-              "alignItems": "flex-start",
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "borderWidth": "1",
-              "borderStyle": "solid",
-              "borderRadius": 4,
-              "borderColor": "rgba(255,0,54,1)",
-              "backgroundColor": "rgba(255,0,54,0.10)",
-              "width": 200,
-              "height": 60
-            },
-            "attrs": { "y": 383, "x": 498, "className": "shape-10" }
-          },
-          "__ADAPT__": true,
-          "componentType": "view",
-          "_jsonId": "Shape-10",
-          "_jsonElementId": "Shape-10",
-          "title": "Shape",
-          "attrs": { "y": 383, "x": 498, "className": "priceWrap" },
-          "style": {
-            "display": "flex",
-            "alignItems": "flex-start",
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "borderWidth": "1",
-            "borderStyle": "solid",
-            "borderRadius": 4,
-            "borderColor": "rgba(255,0,54,1)",
-            "backgroundColor": "rgba(255,0,54,0.10)",
-            "width": 200,
-            "height": 60
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "view",
-                "prefix": "",
-                "id": 110610
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 95,
-                "result": "block",
-                "prefix": "",
-                "id": 830656
-              }
-            ],
-            "dvc_text": [
-              {
-                "name": "dvc_text",
-                "level": 80,
-                "result": "priceWrap",
-                "prefix": "",
-                "id": 556103,
-                "choose": true
-              }
-            ]
-          }
-        }
-      ],
-      "__ADAPT__": true,
-      "componentType": "view",
-      "_jsonId": "Block-549748",
-      "_jsonElementId": "Block-549748",
-      "title": "Block",
-      "attrs": { "x": 0, "y": 383, "className": "main" },
-      "style": {
-        "boxSizing": "border-box",
-        "display": "flex",
-        "flexDirection": "row",
-        "justifyContent": "space-between",
-        "marginTop": 26,
-        "paddingRight": 15,
-        "paddingLeft": 15,
-        "width": 714,
-        "height": 62
-      },
-      "semantic": {
-        "dvc_layout": [
-          {
-            "name": "dvc_layout",
-            "level": 100,
-            "result": "main",
-            "prefix": "",
-            "id": 854194,
-            "choose": true
-          }
-        ],
-        "dvc_default": [
-          {
-            "name": "dvc_default",
-            "level": 100,
-            "result": "block",
-            "prefix": "",
-            "id": 796295
-          }
-        ],
-        "dvc_view": [
-          {
-            "name": "dvc_view",
-            "level": 95,
-            "result": "block",
-            "prefix": "",
-            "id": 542398
-          }
-        ]
-      }
-    },
-    {
-      "props": {
-        "attrs": { "x": 0, "y": 445, "className": "block-111179" },
-        "style": {
-          "display": "flex",
-          "position": "relative",
-          "flexDirection": "row",
-          "marginTop": 1,
-          "width": 714,
-          "height": 77
-        }
-      },
-      "type": "Block",
-      "id": "Block-111179",
-      "__VERSION__": "2.0",
-      "__GRID__": "NEWROW",
-      "children": [
-        {
-          "props": {
-            "attrs": { "x": 16, "y": 445, "className": "block-501162" },
-            "style": {
-              "display": "flex",
-              "alignItems": "flex-start",
-              "flexDirection": "column",
-              "marginLeft": 16,
-              "width": 10,
-              "height": 77
-            }
-          },
-          "type": "Block",
-          "id": "Block-501162",
-          "__VERSION__": "2.0",
-          "children": [
-            {
-              "id": "Shape-6",
-              "__VERSION__": "2.0",
-              "type": "Shape",
-              "children": [],
-              "props": {
-                "style": {
-                  "display": "flex",
-                  "alignItems": "flex-start",
-                  "marginTop": 17,
-                  "borderRadius": 8,
-                  "backgroundColor": "#999999",
-                  "width": 8,
-                  "height": 8
-                },
-                "attrs": { "y": 462, "x": 16, "className": "shape-6" }
-              },
-              "__ADAPT__": true,
-              "componentType": "view",
-              "_jsonId": "Shape-6",
-              "_jsonElementId": "Shape-6",
-              "title": "Shape",
-              "attrs": { "y": 462, "x": 16, "className": "color" },
-              "style": {
-                "display": "flex",
-                "alignItems": "flex-start",
-                "marginTop": 17,
-                "borderRadius": 8,
-                "backgroundColor": "#999999",
-                "width": 8,
-                "height": 8
-              },
-              "semantic": {
-                "dvc_default": [
-                  {
-                    "name": "dvc_default",
-                    "level": 100,
-                    "result": "block",
-                    "prefix": "",
-                    "id": 21771
-                  }
-                ],
-                "dvc_view": [
-                  {
-                    "name": "dvc_view",
-                    "level": 100,
-                    "result": "color",
-                    "prefix": "",
-                    "id": 815170,
-                    "choose": true
-                  }
-                ]
-              }
-            },
-            {
-              "id": "Shape-7",
-              "__VERSION__": "2.0",
-              "type": "Shape",
-              "children": [],
-              "props": {
-                "style": {
-                  "display": "flex",
-                  "alignItems": "flex-start",
-                  "marginTop": 26,
-                  "borderRadius": 8,
-                  "backgroundColor": "#999999",
-                  "width": 8,
-                  "height": 8
-                },
-                "attrs": { "y": 496, "x": 16, "className": "shape-7" }
-              },
-              "__ADAPT__": true,
-              "componentType": "view",
-              "_jsonId": "Shape-7",
-              "_jsonElementId": "Shape-7",
-              "title": "Shape",
-              "attrs": { "y": 496, "x": 16, "className": "colorDiv" },
-              "style": {
-                "display": "flex",
-                "alignItems": "flex-start",
-                "marginTop": 26,
-                "borderRadius": 8,
-                "backgroundColor": "#999999",
-                "width": 8,
-                "height": 8
-              },
-              "semantic": {
-                "dvc_default": [
-                  {
-                    "name": "dvc_default",
-                    "level": 100,
-                    "result": "view",
-                    "prefix": "",
-                    "id": 157926
-                  }
-                ],
-                "dvc_view": [
-                  {
-                    "name": "dvc_view",
-                    "level": 100,
-                    "result": "colorDiv",
-                    "prefix": "",
-                    "id": 90987,
-                    "choose": true
-                  }
-                ]
-              }
-            }
-          ],
-          "__ADAPT__": true,
-          "componentType": "view",
-          "_jsonId": "Block-501162",
-          "_jsonElementId": "Block-501162",
-          "title": "Block",
-          "attrs": { "x": 16, "y": 445, "className": "group" },
-          "style": {
-            "display": "flex",
-            "alignItems": "flex-start",
-            "flexDirection": "column",
-            "marginLeft": 16,
-            "width": 10,
-            "height": 77
-          },
-          "semantic": {
-            "dvc_default": [
-              {
-                "name": "dvc_default",
-                "level": 100,
-                "result": "block",
-                "prefix": "",
-                "id": 298553
-              }
-            ],
-            "dvc_view": [
-              {
-                "name": "dvc_view",
-                "level": 95,
-                "result": "group",
-                "prefix": "",
-                "id": 674213,
-                "choose": true
-              }
-            ]
-          }
-        },
-        {
-          "props": {
-            "attrs": { "x": 33, "y": 445, "className": "block-304419" },
-            "style": {
-              "display": "flex",
-              "alignItems": "flex-start",
-              "flexDirection": "column",
-              "marginLeft": 8,
-              "width": 665,
-              "height": 77
-            }
-          },
-          "type": "Block",
-          "id": "Block-304419",
-          "__VERSION__": "2.0",
-          "children": [
-            {
-              "__VERSION__": "2.0",
-              "type": "Text",
-              "id": "Text-4",
-              "props": {
-                "style": {
-                  "width": 196,
-                  "maxWidth": 442,
-                  "height": 40,
-                  "overflow": "hidden",
-                  "textOverflow": "ellipsis",
-                  "lineHeight": 40,
-                  "whiteSpace": "nowrap",
-                  "color": "#ff0036",
-                  "fontSize": 28,
-                  "fontWeight": 400,
-                  "lines": 1
-                },
-                "attrs": {
-                  "y": 445,
-                  "x": 33,
-                  "lines": 1,
-                  "text": "全场满500减20",
-                  "fixed": true,
-                  "className": "text-4"
-                }
-              },
-              "__ADAPT__": true,
-              "componentType": "text",
-              "innerText": "全场满500减20",
-              "_jsonId": "Text-4",
-              "_jsonElementId": "Text-4",
-              "title": "Text",
-              "attrs": {
-                "y": 445,
-                "x": 33,
-                "lines": 1,
-                "text": "全场满500减20",
+                "text": "GENTLE 文艺手机壳",
                 "fixed": true,
-                "className": "fullReductionAudience"
+                "className": "category"
               },
               "style": {
-                "maxWidth": 442,
+                "marginTop": 12,
+                "maxWidth": 390,
                 "overflow": "hidden",
                 "textOverflow": "ellipsis",
-                "lineHeight": "40px",
-                "whiteSpace": "nowrap",
-                "color": "#ff0036",
-                "fontSize": 28,
-                "fontWeight": 400,
+                "lineHeight": "44px",
+                "whiteSpace": "pre",
+                "color": "#222222",
+                "fontSize": 30,
+                "fontWeight": 500,
                 "lines": 1
               },
               "semantic": {
@@ -921,16 +162,596 @@
                     "level": 100,
                     "result": "txt",
                     "prefix": "",
-                    "id": 640140
+                    "id": 521200
                   }
                 ],
                 "dvc_text": [
                   {
                     "name": "dvc_text",
-                    "level": 55,
-                    "result": "fullReductionAudience",
+                    "level": 45,
+                    "result": "category",
                     "prefix": "",
-                    "id": 941820,
+                    "id": 110337,
+                    "choose": true
+                  }
+                ]
+              }
+            },
+            {
+              "props": {
+                "attrs": { "x": 348, "y": 92, "className": "block-683842" },
+                "style": {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginTop": 12,
+                  "width": 402,
+                  "height": 102
+                }
+              },
+              "type": "Block",
+              "id": "Block-683842",
+              "__VERSION__": "2.0",
+              "__GRID__": "NEWROW",
+              "children": [
+                {
+                  "id": "Image-2",
+                  "__VERSION__": "2.0",
+                  "type": "Image",
+                  "children": [],
+                  "props": {
+                    "style": {
+                      "width": 100,
+                      "height": 100,
+                      "overflow": "hidden"
+                    },
+                    "attrs": {
+                      "y": 92,
+                      "x": 348,
+                      "source": "https://img.alicdn.com/tfs/TB1KKRaQBLoK1RjSZFuXXXn0XXa-200-200.png",
+                      "src": "https://img.alicdn.com/tfs/TB1KKRaQBLoK1RjSZFuXXXn0XXa-200-200.png",
+                      "className": "image-2"
+                    }
+                  },
+                  "__ADAPT__": true,
+                  "componentType": "picture",
+                  "_jsonId": "Image-2",
+                  "_jsonElementId": "Image-2",
+                  "title": "Image",
+                  "attrs": {
+                    "y": 92,
+                    "x": 348,
+                    "source": "https://img.alicdn.com/tfs/TB1KKRaQBLoK1RjSZFuXXXn0XXa-200-200.png",
+                    "src": "https://img.alicdn.com/tfs/TB1KKRaQBLoK1RjSZFuXXXn0XXa-200-200.png",
+                    "className": "pic"
+                  },
+                  "style": {
+                    "width": 100,
+                    "height": 100,
+                    "overflow": "hidden"
+                  },
+                  "semantic": {
+                    "dvc_default": [
+                      {
+                        "name": "dvc_default",
+                        "level": 100,
+                        "result": "img",
+                        "prefix": "",
+                        "id": 528158
+                      }
+                    ],
+                    "dvc_picture": [
+                      {
+                        "name": "dvc_picture",
+                        "level": 32,
+                        "result": "pic",
+                        "prefix": "",
+                        "id": 334074,
+                        "choose": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "Image-3",
+                  "__VERSION__": "2.0",
+                  "type": "Image",
+                  "children": [],
+                  "props": {
+                    "style": {
+                      "marginLeft": 10,
+                      "width": 100,
+                      "height": 100,
+                      "overflow": "hidden"
+                    },
+                    "attrs": {
+                      "y": 92,
+                      "x": 458,
+                      "source": "https://img.alicdn.com/tfs/TB1tNEMi_Zmx1VjSZFGXXax2XXa-200-200.png",
+                      "src": "https://img.alicdn.com/tfs/TB1tNEMi_Zmx1VjSZFGXXax2XXa-200-200.png",
+                      "className": "image-3"
+                    }
+                  },
+                  "__ADAPT__": true,
+                  "componentType": "picture",
+                  "_jsonId": "Image-3",
+                  "_jsonElementId": "Image-3",
+                  "title": "Image",
+                  "attrs": {
+                    "y": 92,
+                    "x": 458,
+                    "source": "https://img.alicdn.com/tfs/TB1tNEMi_Zmx1VjSZFGXXax2XXa-200-200.png",
+                    "src": "https://img.alicdn.com/tfs/TB1tNEMi_Zmx1VjSZFGXXax2XXa-200-200.png",
+                    "className": "img"
+                  },
+                  "style": {
+                    "marginLeft": 10,
+                    "width": 100,
+                    "height": 100,
+                    "overflow": "hidden"
+                  },
+                  "semantic": {
+                    "dvc_default": [
+                      {
+                        "name": "dvc_default",
+                        "level": 100,
+                        "result": "image",
+                        "prefix": "",
+                        "id": 529262
+                      }
+                    ],
+                    "dvc_picture": [
+                      {
+                        "name": "dvc_picture",
+                        "level": 32,
+                        "result": "img",
+                        "prefix": "",
+                        "id": 622052,
+                        "choose": true
+                      }
+                    ]
+                  }
+                }
+              ],
+              "__ADAPT__": true,
+              "componentType": "view",
+              "_jsonId": "Block-683842",
+              "_jsonElementId": "Block-683842",
+              "title": "Block",
+              "attrs": { "x": 348, "y": 92, "className": "wrap" },
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "marginTop": 12,
+                "width": 402,
+                "height": 102
+              },
+              "semantic": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "block",
+                    "prefix": "",
+                    "id": 503153
+                  }
+                ],
+                "dvc_view": [
+                  {
+                    "name": "dvc_view",
+                    "level": 95,
+                    "result": "wrap",
+                    "prefix": "",
+                    "id": 917887,
+                    "choose": true
+                  }
+                ]
+              }
+            },
+            {
+              "props": {
+                "attrs": { "x": 348, "y": 272, "className": "block-153372" },
+                "style": {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginTop": 79,
+                  "width": 291,
+                  "height": 42
+                }
+              },
+              "type": "Block",
+              "id": "Block-153372",
+              "__VERSION__": "2.0",
+              "__GRID__": "NEWROW",
+              "children": [
+                {
+                  "id": "Image-9",
+                  "__VERSION__": "2.0",
+                  "type": "Image",
+                  "children": [],
+                  "props": {
+                    "style": { "width": 40, "height": 40 },
+                    "attrs": {
+                      "y": 272,
+                      "x": 348,
+                      "source": "https://img.alicdn.com/tfs/TB1aglDQxjaK1RjSZKzXXXVwXXa-80-80.png",
+                      "src": "https://img.alicdn.com/tfs/TB1aglDQxjaK1RjSZKzXXXVwXXa-80-80.png",
+                      "className": "image-9"
+                    }
+                  },
+                  "__ADAPT__": true,
+                  "componentType": "picture",
+                  "_jsonId": "Image-9",
+                  "_jsonElementId": "Image-9",
+                  "title": "Image",
+                  "attrs": {
+                    "y": 272,
+                    "x": 348,
+                    "source": "https://img.alicdn.com/tfs/TB1aglDQxjaK1RjSZKzXXXVwXXa-80-80.png",
+                    "src": "https://img.alicdn.com/tfs/TB1aglDQxjaK1RjSZKzXXXVwXXa-80-80.png",
+                    "className": "deguoguoqi"
+                  },
+                  "style": { "width": 40, "height": 40 },
+                  "semantic": {
+                    "dvc_default": [
+                      {
+                        "name": "dvc_default",
+                        "level": 100,
+                        "result": "picture",
+                        "prefix": "",
+                        "id": 178102
+                      }
+                    ],
+                    "dvc_picture": [
+                      {
+                        "name": "dvc_picture",
+                        "level": 88,
+                        "result": "deguoguoqi",
+                        "prefix": "",
+                        "id": 999225,
+                        "choose": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "__VERSION__": "2.0",
+                  "type": "Text",
+                  "id": "Text-10",
+                  "props": {
+                    "style": {
+                      "marginTop": 4,
+                      "marginLeft": 10,
+                      "width": 120,
+                      "maxWidth": 229,
+                      "height": 33,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "lineHeight": 33,
+                      "whiteSpace": "nowrap",
+                      "color": "#999999",
+                      "fontSize": 24,
+                      "fontWeight": 400,
+                      "lines": 1
+                    },
+                    "attrs": {
+                      "y": 276,
+                      "x": 398,
+                      "lines": 1,
+                      "text": "列腾不在线",
+                      "fixed": true,
+                      "className": "text-10"
+                    }
+                  },
+                  "__ADAPT__": true,
+                  "componentType": "text",
+                  "innerText": "列腾不在线",
+                  "_jsonId": "Text-10",
+                  "_jsonElementId": "Text-10",
+                  "title": "Text",
+                  "attrs": {
+                    "y": 276,
+                    "x": 398,
+                    "lines": 1,
+                    "text": "列腾不在线",
+                    "fixed": true,
+                    "className": "notOnline"
+                  },
+                  "style": {
+                    "marginTop": 4,
+                    "marginLeft": 10,
+                    "maxWidth": 229,
+                    "overflow": "hidden",
+                    "textOverflow": "ellipsis",
+                    "lineHeight": "33px",
+                    "whiteSpace": "nowrap",
+                    "color": "#999999",
+                    "fontSize": 24,
+                    "fontWeight": 400,
+                    "lines": 1
+                  },
+                  "semantic": {
+                    "dvc_default": [
+                      {
+                        "name": "dvc_default",
+                        "level": 100,
+                        "result": "text",
+                        "prefix": "",
+                        "id": 368743
+                      }
+                    ],
+                    "dvc_text": [
+                      {
+                        "name": "dvc_text",
+                        "level": 55,
+                        "result": "notOnline",
+                        "prefix": "",
+                        "id": 731868,
+                        "choose": true
+                      }
+                    ]
+                  }
+                }
+              ],
+              "__ADAPT__": true,
+              "componentType": "view",
+              "_jsonId": "Block-153372",
+              "_jsonElementId": "Block-153372",
+              "title": "Block",
+              "attrs": { "x": 348, "y": 272, "className": "block" },
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "marginTop": 79,
+                "width": 291,
+                "height": 42
+              },
+              "semantic": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "view",
+                    "prefix": "",
+                    "id": 717450
+                  }
+                ],
+                "dvc_view": [
+                  {
+                    "name": "dvc_view",
+                    "level": 95,
+                    "result": "block",
+                    "prefix": "",
+                    "id": 269392,
+                    "choose": true
+                  }
+                ]
+              }
+            }
+          ],
+          "__ADAPT__": true,
+          "componentType": "view",
+          "_jsonId": "Block-104834",
+          "_jsonElementId": "Block-104834",
+          "title": "Block",
+          "attrs": { "x": 348, "y": 24, "className": "outer" },
+          "style": {
+            "display": "flex",
+            "alignItems": "flex-start",
+            "flexDirection": "column",
+            "marginLeft": 24,
+            "width": 404,
+            "height": 302
+          },
+          "semantic": {
+            "dvc_default": [
+              {
+                "name": "dvc_default",
+                "level": 100,
+                "result": "view",
+                "prefix": "",
+                "id": 671391
+              }
+            ],
+            "dvc_view": [
+              {
+                "name": "dvc_view",
+                "level": 95,
+                "result": "outer",
+                "prefix": "",
+                "id": 639545,
+                "choose": true
+              }
+            ]
+          }
+        },
+        {
+          "props": {
+            "attrs": { "x": 650, "y": 280, "className": "block-654532" },
+            "style": {
+              "display": "flex",
+              "position": "absolute",
+              "right": 23,
+              "bottom": 22,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "width": 77,
+              "height": 24
+            }
+          },
+          "type": "Block",
+          "id": "Block-654532",
+          "__VERSION__": "2.0",
+          "children": [
+            {
+              "props": {
+                "attrs": { "x": 650, "y": 283, "className": "block-572987" },
+                "style": {
+                  "display": "flex",
+                  "position": "relative",
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "marginTop": 3,
+                  "width": 26,
+                  "height": 18
+                }
+              },
+              "type": "Block",
+              "id": "Block-572987",
+              "__VERSION__": "2.0",
+              "children": [
+                {
+                  "id": "Image-7",
+                  "__VERSION__": "2.0",
+                  "type": "Image",
+                  "children": [],
+                  "props": {
+                    "style": {
+                      "position": "relative",
+                      "width": 26,
+                      "height": 18
+                    },
+                    "attrs": {
+                      "y": 283,
+                      "x": 650,
+                      "source": "https://img.alicdn.com/tfs/TB1KhEMi_Zmx1VjSZFGXXax2XXa-52-38.png",
+                      "src": "https://img.alicdn.com/tfs/TB1KhEMi_Zmx1VjSZFGXXax2XXa-52-38.png",
+                      "className": "image-7"
+                    }
+                  },
+                  "__ADAPT__": true,
+                  "componentType": "picture",
+                  "_jsonId": "Image-7",
+                  "_jsonElementId": "Image-7",
+                  "title": "Image",
+                  "attrs": {
+                    "y": 283,
+                    "x": 650,
+                    "source": "https://img.alicdn.com/tfs/TB1KhEMi_Zmx1VjSZFGXXax2XXa-52-38.png",
+                    "src": "https://img.alicdn.com/tfs/TB1KhEMi_Zmx1VjSZFGXXax2XXa-52-38.png",
+                    "className": "wodeshi"
+                  },
+                  "style": {
+                    "position": "relative",
+                    "width": 26,
+                    "height": 18
+                  },
+                  "semantic": {
+                    "dvc_default": [
+                      {
+                        "name": "dvc_default",
+                        "level": 100,
+                        "result": "pic",
+                        "prefix": "",
+                        "id": 717472
+                      }
+                    ],
+                    "dvc_picture": [
+                      {
+                        "name": "dvc_picture",
+                        "level": 88,
+                        "result": "wodeshi",
+                        "prefix": "",
+                        "id": 111309,
+                        "choose": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "Image-8",
+                  "__VERSION__": "2.0",
+                  "type": "Image",
+                  "children": [],
+                  "props": {
+                    "style": {
+                      "position": "absolute",
+                      "top": 5,
+                      "left": 9,
+                      "width": 8,
+                      "height": 8
+                    },
+                    "attrs": {
+                      "y": 288,
+                      "x": 659,
+                      "source": "https://img.alicdn.com/tfs/TB1NFJcQyrpK1RjSZFhXXXSdXXa-18-18.png",
+                      "src": "https://img.alicdn.com/tfs/TB1NFJcQyrpK1RjSZFhXXXSdXXa-18-18.png",
+                      "className": "image-8"
+                    }
+                  },
+                  "__ADAPT__": true,
+                  "componentType": "picture",
+                  "_jsonId": "Image-8",
+                  "_jsonElementId": "Image-8",
+                  "title": "Image",
+                  "attrs": {
+                    "y": 288,
+                    "x": 659,
+                    "source": "https://img.alicdn.com/tfs/TB1NFJcQyrpK1RjSZFhXXXSdXXa-18-18.png",
+                    "src": "https://img.alicdn.com/tfs/TB1NFJcQyrpK1RjSZFhXXXSdXXa-18-18.png",
+                    "className": "img_2"
+                  },
+                  "style": {
+                    "position": "absolute",
+                    "top": 5,
+                    "left": 9,
+                    "width": 8,
+                    "height": 8
+                  },
+                  "semantic": {
+                    "dvc_default": [
+                      {
+                        "name": "dvc_default",
+                        "level": 100,
+                        "result": "img",
+                        "prefix": "",
+                        "id": 932631,
+                        "choose": true
+                      }
+                    ]
+                  }
+                }
+              ],
+              "__ADAPT__": true,
+              "componentType": "view",
+              "_jsonId": "Block-572987",
+              "_jsonElementId": "Block-572987",
+              "title": "Block",
+              "attrs": { "x": 650, "y": 283, "className": "wodeshiWrap" },
+              "style": {
+                "display": "flex",
+                "position": "relative",
+                "alignItems": "flex-start",
+                "flexDirection": "row",
+                "marginTop": 3,
+                "width": 26,
+                "height": 18
+              },
+              "semantic": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "block",
+                    "prefix": "",
+                    "id": 964809
+                  }
+                ],
+                "dvc_view": [
+                  {
+                    "name": "dvc_view",
+                    "level": 95,
+                    "result": "group",
+                    "prefix": "",
+                    "id": 893467
+                  }
+                ],
+                "dvc_picture": [
+                  {
+                    "name": "dvc_picture",
+                    "level": 88,
+                    "result": "wodeshiWrap",
+                    "prefix": "",
+                    "id": 636850,
                     "choose": true
                   }
                 ]
@@ -939,53 +760,53 @@
             {
               "__VERSION__": "2.0",
               "type": "Text",
-              "id": "Text-5",
+              "id": "Text-6",
               "props": {
                 "style": {
-                  "width": 269,
-                  "maxWidth": 442,
-                  "height": 35,
+                  "width": 44,
+                  "maxWidth": 44,
+                  "height": 24,
                   "overflow": "hidden",
                   "textOverflow": "ellipsis",
-                  "lineHeight": 40,
+                  "lineHeight": 24,
                   "whiteSpace": "nowrap",
-                  "color": "#ff0036",
-                  "fontSize": 28,
-                  "fontWeight": 400,
+                  "color": "#999999",
+                  "fontSize": 24,
+                  "fontWeight": 300,
                   "lines": 1
                 },
                 "attrs": {
-                  "y": 485,
-                  "x": 33,
+                  "y": 280,
+                  "x": 682,
                   "lines": 1,
-                  "text": "部分新品折扣季5折起",
+                  "text": "524",
                   "fixed": true,
-                  "className": "text-5"
+                  "className": "text-6"
                 }
               },
               "__ADAPT__": true,
               "componentType": "text",
-              "innerText": "部分新品折扣季5折起",
-              "_jsonId": "Text-5",
-              "_jsonElementId": "Text-5",
+              "innerText": "524",
+              "_jsonId": "Text-6",
+              "_jsonElementId": "Text-6",
               "title": "Text",
               "attrs": {
-                "y": 485,
-                "x": 33,
+                "y": 280,
+                "x": 682,
                 "lines": 1,
-                "text": "部分新品折扣季5折起",
+                "text": "524",
                 "fixed": true,
-                "className": "title_2"
+                "className": "num"
               },
               "style": {
-                "maxWidth": 442,
+                "maxWidth": 44,
                 "overflow": "hidden",
                 "textOverflow": "ellipsis",
-                "lineHeight": "40px",
+                "lineHeight": "24px",
                 "whiteSpace": "nowrap",
-                "color": "#ff0036",
-                "fontSize": 28,
-                "fontWeight": 400,
+                "color": "#999999",
+                "fontSize": 24,
+                "fontWeight": 300,
                 "lines": 1
               },
               "semantic": {
@@ -995,16 +816,16 @@
                     "level": 100,
                     "result": "word",
                     "prefix": "",
-                    "id": 335309
+                    "id": 714908
                   }
                 ],
                 "dvc_text": [
                   {
                     "name": "dvc_text",
-                    "level": 20,
-                    "result": "title",
+                    "level": 40,
+                    "result": "num",
                     "prefix": "",
-                    "id": 278974,
+                    "id": 204084,
                     "choose": true
                   }
                 ]
@@ -1013,162 +834,65 @@
           ],
           "__ADAPT__": true,
           "componentType": "view",
-          "_jsonId": "Block-304419",
-          "_jsonElementId": "Block-304419",
+          "_jsonId": "Block-654532",
+          "_jsonElementId": "Block-654532",
           "title": "Block",
-          "attrs": { "x": 33, "y": 445, "className": "container" },
+          "attrs": { "x": 650, "y": 280, "className": "block_2" },
           "style": {
             "display": "flex",
-            "alignItems": "flex-start",
-            "flexDirection": "column",
-            "marginLeft": 8,
-            "width": 665,
-            "height": 77
+            "position": "absolute",
+            "right": 23,
+            "bottom": 22,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "width": 77,
+            "height": 24
           },
           "semantic": {
             "dvc_default": [
               {
                 "name": "dvc_default",
                 "level": 100,
-                "result": "view",
+                "result": "block",
                 "prefix": "",
-                "id": 90014
+                "id": 244517
               }
             ],
             "dvc_view": [
               {
                 "name": "dvc_view",
                 "level": 95,
-                "result": "container",
+                "result": "block",
                 "prefix": "",
-                "id": 859159,
+                "id": 637682,
                 "choose": true
               }
             ]
-          }
-        },
-        {
-          "id": "Shape-8",
-          "type": "block",
-          "children": [
-            {
-              "__VERSION__": "2.0",
-              "type": "Text",
-              "id": "Text-9",
-              "props": {
-                "style": {
-                  "marginTop": 15,
-                  "width": 96,
-                  "maxWidth": 188,
-                  "height": 33,
-                  "overflow": "hidden",
-                  "textAlign": "center",
-                  "textOverflow": "ellipsis",
-                  "lineHeight": 33,
-                  "whiteSpace": "nowrap",
-                  "color": "#ffffff",
-                  "fontSize": 24,
-                  "fontWeight": 400,
-                  "lines": 1
-                },
-                "attrs": {
-                  "y": 468,
-                  "x": 550,
-                  "lines": 1,
-                  "text": "进入店铺",
-                  "fixed": true,
-                  "className": "text-9"
-                }
-              },
-              "componentType": "text",
-              "innerText": "进入店铺",
-              "_jsonId": "Text-9",
-              "_jsonElementId": "Text-9",
-              "title": "Text",
-              "attrs": {
-                "y": 468,
-                "x": 550,
-                "lines": 1,
-                "text": "进入店铺",
-                "fixed": true,
-                "className": "tag"
-              },
-              "style": {
-                "marginTop": 15,
-                "maxWidth": 188,
-                "overflow": "hidden",
-                "textAlign": "center",
-                "textOverflow": "ellipsis",
-                "lineHeight": "33px",
-                "whiteSpace": "nowrap",
-                "color": "#ffffff",
-                "fontSize": 24,
-                "fontWeight": 400,
-                "lines": 1
-              },
-              "semantic": {
-                "dvc_default": [
-                  {
-                    "name": "dvc_default",
-                    "level": 100,
-                    "result": "text",
-                    "prefix": "",
-                    "id": 597301
-                  }
-                ],
-                "dvc_text": [
-                  {
-                    "name": "dvc_text",
-                    "level": 65,
-                    "result": "tag",
-                    "prefix": "",
-                    "id": 160197,
-                    "choose": true
-                  }
-                ]
-              }
-            }
-          ],
-          "componentType": "link",
-          "title": "link",
-          "attrs": { "className": "tagWrap", "href": "" },
-          "style": {
-            "display": "flex",
-            "position": "absolute",
-            "top": 8,
-            "right": 16,
-            "alignItems": "flex-start",
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "borderRadius": 4,
-            "backgroundColor": "#ff0036",
-            "width": 200,
-            "height": 60
           }
         }
       ],
       "__ADAPT__": true,
       "componentType": "view",
-      "_jsonId": "Block-111179",
-      "_jsonElementId": "Block-111179",
+      "_jsonId": "Block-697039",
+      "_jsonElementId": "Block-697039",
       "title": "Block",
-      "attrs": { "x": 0, "y": 445, "className": "ft" },
+      "attrs": { "x": 0, "y": 24, "className": "bd" },
       "style": {
         "display": "flex",
         "position": "relative",
         "flexDirection": "row",
-        "marginTop": 1,
-        "width": 714,
-        "height": 77
+        "marginTop": 24,
+        "width": 750,
+        "height": 302
       },
       "semantic": {
         "dvc_layout": [
           {
             "name": "dvc_layout",
             "level": 100,
-            "result": "ft",
+            "result": "bd",
             "prefix": "",
-            "id": 936071,
+            "id": 34928,
             "choose": true
           }
         ],
@@ -1178,16 +902,130 @@
             "level": 100,
             "result": "view",
             "prefix": "",
-            "id": 582334
+            "id": 214796
           }
         ],
         "dvc_view": [
           {
             "name": "dvc_view",
             "level": 95,
-            "result": "group",
+            "result": "container",
             "prefix": "",
-            "id": 300868
+            "id": 626393
+          }
+        ],
+        "dvc_picture": [
+          {
+            "name": "dvc_picture",
+            "level": 55,
+            "result": "itemWrap",
+            "prefix": "",
+            "id": 61796
+          }
+        ]
+      }
+    },
+    {
+      "props": {
+        "attrs": { "x": 0, "y": 347, "className": "block-759450" },
+        "style": {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginTop": 22,
+          "width": 750,
+          "height": 2
+        }
+      },
+      "type": "Block",
+      "id": "Block-759450",
+      "__VERSION__": "2.0",
+      "__GRID__": "NEWROW",
+      "children": [
+        {
+          "id": "Shape-4",
+          "__VERSION__": "2.0",
+          "type": "Shape",
+          "children": [],
+          "props": {
+            "style": {
+              "backgroundColor": "#eeeeee",
+              "width": 702,
+              "height": 1
+            },
+            "attrs": { "y": 347, "x": 24, "className": "shape-4" }
+          },
+          "__ADAPT__": true,
+          "componentType": "view",
+          "_jsonId": "Shape-4",
+          "_jsonElementId": "Shape-4",
+          "title": "Shape",
+          "attrs": { "y": 347, "x": 24, "className": "color" },
+          "style": { "backgroundColor": "#eeeeee", "width": 702, "height": 1 },
+          "semantic": {
+            "dvc_default": [
+              {
+                "name": "dvc_default",
+                "level": 100,
+                "result": "view",
+                "prefix": "",
+                "id": 140764
+              }
+            ],
+            "dvc_view": [
+              {
+                "name": "dvc_view",
+                "level": 100,
+                "result": "color",
+                "prefix": "",
+                "id": 854714,
+                "choose": true
+              }
+            ]
+          }
+        }
+      ],
+      "__ADAPT__": true,
+      "componentType": "view",
+      "_jsonId": "Block-759450",
+      "_jsonElementId": "Block-759450",
+      "title": "Block",
+      "attrs": { "x": 0, "y": 347, "className": "ft" },
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginTop": 22,
+        "width": 750,
+        "height": 2
+      },
+      "semantic": {
+        "dvc_layout": [
+          {
+            "name": "dvc_layout",
+            "level": 100,
+            "result": "ft",
+            "prefix": "",
+            "id": 67298,
+            "choose": true
+          }
+        ],
+        "dvc_default": [
+          {
+            "name": "dvc_default",
+            "level": 100,
+            "result": "block",
+            "prefix": "",
+            "id": 637026
+          }
+        ],
+        "dvc_view": [
+          {
+            "name": "dvc_view",
+            "level": 95,
+            "result": "block",
+            "prefix": "",
+            "id": 687920
           }
         ]
       }
@@ -1199,14 +1037,13 @@
       "alignItems": "flex-start",
       "flexDirection": "column",
       "backgroundColor": "#ffffff",
-      "width": 714,
-      "height": 537,
-      "overflow": "hidden"
+      "width": 750,
+      "height": 348
     },
     "attrs": { "y": 0, "x": 0, "className": "shape-0" }
   },
-  "artboardImg": "https://img.alicdn.com/tfs/TB1OULFQCzqK1RjSZPcXXbTepXa-1428-1074.png",
-  "name": "模版2",
+  "artboardImg": "https://img.alicdn.com/tfs/TB1bKBdQAvoK1RjSZFDXXXY3pXa-750-348.png",
+  "name": "Group 11 Copy 115",
   "componentType": "view",
   "_jsonId": "Shape-0",
   "_jsonElementId": "Shape-0",
@@ -1217,9 +1054,8 @@
     "alignItems": "flex-start",
     "flexDirection": "column",
     "backgroundColor": "#ffffff",
-    "width": 714,
-    "height": 537,
-    "overflow": "hidden"
+    "width": 750,
+    "height": 348
   },
   "dataConfig": {
     "customerAttrs": {},
@@ -1228,201 +1064,603 @@
         "name": "data",
         "origin": {
           "type": "expression",
-          "expression": "let data = this.props && this.props.data;"
-        },
-        "merge": [{ "type": "schemaApp", "appId": "dvc-7565" }]
-      },
-      {
-        "name": "attrs",
-        "origin": {
-          "type": "expression",
-          "expression": "let attrs = this.props && this.props.attrs;"
-        },
-        "merge": [{ "type": "schemaApp", "appId": "dvc-7565" }]
-      },
-      {
-        "name": "pageInfo",
-        "origin": {
-          "type": "expression",
-          "expression": "let pageInfo = this.props && this.props.pageInfo;"
+          "expression": "let data = this.props.data && this.props.data.$data || {};"
         },
         "merge": []
+      },
+      {
+        "name": "$attr",
+        "origin": {
+          "type": "expression",
+          "expression": "let $attr = this.props.data && this.props.data.$attr || {};"
+        },
+        "merge": [{ "type": "schemaApp", "appId": "dvc-14289" }]
+      },
+      {
+        "name": "$theme",
+        "origin": {
+          "type": "expression",
+          "expression": "let $theme = this.props.data && this.props.data.$theme || {};"
+        },
+        "merge": [{ "type": "schemaApp", "appId": "dvc-14289" }]
       }
-    ]
+    ],
+    "schema": {
+      "type": "object",
+      "title": "商品模型",
+      "properties": {
+        "items": {
+          "type": "array",
+          "title": "商品列表",
+          "description": "商品列表",
+          "items": {
+            "type": "object",
+            "properties": {
+              "streamLineLongTitle": {
+                "title": "SCM_素材库精简长标题",
+                "description": "SCM_素材库精简长标题"
+              },
+              "marketSellPoint": {
+                "title": "SCM_素材库营销卖点",
+                "description": "SCM_素材库营销卖点"
+              },
+              "pictureTransparentBackGround": {
+                "title": "SCM_素材商品透明底图",
+                "description": "SCM_素材商品透明底图"
+              },
+              "pictureScene": {
+                "title": "SCM_素材商品氛围图",
+                "description": "SCM_素材商品氛围图"
+              },
+              "itemDiscountFeeTitle": {
+                "title": "定金立减文案",
+                "description": "定金立减文案",
+                "type": "string",
+                "x-format": "@string()",
+                "x-required:": false
+              },
+              "itemPreSaleDiscountFee": {
+                "title": "定金立减的金额",
+                "description": "定金立减金额",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": false
+              },
+              "prepSaleHandsel": {
+                "title": "预售定金",
+                "description": "预售定金",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)\t",
+                "x-required:": false
+              },
+              "preSalePrice": {
+                "title": "预售价",
+                "description": "预售价",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": false
+              },
+              "preSaleExpandPriceTitleM": {
+                "title": "Mobile定金膨胀额\t",
+                "description": "Mobile定金膨胀额",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": true
+              },
+              "preSaleExpandPriceTitlePC": {
+                "title": "PC定金膨胀额",
+                "description": "PC定金膨胀额",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": true
+              },
+              "interestFreePeriodIcon": {
+                "title": "最高免息分期角标",
+                "description": "最高免息分期角标",
+                "type": "string",
+                "x-format": "@image('60x60','jpg|png',0,5)",
+                "x-required:": false
+              },
+              "isWuyougou": {
+                "title": "是否为无忧购商品",
+                "description": "是否为无忧购商品",
+                "type": "string",
+                "x-format": "@string()",
+                "x-required:": false
+              },
+              "btnText": { "title": "行动点", "description": "行动点" },
+              "itemInfo": {
+                "title": "商品简介",
+                "description": "≤40个字(不区分中英文)，含标点",
+                "type": "string",
+                "x-format": "@string(0,40)",
+                "x-required:": true
+              },
+              "iconImg": {
+                "title": "坑位标图片",
+                "description": "坑位标图片",
+                "type": "string",
+                "x-format": "@image('60x60','jpg|png',0,5)",
+                "x-required:": false
+              },
+              "o2oDeductionPrice": {
+                "title": "订金抵用价格",
+                "description": "订金抵用价格",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": false
+              },
+              "unitPrice": {
+                "title": "商品单位面积价格",
+                "description": "分期数",
+                "type": "string",
+                "x-format": "@string()",
+                "x-required:": false
+              },
+              "itemCarSellPrice": {
+                "title": "商品特卖一口价",
+                "description": "商品特卖一口价",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": false
+              },
+              "itemCarFactoryPrice": {
+                "title": "商品厂商指导价",
+                "description": "商品厂商指导价",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": false
+              },
+              "periodPrices": {
+                "title": "商品分期价格",
+                "description": "商品分期价格",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": false
+              },
+              "period": {
+                "title": "分期数",
+                "description": "分期数",
+                "type": "string",
+                "x-format": "@string()",
+                "x-required:": false
+              },
+              "presentDesc": {
+                "title": "赠品描述",
+                "description": "赠品描述，最多8个字",
+                "type": "string",
+                "x-format": "@string(0,8)",
+                "x-required:": true
+              },
+              "presentImg": {
+                "title": "赠品图片",
+                "description": "赠品图，格式：jpg，体积：20kb",
+                "type": "string",
+                "x-format": "@image('100x100', 'jpg|png', 0, 20)",
+                "x-required:": true
+              },
+              "itemMonthSoldCount": {
+                "title": "商品月销量",
+                "description": "商品月销量",
+                "type": "number",
+                "x-format": "@integer(0)",
+                "x-required:": false
+              },
+              "brandLogo": {
+                "title": "品牌LOGO",
+                "description": "品牌LOGO（140x70），格式：png，体积：<5kb",
+                "type": "string",
+                "x-format": "@image('140x70','png',0,5)",
+                "x-required:": true
+              },
+              "brandName": {
+                "title": "品牌名称",
+                "description": "品牌名称",
+                "type": "string",
+                "x-format": "@string()",
+                "x-required:": false
+              },
+              "brandId": {
+                "title": "品牌ID",
+                "description": "品牌ID",
+                "type": "string",
+                "x-format": "@string()",
+                "x-required:": false
+              },
+              "shopActUrl": {
+                "title": "店铺承接页链接",
+                "description": "店铺承接页链接",
+                "type": "string",
+                "x-format": "@url()",
+                "x-required:": true
+              },
+              "shopFpUrl": {
+                "title": "店铺首页链接",
+                "description": "店铺首页链接",
+                "type": "string",
+                "x-format": "@url()",
+                "x-required:": false
+              },
+              "shopName": {
+                "title": "店铺名称",
+                "description": "店铺名称(5-10个字)",
+                "type": "string",
+                "x-format": "@string(5,10)",
+                "x-required:": true
+              },
+              "shopId": {
+                "title": "店铺ID",
+                "description": "店铺ID",
+                "type": "string",
+                "x-format": "@string()",
+                "x-required:": false
+              },
+              "inventoryQuantity": {
+                "title": "商品库存",
+                "description": "商品库存",
+                "type": "number",
+                "x-format": "@integer(0)",
+                "x-required:": false
+              },
+              "couponUrl": {
+                "title": "优惠券领取链接",
+                "description": "优惠券链接",
+                "type": "string",
+                "x-format": "@url()",
+                "x-required:": false
+              },
+              "couponValue": {
+                "title": "优惠券面额",
+                "description": "优惠券面额",
+                "type": "number",
+                "x-format": "@integer(0)",
+                "x-required:": false
+              },
+              "itemPaidCouponId": {
+                "title": "有偿优惠券宝贝ID",
+                "description": "有偿优惠券宝贝ID",
+                "type": "string",
+                "x-format": "@string()",
+                "x-required:": false
+              },
+              "itemMPrice": {
+                "title": "商品手机专享价",
+                "description": "商品手机专享价",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": false
+              },
+              "itemTagPriceTitle": {
+                "title": "商品标签价标题",
+                "description": "商品标签价标题",
+                "type": "string",
+                "x-format": "@string()",
+                "x-required:": false
+              },
+              "itemTagPrice": {
+                "title": "商品标签价",
+                "description": "商品标签价",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": false
+              },
+              "itemActPriceTitle": {
+                "title": "商品活动价标题",
+                "description": "商品活动价标题",
+                "type": "string",
+                "x-format": "@string()",
+                "x-required:": false
+              },
+              "itemActPrice": {
+                "title": "商品活动价",
+                "description": "商品活动价",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": false
+              },
+              "itemPsoriasisPrice": {
+                "title": "牛皮癣到手价",
+                "description": "牛皮癣价格",
+                "type": "number",
+                "x-format": "@float(0,9999999,0,2)",
+                "x-required:": true
+              },
+              "itemPsoriasisText": {
+                "title": "牛皮癣文案",
+                "description": "大促氛围图利益点（5-8个字）",
+                "type": "string",
+                "x-format": "@string(5,8)",
+                "x-required:": true
+              },
+              "itemDesc2": {
+                "title": "商品利益点二",
+                "description": "商品利益点二（5-8个字）",
+                "type": "string",
+                "x-format": "@string(5,8)",
+                "x-required:": true
+              },
+              "itemDesc1": {
+                "title": "商品利益点一",
+                "description": "商品利益点一（5-8个字）",
+                "type": "string",
+                "x-format": "@string(5,8)",
+                "x-required:": true
+              },
+              "itemDesc": {
+                "title": "商品利益点",
+                "description": "商品利益点（5-8个字）",
+                "type": "string",
+                "x-format": "@string(5,8)",
+                "x-required:": true
+              },
+              "itemUrl": {
+                "title": "商品链接",
+                "description": "商品链接",
+                "type": "string",
+                "x-format": "@url()",
+                "x-required:": true
+              },
+              "itemTitle": {
+                "title": "商品标题",
+                "description": "商品短标题（6-10个字）",
+                "type": "string",
+                "x-format": "@string(6,10)",
+                "x-required:": true
+              },
+              "itemId": {
+                "title": "商品ID",
+                "description": "商品ID",
+                "type": "string",
+                "x-format": "@string()",
+                "x-required:": false,
+                "x-rmc": true
+              },
+              "itemImg": {
+                "title": "商品图片",
+                "description": "商品图片（800x800），格式jpg、png，体积：<500kb",
+                "type": "string",
+                "x-format": "@image('800x800', 'jpg|png', 0, 3000)",
+                "x-required:": true
+              }
+            },
+            "title": "商品信息",
+            "description": "商品信息"
+          }
+        },
+        "$config": {
+          "title": "投放配置",
+          "type": "object",
+          "description": "投放配置",
+          "properties": {
+            "$dynamic": {
+              "type": "boolean",
+              "title": "个性化推荐配置",
+              "default": true,
+              "x-rmc": true
+            }
+          }
+        },
+        "config": {
+          "title": "模块配置",
+          "type": "object",
+          "description": "模块配置",
+          "properties": {
+            "hideLogo": {
+              "title": "是否隐藏LOGO",
+              "type": "boolean",
+              "description": "是否隐藏LOGO"
+            },
+            "loadmore": {
+              "title": "是否开启loadmore",
+              "type": "boolean",
+              "description": "是否开启loadmore"
+            }
+          }
+        }
+      }
+    },
+    "schemaConfigId": 96170,
+    "schemaConfigSelf": null,
+    "schemaConfigExtend": []
   },
   "dataBindingStore": [
+    {
+      "belongId": "Image-12",
+      "target": ["source"],
+      "value": {
+        "isStatic": true,
+        "staticType": "STRING",
+        "value": "https://img.alicdn.com/tfs/TB1hC0lQwHqK1RjSZFkXXX.WFXa-600-600.png"
+      },
+      "defaultValue": "https://img.alicdn.com/tfs/TB1hC0lQwHqK1RjSZFkXXX.WFXa-600-600.png",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Text-11",
+      "target": ["innerText"],
+      "value": {
+        "helperScriptName": null,
+        "isHandEdit": true,
+        "isStatic": false,
+        "schema": {
+          "schemaProps": {
+            "description": "dvc schema描述",
+            "properties": {
+              "itemTitle": {
+                "properties": {
+                  "title": { "title": "title", "type": "string" }
+                },
+                "title": "itemTitle",
+                "type": "object"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "source": "data",
+        "sourceValue": [
+          { "value": "标题名：", "type": "STATIC" },
+          { "value": "${data.itemTitle.title}", "type": "DYNAMIC" }
+        ]
+      },
+      "defaultValue": "GENTLE 文艺手机壳",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
     {
       "belongId": "Image-2",
       "target": ["source"],
       "value": {
         "isStatic": true,
         "staticType": "STRING",
-        "value": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png"
+        "value": "https://img.alicdn.com/tfs/TB1KKRaQBLoK1RjSZFuXXXn0XXa-200-200.png"
       },
-      "defaultValue": "https://img.alicdn.com/tfs/TB1nVEpQxjaK1RjSZFAXXbdLFXa-1428-714.png",
+      "defaultValue": "https://img.alicdn.com/tfs/TB1KKRaQBLoK1RjSZFuXXXn0XXa-200-200.png",
       "smart": { "type": "dynamic", "rule": "default" }
     },
     {
-      "belongId": "Image-15",
+      "belongId": "Image-3",
       "target": ["source"],
       "value": {
         "isStatic": true,
         "staticType": "STRING",
-        "value": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png"
+        "value": "https://img.alicdn.com/tfs/TB1tNEMi_Zmx1VjSZFGXXax2XXa-200-200.png"
       },
-      "defaultValue": "https://img.alicdn.com/tfs/TB1G8AeQAvoK1RjSZPfXXXPKFXa-256-108.png",
+      "defaultValue": "https://img.alicdn.com/tfs/TB1tNEMi_Zmx1VjSZFGXXax2XXa-200-200.png",
       "smart": { "type": "dynamic", "rule": "default" }
     },
     {
-      "belongId": "Text-3",
-      "target": ["innerText"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "高端定制2018开叉设计羊毛衬衫 "
-      },
-      "defaultValue": "高端定制2018开叉设计羊毛衬衫 ",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Text-11",
-      "target": ["innerText"],
-      "value": { "isStatic": true, "staticType": "STRING", "value": "券" },
-      "defaultValue": "券",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Image-13",
+      "belongId": "Image-9",
       "target": ["source"],
       "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png"
-      },
-      "defaultValue": "https://img.alicdn.com/tfs/TB1GMZhQzTpK1RjSZKPXXa3UpXa-4-102.png",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "value": {
-        "isStatic": false,
+        "helperScriptName": null,
         "isHandEdit": true,
+        "isStatic": false,
+        "schema": {
+          "schemaProps": {
+            "description": "dvc schema描述",
+            "properties": {
+              "item": {
+                "properties": {
+                  "content": {
+                    "properties": {
+                      "imgUrl": { "title": "imgUrl", "type": "string" }
+                    },
+                    "title": "content",
+                    "type": "object"
+                  }
+                },
+                "title": "item",
+                "type": "object"
+              }
+            },
+            "type": "object"
+          }
+        },
         "source": "data",
-        "sourceValue": "item_current_price",
-        "helperScriptName": null
+        "sourceValue": [
+          { "value": "${data.item.content.imgUrl}", "type": "DYNAMIC" }
+        ]
       },
-      "smart": { "rule": "CURRENT_PRCIE", "type": "dynamic" },
-      "schema": {
-        "schemaProps": {
-          "description": "dvc schema描述",
-          "properties": {
-            "item_current_price": {
-              "title": "item_current_price",
-              "type": "string"
-            }
-          },
-          "type": "object"
-        }
-      },
-      "belongId": "Text-12",
-      "defaultValue": "¥10000",
-      "target": ["innerText"]
+      "defaultValue": "https://img.alicdn.com/tfs/TB1aglDQxjaK1RjSZKzXXXVwXXa-80-80.png",
+      "smart": { "type": "dynamic", "rule": "default" }
     },
     {
-      "belongId": "Text-4",
+      "belongId": "Text-10",
       "target": ["innerText"],
       "value": {
         "isStatic": true,
         "staticType": "STRING",
-        "value": "全场满500减20"
+        "value": "烈腾不在线呢！！！"
       },
-      "defaultValue": "全场满500减20",
+      "defaultValue": "列腾不在线",
       "smart": { "type": "dynamic", "rule": "default" }
     },
     {
-      "belongId": "Text-5",
+      "belongId": "Image-7",
+      "target": ["source"],
+      "value": {
+        "isStatic": true,
+        "staticType": "STRING",
+        "value": "https://img.alicdn.com/tfs/TB1KhEMi_Zmx1VjSZFGXXax2XXa-52-38.png"
+      },
+      "defaultValue": "https://img.alicdn.com/tfs/TB1KhEMi_Zmx1VjSZFGXXax2XXa-52-38.png",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Image-8",
+      "target": ["source"],
+      "value": {
+        "isStatic": true,
+        "staticType": "STRING",
+        "value": "https://img.alicdn.com/tfs/TB1NFJcQyrpK1RjSZFhXXXSdXXa-18-18.png"
+      },
+      "defaultValue": "https://img.alicdn.com/tfs/TB1NFJcQyrpK1RjSZFhXXXSdXXa-18-18.png",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Text-6",
       "target": ["innerText"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "部分新品折扣季5折起"
-      },
-      "defaultValue": "部分新品折扣季5折起",
+      "value": { "isStatic": true, "staticType": "STRING", "value": "524" },
+      "defaultValue": "524",
       "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Text-9",
-      "target": ["innerText"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "进入店铺"
-      },
-      "defaultValue": "进入店铺",
-      "smart": { "type": "dynamic", "rule": "default" }
-    },
-    {
-      "belongId": "Shape-8",
-      "target": ["href"],
-      "value": {
-        "isStatic": true,
-        "staticType": "STRING",
-        "value": "http://imgcook.taobao.org"
-      }
     }
   ],
   "rootProps": {
     "JSONSchema": {
-      "title": "根节点属性",
-      "description": "不同营销场景下配置不同，这里配置的是淘宝命运石RAX链路下的模块根节点属性",
+      "title": "静态属性",
+      "description": "不同开发场景下可配置的属性不同，这里配置的是淘宝命运石RAX链路下的模块静态属性",
       "type": "object",
       "required": ["gSize", "marginRight", "marginTop"],
       "properties": {
-        "gSize": { "type": "integer", "title": "一行几个", "default": 2 },
-        "marginRight": {
-          "type": "integer",
-          "title": "模块横向间距",
-          "default": 24
-        },
-        "marginTop": {
-          "type": "integer",
-          "title": "模块纵向间距",
-          "default": 24
-        },
-        "backup": {
+        "disableModuleDataAutoFetch": {
           "type": "boolean",
-          "title": "启用空坑处理",
-          "default": true
+          "title": "禁用自动请求",
+          "default": false
         },
-        "tracker": { "type": "boolean", "title": "启用埋点", "default": false }
+        "moduleRenderMode": {
+          "type": "string",
+          "title": "模块渲染模式",
+          "default": "cell",
+          "enum": ["cell", "header", "repeat"]
+        }
       }
     },
     "UISchema": {
-      "gSize": { "ui:title": "一行几个" },
-      "marginRight": { "ui:title": "模块横向间距" },
-      "marginTop": { "ui:title": "模块纵向间距" },
-      "backup": { "ui:widget": "switch", "ui:title": "启用空坑处理" },
-      "tracker": { "ui:widget": "switch", "ui:title": "启用埋点" }
+      "disableModuleDataAutoFetch": {
+        "ui:widget": "switch",
+        "ui:title": "禁用自动请求"
+      },
+      "moduleRenderMode": { "ui:widget": "select", "ui:title": "模块渲染模式" }
     },
     "formData": {
-      "gSize": 2,
-      "marginRight": 24,
-      "marginTop": 24,
-      "backup": true,
-      "tracker": false
+      "disableModuleDataAutoFetch": false,
+      "moduleRenderMode": "cell"
     }
   },
+  "loops": [],
+  "scriptStore": [
+    {
+      "id": "6aabf5ca7c2e",
+      "name": "clickHandle",
+      "content": "/**\n * @author 卡狸\n * @version 1.0\n * @param\n * @return\n */\nexport default function(){\n  window.open('https://m.taobao.com');\n};",
+      "type": "custom"
+    },
+    {
+      "id": "120270c0d279",
+      "name": "titleClick",
+      "content": "/**\n * @author 卡狸\n * @version 1.0\n * @param\n * @return\n */\nexport default function(){\n  console.log('title clicked!');\n};",
+      "type": "custom"
+    }
+  ],
   "modStyleConfig": {
     "designWidth": 750,
     "designHeight": 1334,
     "viewportWidth": 375
   },
-  "scriptStore": [
-    {
-      "id": "35a572d71019",
-      "name": "getData",
-      "content": "/**\n * @author 笑翟\n * @version 1.0\n * @param value 入参\n * @return value 出参\n */\nexport default function(){\n  let data = this.props && this.props.data;\n  let attrs = this.props && this.props.attrs;\n  let pageInfo = this.props && this.props.pageInfo;\n  return {\n    data,\n    attrs,\n    pageInfo,\n  };\n};",
-      "type": "system"
-    }
+  "eventStore": [
+    { "belongId": "Image-12", "scriptId": "6aabf5ca7c2e", "type": "onClick" },
+    { "belongId": "Text-11", "scriptId": "120270c0d279", "type": "onClick" },
+    { "belongId": "Image-2", "scriptId": "6aabf5ca7c2e", "type": "onClick" }
   ],
   "semantic": {
     "dvc_default": [
@@ -1431,7 +1669,7 @@
         "level": 100,
         "result": "block",
         "prefix": "",
-        "id": 872423
+        "id": 45311
       }
     ],
     "dvc_layout": [
@@ -1440,7 +1678,7 @@
         "level": 100,
         "result": "box",
         "prefix": "",
-        "id": 87802,
+        "id": 151973,
         "choose": true
       }
     ]
