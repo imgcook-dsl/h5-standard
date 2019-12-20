@@ -4,12 +4,10 @@ const fs = require('fs');
 const thunkify = require('thunkify');
 const path = require('path');
 const prettier = require('prettier');
+const helper = require('@imgcook/dsl-helper');
 const { NodeVM } = require('vm2');
 const _ = require('lodash');
-const dslHelper = require('@imgcook/dsl-helper');
-
-const data = require('./data.json');
-const originData = require('./origin.json');
+const data = require('./data');
 
 const vm = new NodeVM({
   console: 'inherit',
@@ -24,22 +22,36 @@ co(function*() {
   );
   const renderInfo = vm.run(code)(data, {
     prettier: prettier,
-    helper: dslHelper,
     _: _,
-    originData: originData
+    responsive: {
+      width: 750,
+      viewportWidth: 375
+    },
+    utils: {
+      print: function(value) {
+        console.log(value);
+      }
+    }
   });
-  const renderData = renderInfo.renderData;
-  const ret = yield xtplRender(
-    path.resolve(__dirname, '../src/template.xtpl'),
-    renderData,
-    {}
-  );
-  fs.writeFileSync(path.join(__dirname, '../test/template.result.js'), ret);
-  fs.writeFileSync(
-    path.join(__dirname, '../test/template.result.json'),
-    JSON.stringify(renderInfo, null, 2)
-  );
-  fs.writeFileSync(path.join(__dirname, '../test/template.result.html'), ret);
 
-  console.log('代码生成成功');
+  if (renderInfo.noTemplate) {
+    renderInfo.panelDisplay.forEach((file) => {
+      fs.writeFileSync(path.join(__dirname, `../code/${file.panelName}`), file.panelValue);
+    });
+  } else {
+    const renderData = renderInfo.renderData;
+    const ret = yield xtplRender(
+      path.resolve(__dirname, '../src/template.xtpl'),
+      renderData,
+      {}
+    );
+
+    const prettierOpt = renderInfo.prettierOpt || {
+      printWidth: 120
+    };
+
+    const prettierRes = prettier.format(ret, prettierOpt);
+
+    fs.writeFileSync(path.join(__dirname,'../code/result.js'), prettierRes);
+  }
 });

@@ -1,5 +1,13 @@
-{{{html}}}
+'use strict';
 
-{{{js}}}
+import React, { Component } from 'react';
 
-{{{css}}}
+{{{imports}}}
+
+{{{utils}}}
+
+{{{style}}}
+
+{{{classes}}}
+
+{{{exports}}}

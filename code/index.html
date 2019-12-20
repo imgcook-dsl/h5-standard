@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.bootcss.com/fetch-jsonp/1.1.3/fetch-jsonp.js"></script>
+  </head>
+  <body></body>
+  <script src="./index.js"></script>
+  <script>
+    document.querySelectorAll('[data-id="Div_75"]').forEach(function(element) {
+      element.addEventListener("click", function(e) {
+        var findUrl = function(ele) {
+          var url = ele.getAttribute("data-url");
+          if (url) {
+            return url;
+          } else {
+            return findUrl(ele.parentElement);
+          }
+        };
+
+        window.open(findUrl(e.target), "_blank");
+      });
+    });
+  </script>
+</html>
