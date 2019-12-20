@@ -67,21 +67,49 @@ class Page_0 {
       });
   }
   render() {
-    return `<div class="box">${this.state.data.map((item, index) => {
-      return `<div data-id="Div_75" data-url="${
-        item.url
-      }"><div class="bd"><img class="layer" src="https://img.alicdn.com/tfs/TB1bLoWoYH1gK0jSZFwXXc7aXXa-684-684.png" /><img class="bg" src="${
-        item.coverImage
-      }" /><div class="wrap"><img class="riverdinwei" src="https://img.alicdn.com/tfs/TB1mtZRoVT7gK0jSZFpXXaTkpXa-28-36.png" /><span class="distance">距离500m</span></div></div><div class="main"><span class="title">${
-        item.title
-      }</span></div><div class="ft"><div class="block"><img class="xianjin" src="https://img.alicdn.com/tfs/TB1OvsYoW61gK0jSZFlXXXDKFXa-60-60.png" /><span class="fashionHome">${
-        item.user.userName
-      }</span></div>${
+    return `
+<div class="box">
+  ${this.state.data.map((item, index) => {
+    return `
+  <div data-id="div_276" data-url="${item.url}">
+    <div class="bd">
+      <img
+        class="layer"
+        src="https://img.alicdn.com/tfs/TB1bLoWoYH1gK0jSZFwXXc7aXXa-684-684.png"
+      /><img class="bg" src="${item.coverImage}" />
+      <div class="wrap">
+        <img
+          class="riverdinwei"
+          src="https://img.alicdn.com/tfs/TB1mtZRoVT7gK0jSZFpXXaTkpXa-28-36.png"
+        /><span class="distance">距离500m</span>
+      </div>
+    </div>
+    <div class="main"><span class="title">${item.title}</span></div>
+    <div class="ft">
+      <div class="block">
+        <img
+          class="xianjin"
+          src="https://img.alicdn.com/tfs/TB1OvsYoW61gK0jSZFlXXXDKFXa-60-60.png"
+        /><span class="fashionHome">${item.user.userName}</span>
+      </div>
+      ${
         this.isReadCountShow(item.readCount)
-          ? `<div class="group"><img class="favorite" src="https://img.alicdn.com/tfs/TB1arwYo7T2gK0jSZFkXXcIQFXa-46-44.png" /><span class="num">${item.readCount}</span></div>`
+          ? `
+      <div class="group">
+        <img
+          class="favorite"
+          src="https://img.alicdn.com/tfs/TB1arwYo7T2gK0jSZFkXXcIQFXa-46-44.png"
+        /><span class="num">${item.readCount}</span>
+      </div>
+      `
           : ""
-      }</div></div>`;
-    })}</div>`;
+      }
+    </div>
+  </div>
+  `;
+  })}
+</div>
+`;
   }
 }
 var page = new Page_0();

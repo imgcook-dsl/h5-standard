@@ -1,6 +1,5 @@
 module.exports = function(schema, option) {
-  const {prettier, helper} = option;
-  const {line, indentTab} = helper.utils;
+  const {prettier} = option;
 
   // imports
   const imports = [];
@@ -19,6 +18,16 @@ module.exports = function(schema, option) {
 
   // 1vw = width / 100
   const _w = option.responsive.width / 100;
+
+  const prettierHtmlOpt = {
+    parser: 'html'
+  };
+  const prettierJsOpt = {
+    parser: 'babel'
+  };
+  const prettierCssOpt = {
+    parser: 'css'
+  };
 
   const isExpression = (value) => {
     return /^\{\{.*\}\}$/.test(value);
@@ -330,7 +339,14 @@ module.exports = function(schema, option) {
         render.push(generateRender(schema))
         render.push('`;}');
 
-        classData = classData.concat(states).concat(lifeCycles).concat(methods).concat([render.join('')]);
+        classData = classData
+          .concat(states)
+          .concat(lifeCycles)
+          .concat(methods)
+          .concat([prettier.format(render.join(''), {
+            parser: 'html',
+            rangeStart: 0
+          })]);
         classData.push('}');
 
         classes.push(classData.join('\n'));
@@ -370,16 +386,6 @@ module.exports = function(schema, option) {
 
   // start parse schema
   transform(schema);
-
-  const prettierHtmlOpt = {
-    parser: 'html'
-  };
-  const prettierJsOpt = {
-    parser: 'babel'
-  };
-  const prettierCssOpt = {
-    parser: 'css'
-  };
 
   return {
     panelDisplay: [
