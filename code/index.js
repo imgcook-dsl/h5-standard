@@ -71,7 +71,7 @@ class Page_0 {
 <div class="box">
   ${this.state.data.map((item, index) => {
     return `
-  <div data-id="div_276" data-url="${item.url}">
+  <div data-id="div_472" data-url="${item.url}">
     <div class="bd">
       <img
         class="layer"
