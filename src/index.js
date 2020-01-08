@@ -258,7 +258,7 @@ module.exports = function(schema, option) {
         if (schema.children && schema.children.length) {
           xml = `<div${elementIdString}${classString}${props}>${transform(schema.children)}</div>`;
         } else {
-          xml = `<div${elementIdString}${classString}${props} />`;
+          xml = `<div${elementIdString}${classString}${props}></div>`;
         }
         break;
     }
