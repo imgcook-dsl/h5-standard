@@ -267,9 +267,7 @@ module.exports = function(schema, option) {
       xml = parseLoop(schema.loop, schema.loopArgs, xml)
     }
     if (schema.condition) {
-      console.log(schema.condition, xml)
       xml = parseCondition(schema.condition, xml);
-      console.log( xml)
     }
     if (schema.loop || schema.condition) {
       xml = `\$\{${xml}\}`;
