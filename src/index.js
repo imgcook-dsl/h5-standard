@@ -177,7 +177,7 @@ module.exports = function(schema, option) {
   // parse condition: whether render the layer
   const parseCondition = (condition, render) => {
     if (typeof condition === 'boolean') {
-      return `${condition} ? ${render} : ''`;
+      return `${condition} ? \`${render}\` : ''`;
     } else if (typeof condition === 'string') {
       return `${condition.slice(2, -2)} ? \`${render}\` : ''`;
     }
@@ -267,7 +267,9 @@ module.exports = function(schema, option) {
       xml = parseLoop(schema.loop, schema.loopArgs, xml)
     }
     if (schema.condition) {
+      console.log(schema.condition, xml)
       xml = parseCondition(schema.condition, xml);
+      console.log( xml)
     }
     if (schema.loop || schema.condition) {
       xml = `\$\{${xml}\}`;
