@@ -133,7 +133,7 @@ module.exports = function(schema, option) {
         payload = {
           method: method
         };
-
+        
         break;
       case 'jsonp':
         if (imports.indexOf(`<script src="https://cdn.bootcss.com/fetch-jsonp/1.1.3/fetch-jsonp.js"></script>`) === -1) {
@@ -149,14 +149,14 @@ module.exports = function(schema, option) {
     });
 
     // params parse should in string template
-    if (params) {
+    if (params && method !== 'GET' ) {
       payload = `${toString(payload).slice(0, -1)} ,body: ${isExpression(params) ? parseProps(params) : toString(params)}}`;
     } else {
       payload = toString(payload);
     }
 
     let result = `{
-      ${action === 'json' ? action : 'fetchJsonp'}(${parseProps(uri)}, ${toString(payload)})
+      ${action !== 'jsonp' ? action : 'fetchJsonp'}(${parseProps(uri)}, ${toString(payload)})
         .then((response) => response.json())
     `;
 
