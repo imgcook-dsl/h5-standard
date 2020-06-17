@@ -156,7 +156,7 @@ module.exports = function(schema, option) {
     }
 
     let result = `{
-      ${action !== 'jsonp' ? action : 'fetchJsonp'}(${parseProps(uri)}, ${toString(payload)})
+      return ${action !== 'jsonp' ? action : 'fetchJsonp'}(${parseProps(uri)}, ${toString(payload)})
         .then((response) => response.json())
     `;
 
@@ -310,9 +310,9 @@ module.exports = function(schema, option) {
         if (schema.dataSource && Array.isArray(schema.dataSource.list)) {
           schema.dataSource.list.forEach((item) => {
             if (typeof item.isInit === 'boolean' && item.isInit) {
-              init.push(`this.${item.id}();`)
+              init.push(`this.state.${item.id} =  await this.${item.id}();`)
             } else if (typeof item.isInit === 'string') {
-              init.push(`if (${parseProps(item.isInit)}) { this.${item.id}(); }`)
+              init.push(`if (${parseProps(item.isInit)}) { this.state.${item.id} =  await this.${item.id}(); }`)
             }
             methods.push(parseDataSource(item));
           });
@@ -320,20 +320,24 @@ module.exports = function(schema, option) {
           if (schema.dataSource.dataHandler) {
             const { params, content } = parseFunction(schema.dataSource.dataHandler);
             methods.push(`dataHandler(${params}) {${content}}`);
-            init.push(`this.dataHandler()`);
           }
         }
 
+        methods.push(`async __init(){
+          ${init.join('\n')}
+          this.state = this.dataHandler(this.state);
+        }`);
+
         if (schema.lifeCycles) {
           if (!schema.lifeCycles['_constructor']) {
-            lifeCycles.push(`constructor(props, context) { ${init.join('\n')}}`);
+            lifeCycles.push(`constructor(props, context) {  this.__init();}`);
           }
 
           Object.keys(schema.lifeCycles).forEach((name) => {
             const { params, content } = parseFunction(schema.lifeCycles[name]);
 
             if (name === '_constructor') {
-              lifeCycles.push(`constructor(${params}) { ${content} ${init.join('\n')}}`);
+              lifeCycles.push(`constructor(${params}) { ${content}; this.__init();}`);
             }
           });
         }
