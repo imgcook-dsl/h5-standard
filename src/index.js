@@ -293,7 +293,7 @@ module.exports = function(schema, option) {
         const lifeCycles = [];
         const methods = [];
         const init = [];
-        const render = [`render(){ return \``];
+        const render = [`render(){ const html = \``];
         let classData = [`class ${schema.componentName}_${classes.length} {`];
 
         if (schema.state) {
@@ -344,7 +344,7 @@ module.exports = function(schema, option) {
         }
 
         render.push(generateRender(schema))
-        render.push('`;}');
+        render.push('`;  document.querySelector("body").innerHTML = html; }');
 
         classData = classData
           .concat(states)
@@ -425,8 +425,6 @@ module.exports = function(schema, option) {
           ${utils.join('\n')}
           ${classes.join('\n')}
           var page = new ${schema.componentName}_0;
-          var html = page.render();
-          document.querySelector('body').innerHTML = html;
         `, prettierJsOpt),
         panelType: 'js'
       },
