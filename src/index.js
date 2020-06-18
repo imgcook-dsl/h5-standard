@@ -326,6 +326,7 @@ module.exports = function(schema, option) {
         methods.push(`async __init(){
           ${init.join('\n')}
           this.state = this.dataHandler(this.state);
+          this.render();
         }`);
 
         if (schema.lifeCycles) {
