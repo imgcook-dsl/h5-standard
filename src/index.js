@@ -203,9 +203,9 @@ module.exports = function(schema, option) {
     const re = new RegExp(`this.${loopArgItem}`, 'g')
     render = render.replace(re, loopArgItem);
 
-    return `${data}.map((${loopArgItem}, ${loopArgIndex}) => {
+    return `(${data}.map((${loopArgItem}, ${loopArgIndex}) => {
       return \`${render}\`;
-    })`;
+    }) || []).join('')`;
   }
 
   // generate render xml
