@@ -224,7 +224,7 @@ module.exports = function(schema, option) {
     let props = '';
 
     Object.keys(schema.props).forEach((key) => {
-      if (['className', 'style', 'text', 'src'].indexOf(key) === -1) {
+      if (['className', 'style', 'text', 'src', 'lines'].indexOf(key) === -1) {
         if (/^on/.test(key) && typeof schema.props[key] === 'function') {
           const {params, content} = parseFunction(schema.props[key]);
           elementId = `${schema.componentName.toLowerCase()}_${parseInt(Math.random() * 1000)}`;
@@ -241,7 +241,6 @@ module.exports = function(schema, option) {
         }
       }
     })
-
     switch(type) {
       case 'text':
         const innerText = parseProps(schema.props.text, true);
@@ -261,6 +260,12 @@ module.exports = function(schema, option) {
           xml = `<div${elementIdString}${classString}${props}></div>`;
         }
         break;
+      default:
+        if (schema.children && schema.children.length) {
+          xml = `<div${elementIdString}${classString}${props}>${transform(schema.children)}</div>`;
+        } else {
+          xml = `<div${elementIdString}${classString}${props}></div>`;
+        }
     }
 
     if (schema.loop) {
@@ -325,14 +330,15 @@ module.exports = function(schema, option) {
 
         methods.push(`async __init(){
           ${init.join('\n')}
-          this.state = this.dataHandler(this.state);
+          ${schema.dataSource && schema.dataSource.dataHandler ? `this.state = this.dataHandler(this.state)` : ''};
           this.render();
         }`);
 
+        if (!schema.lifeCycles || !schema.lifeCycles['_constructor']) {
+          lifeCycles.push(`constructor(props, context) {  this.__init();}`);
+        }
+
         if (schema.lifeCycles) {
-          if (!schema.lifeCycles['_constructor']) {
-            lifeCycles.push(`constructor(props, context) {  this.__init();}`);
-          }
 
           Object.keys(schema.lifeCycles).forEach((name) => {
             const { params, content } = parseFunction(schema.lifeCycles[name]);
