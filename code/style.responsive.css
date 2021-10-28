@@ -1,15 +1,11 @@
 .mod {
-  display: flex;
   align-items: center;
-  flex-direction: column;
   width: 95.6vw;
   height: 121.07vw;
 }
 .row-i0 {
-  display: flex;
   position: relative;
   align-items: flex-start;
-  flex-direction: row;
   justify-content: center;
   border-radius: 3.2vw;
   background-color: #ffffff;
@@ -17,9 +13,7 @@
   height: 39.33vw;
 }
 .item-wrapper {
-  display: flex;
   align-items: center;
-  flex-direction: row;
   margin-top: 2.4vw;
   margin-right: 2.4vw;
   border-radius: 1.6vw;
@@ -33,9 +27,7 @@
   height: 32.27vw;
 }
 .wrapper {
-  display: flex;
   align-items: flex-start;
-  flex-direction: column;
   margin-top: 4.53vw;
   margin-right: 0.13vw;
   white-space: nowrap;
@@ -54,10 +46,8 @@
 }
 .button-wrapper {
   box-sizing: border-box;
-  display: flex;
   position: relative;
   align-items: center;
-  flex-direction: row;
   margin-top: 1.33vw;
   border-radius: 0.53vw;
   background-image: linear-gradient(270deg, #ffedd4 100%, #ffdea5 0%);
@@ -88,10 +78,8 @@
   font-weight: 400;
 }
 .wrapper-inner {
-  display: flex;
   position: relative;
   align-items: flex-start;
-  flex-direction: column;
   margin-top: 6.4vw;
   background-size: contain;
   background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01DEE6Gm1xVEXiSUpHD_!!6000000006448-2-tps-490-156.png);
@@ -100,10 +88,8 @@
   line-height: 3.2vw;
 }
 .price-wrapper {
-  display: flex;
   position: relative;
   align-items: center;
-  flex-direction: row;
   margin-top: 0.53vw;
   margin-left: 1.6vw;
   height: 5.33vw;
@@ -129,10 +115,8 @@
   font-size: 4.8vw;
 }
 .group {
-  display: flex;
   position: relative;
   align-items: center;
-  flex-direction: row;
   margin-top: -0.27vw;
   margin-left: 1.6vw;
 }
@@ -150,10 +134,8 @@
   font-weight: 400;
 }
 .wrapper-1 {
-  display: flex;
   position: relative;
   align-items: flex-start;
-  flex-direction: row;
   justify-content: center;
   margin-top: 26.67vw;
   width: 20.53vw;

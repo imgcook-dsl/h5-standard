@@ -1,15 +1,11 @@
 .mod {
-  display: flex;
   align-items: center;
-  flex-direction: column;
   width: 717px;
   height: 908px;
 }
 .row-i0 {
-  display: flex;
   position: relative;
   align-items: flex-start;
-  flex-direction: row;
   justify-content: center;
   border-radius: 24px;
   background-color: #ffffff;
@@ -17,9 +13,7 @@
   height: 295px;
 }
 .item-wrapper {
-  display: flex;
   align-items: center;
-  flex-direction: row;
   margin-top: 18px;
   margin-right: 18px;
   border-radius: 12px;
@@ -33,9 +27,7 @@
   height: 242px;
 }
 .wrapper {
-  display: flex;
   align-items: flex-start;
-  flex-direction: column;
   margin-top: 34px;
   margin-right: 1px;
   white-space: nowrap;
@@ -54,10 +46,8 @@
 }
 .button-wrapper {
   box-sizing: border-box;
-  display: flex;
   position: relative;
   align-items: center;
-  flex-direction: row;
   margin-top: 10px;
   border-radius: 4px;
   background-image: linear-gradient(270deg, #ffedd4 100%, #ffdea5 0%);
@@ -88,10 +78,8 @@
   font-weight: 400;
 }
 .wrapper-inner {
-  display: flex;
   position: relative;
   align-items: flex-start;
-  flex-direction: column;
   margin-top: 48px;
   background-size: contain;
   background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01DEE6Gm1xVEXiSUpHD_!!6000000006448-2-tps-490-156.png);
@@ -100,10 +88,8 @@
   line-height: 24px;
 }
 .price-wrapper {
-  display: flex;
   position: relative;
   align-items: center;
-  flex-direction: row;
   margin-top: 4px;
   margin-left: 12px;
   height: 40px;
@@ -129,10 +115,8 @@
   font-size: 36px;
 }
 .group {
-  display: flex;
   position: relative;
   align-items: center;
-  flex-direction: row;
   margin-top: -2px;
   margin-left: 12px;
 }
@@ -150,10 +134,8 @@
   font-weight: 400;
 }
 .wrapper-1 {
-  display: flex;
   position: relative;
   align-items: flex-start;
-  flex-direction: row;
   justify-content: center;
   margin-top: 200px;
   width: 154px;

@@ -2,13 +2,7 @@ const print = function(value) {
   console.log(value);
 };
 class Block_0 {
-  state = {
-    items: [
-      { itemTitle: "111111.8", itemPrice: "80.8" },
-      { itemTitle: "111111.8", itemPrice: "80.8" },
-      { itemTitle: "111111.8", itemPrice: "80.8" }
-    ]
-  };
+  state = { items: [{ itemTitle: "111111.8", itemPrice: "80.8" }] };
   constructor(props, context) {
     this.__init();
   }
@@ -18,12 +12,12 @@ class Block_0 {
   render() {
     const state = this.state;
     const html = `
-<div class="mod">
+<div class="flex-col mod">
   ${(
     state.items.map((item, index) => {
       return `
-  <div class="row-i0" data-track-type="ALL">
-    <div class="item-wrapper">
+  <div class="flex-row row-i0" data-track-type="ALL">
+    <div class="flex-row item-wrapper">
       <img
         class="item"
         autoScaling="false"
@@ -31,23 +25,23 @@ class Block_0 {
         src="https://img.alicdn.com/imgextra/i1/O1CN019xxCyz1U6OCPl00vy_!!6000000002468-2-tps-508-484.png"
       />
     </div>
-    <div class="wrapper">
+    <div class="flex-col wrapper">
       <span class="title">${item.itemTitle}</span>
-      <div class="button-wrapper">
+      <div class="flex-row button-wrapper">
         <span class="button">黄油夹心 营养早餐</span>
       </div>
       <span class="tag">爆卖21323件</span>
-      <div class="wrapper-inner">
-        <div class="price-wrapper">
+      <div class="flex-col wrapper-inner">
+        <div class="flex-row price-wrapper">
           <span class="label">红包抵后</span><span class="yuan">￥</span
           ><span class="price">${item.itemPrice}</span>
         </div>
-        <div class="group">
+        <div class="flex-row group">
           <span class="money-info">原价￥</span><span class="money">10.9</span>
         </div>
       </div>
     </div>
-    <div class="wrapper-1">
+    <div class="flex-row wrapper-1">
       <div
         class="shop-logo"
         source="[object"
