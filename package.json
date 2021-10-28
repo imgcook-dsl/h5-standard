@@ -1,17 +1,26 @@
 {
   "name": "h5-standard",
+  "version": "0.0.10",
   "devDependencies": {
     "@imgcook/dsl-helper": "^0.0.1-alpha.0",
     "co": "^4.6.0",
+    "css": "^3.0.0",
     "lodash": "^4.17.19",
+    "lodash.find": "^4.6.0",
+    "lodash.unset": "^4.5.2",
     "prettier": "1.x.x",
     "thunkify": "^2.1.2",
     "vm2": "^3.8.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
     "xml-beautifier": "^0.4.0",
     "xtemplate": "^4.6.1",
     "xtpl": "^3.4.0"
   },
+  "main": "./src/entry.js",
   "scripts": {
-    "test": "node ./test/index.js"
+    "debug": "npx webpack --config webpack.config.js --mode=development",
+    "build": "npx webpack --config webpack.config.js --mode=production",
+    "test": "npm run build && node ./test/index.js"
   }
 }
