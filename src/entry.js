@@ -35,7 +35,7 @@ module.exports = function(schema, option) {
 
   const cssParser = new CssTransformer();
   // 设置全局样式表
-  if( imgcookConfig.globalCss){
+  if( imgcookConfig.globalCss ){
     cssParser.setGlobalStyle(schema.css)
   }
 
@@ -419,6 +419,7 @@ module.exports = function(schema, option) {
   // start parse schema
   transform(schema);
 
+  console.log('imgcookConfig.globalCss', imgcookConfig.globalCss)
   const panelDisplay = [
     {
       panelName: `index.html`,
@@ -468,7 +469,7 @@ module.exports = function(schema, option) {
   ]
   
 
-  if(typeof schema.css == 'string'){
+  if(imgcookConfig.globalCss){
     panelDisplay.push({
       panelName: `global.css`,
       panelValue: prettier.format(schema.css, prettierCssOpt),

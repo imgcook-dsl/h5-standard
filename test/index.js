@@ -9,8 +9,6 @@ const { NodeVM } = require('vm2');
 const _ = require('lodash');
 const data = require('./data');
 
-const css = require('css');
-
 const vm = new NodeVM({
   console: 'inherit',
   sandbox: {}
