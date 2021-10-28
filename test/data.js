@@ -4504,7 +4504,7 @@ module.exports = {
     }]
   },
   "imgcookConfig":{
-    "globalCss": true
+    "globalCss": false
   },
   "css": "/************************************************************\n** 组件全局样式 **\n** 将按照从前到后按顺序提取类名，出码生成多类名                **\n************************************************************/\n\n\n.flex-row {\n  display: flex;\n  flex-direction: row;\n}\n\n.flex-col {\n  display: flex;\n  flex-direction: column;\n}\n\n.justify-start {\n  display: flex;\n  justify-content: flex-start;\n}\n\n.justify-center {\n  display: flex;\n  justify-content: center;\n}\n\n.justify-end {\n  display: flex;\n  justify-content: flex-end;\n}\n\n.justify-evenly {\n  display: flex;\n  justify-content: space-evenly;\n}\n\n.justify-around {\n  display: flex;\n  justify-content: space-around;\n}\n\n.justify-between {\n  display: flex;\n  justify-content: space-between;\n}\n\n.items-start {\n  display: flex;\n  align-items: flex-start;\n}\n\n.items-center {\n  display: flex;\n  align-items: center;\n}\n\n.items-end {\n  display: flex;\n  align-items: flex-end;\n}"
 }

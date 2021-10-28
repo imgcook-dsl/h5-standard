@@ -30,9 +30,6 @@ co(function*() {
       viewportWidth: 375
     },
 
-  "imgcookConfig":{
-    "globalCss": true
-  },
     utils: {
       print: function(value) {
         console.log(value);

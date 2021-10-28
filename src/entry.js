@@ -31,7 +31,7 @@ module.exports = function(schema, option) {
     parser: 'css'
   };
 
-  const imgcookConfig = option.imgcookConfig || {};
+  const imgcookConfig = Object.assign({}, option.imgcookConfig , schema.imgcookConfig );
 
   const cssParser = new CssTransformer();
   // 设置全局样式表
@@ -229,7 +229,6 @@ module.exports = function(schema, option) {
     
     const names = [...cssResults.names, className]
 
-    console.log('names', names)
     const classString = className ? ` class="${names.join(' ')}"` : '';
     let elementId = '';
     let elementIdString = ''; 
