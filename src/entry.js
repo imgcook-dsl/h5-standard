@@ -34,6 +34,10 @@ module.exports = function(schema, option) {
   const imgcookConfig = option.imgcookConfig || {};
 
   const cssParser = new CssTransformer();
+  // 设置全局样式表
+  if( imgcookConfig.globalCss){
+    cssParser.setGlobalStyle(schema.css)
+  }
 
   const isExpression = (value) => {
     return /^\{\{.*\}\}$/.test(value);
@@ -219,8 +223,6 @@ module.exports = function(schema, option) {
     const type = schema.componentName.toLowerCase();
     const className = schema.props && schema.props.className;
 
-    // 设置全局样式表
-    cssParser.setGlobalStyle(schema.css)
     const cssResults = cssParser.obj2class(schema.props.style);
     // cssResults.names 被提取出的名称
     // cssResults.style 被提取后剩余样式

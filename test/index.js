@@ -9,6 +9,8 @@ const { NodeVM } = require('vm2');
 const _ = require('lodash');
 const data = require('./data');
 
+const css = require('css');
+
 const vm = new NodeVM({
   console: 'inherit',
   sandbox: {}
@@ -27,6 +29,10 @@ co(function*() {
       width: 750,
       viewportWidth: 375
     },
+
+  "imgcookConfig":{
+    "globalCss": true
+  },
     utils: {
       print: function(value) {
         console.log(value);
