@@ -21,6 +21,7 @@
   "scripts": {
     "debug": "npx webpack --config webpack.config.js --mode=development",
     "build": "npx webpack --config webpack.config.js --mode=production",
-    "test": "npm run build && node ./test/index.js"
+    "test": "npm run build && node ./test/index.js",
+    "start": "node ./test/index.js"
   }
 }
