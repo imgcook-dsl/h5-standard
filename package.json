@@ -16,7 +16,7 @@
     "thunkify": "^2.1.2",
     "ts-loader": "^8.2.0",
     "typescript": "^4.4.4",
-    "vm2": "^3.8.0",
+    "vm2": "^3.9.4",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "xml-beautifier": "^0.4.0",
