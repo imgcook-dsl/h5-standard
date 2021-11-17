@@ -3,12 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>feeds</title>
     <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
   </head>
-  <body></body>
-  <script src="./index.js"></script>
-  <script></script>
+  <body>
+    <div class="flex-col mod">
+      <TrackerLink class="flex-row rowI0" data-track-type="ALL"
+        ><div class="flex-row itemWrapper">
+          <img
+            class="item"
+            src="https://img.alicdn.com/imgextra/i1/O1CN019xxCyz1U6OCPl00vy_!!6000000002468-2-tps-508-484.png"
+            autoScaling="false"
+            autoWebp="false"
+          />
+        </div>
+        <div class="flex-col wrapper">
+          <span class="title">{item.itemTitle}</span>
+          <div class="flex-row buttonWrapper"><span class="button">黄油夹心 营养早餐</span></div>
+          <span class="tag">爆卖21323件</span>
+          <div class="flex-col wrapperInner">
+            <div class="flex-row priceWrapper">
+              <span class="label">红包抵后</span><span class="yuan">￥</span><span class="price">{item.itemPrice}</span>
+            </div>
+            <div class="flex-row group"><span class="moneyInfo">原价￥</span><span class="money">10.9</span></div>
+          </div>
+        </div>
+        <div class="flex-row wrapper1">
+          <Picture class="shopLogo"
+          source={"uri":"https://img.alicdn.com/imgextra/i1/O1CN01Fw0aHK1N8x6mYKY5x_!!6000000001526-2-tps-310-156.png"}
+          autoScaling=false autoWebp=false /><span class="caption">马上抢</span>
+        </div></TrackerLink
+      >
+    </div>
+  </body>
 </html>

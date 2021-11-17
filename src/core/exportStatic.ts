@@ -1,26 +1,30 @@
-const {
+import {
   parseStyle,
   parseProps,
-  isExpression
-} = require('./utils');
-const { getGlobalClassNames, genStyleClass }  = require('./cssUtils');
+  generateCSS,
+  getGlobalClassNames, genStyleClass 
+}from './utils';
 
-function exportMod(schema, option) {
-  const { prettier, scale = 1, _, responsive, imgcookConfig } = option;
+import { prettierHtmlOpt, prettierJsOpt, prettierCssOpt } from './consts';
+
+export default function exportMod(schema, option) {
+  const { prettier, scale = 1, _, responsive, dslConfig } = option;
+  const { cssUnit } = dslConfig;
 
   const fileName = schema.fileName || 'index';
 
-  const isExportGlobalFile = _.get(option, 'imgcookConfig.globalCss');
+  const isExportGlobalFile = _.get(option, 'dslConfig.globalCss');
 
   const globalCss = schema.css || '';
 
   // imports
   let imports = [];
 
-  // styles
-  const styles = [];
+  let style = {}
 
-  const links = [];
+  // styles
+
+  const links: string[] = [];
   if (isExportGlobalFile) {
     links.push(` <link rel="stylesheet" href="./global.css" />`);
   }
@@ -28,7 +32,7 @@ function exportMod(schema, option) {
 
 
   // Global Public Functions
-  const utils = [];
+  const utils: string[] = [];
 
   const width = responsive.width || 750;
   const viewportWidth = responsive.viewportWidth || 375;
@@ -42,53 +46,18 @@ function exportMod(schema, option) {
   let isPage = false;
   let htmlBody = '';
 
-  let classNames = [];
-
   // generate render xml
   const generateRender = (schema) => {
     const componentName = schema.componentName;
     const type = schema.componentName.toLowerCase();
     const className = schema.props && schema.props.className;
-    let classString = '';
-    
+    let classString = schema.classString;
 
-    if (imgcookConfig.globalCss) {
-      const cssResults = getGlobalClassNames(schema.props.style, globalCss);
-      if (cssResults.names.length > 0) {
-        
-        
-        classString = ` class="${cssResults.names.join(' ')} ${className}"`;
-
-
-      } else {
-        className && (classString = ` class="${className}"`);
-      }
-      schema.props.style = cssResults.style;
-    }else{
-      className && (classString = ` class="${className}"`);
-    }
-
-
-    let commonStyles = {};
-    let codeStyles = {};
-    Object.keys(schema.props.style || {}).forEach((key) => {
-      if (key === 'lines') return;
-      if (isExpression(schema.props.style[key])) {
-        codeStyles[key] = schema.props.style[key];
-      } else {
-        commonStyles[key] = schema.props.style[key];
-      }
-    });
-
-    schema.props.codeStyle = codeStyles;
-
-    if (className && classNames.indexOf(className) === -1) {
-      classNames.push(className);
-      styles.push(`
-        .${className} {
-          ${parseStyle(commonStyles, { cssUnit: _.get(option, 'imgcookConfig.cssUnit'), _, responsive })}
-        }
-      `);
+    if (className) {
+      style[className] = parseStyle(schema.props.style, {
+        scale,
+        cssUnit,
+      });
     }
 
     let xml;
@@ -143,7 +112,7 @@ function exportMod(schema, option) {
   };
 
   // parse schema
-  const transform = (schema, flag) => {
+  const transform = (schema, flag = false) => {
     let result = '';
     const blockName = schema.fileName || schema.id;
     if (flag && schema.componentName === 'Page') {
@@ -172,20 +141,7 @@ function exportMod(schema, option) {
 
   // start parse schema
   htmlBody = transform(schema, true);
-  // output
-  const prettierHtmlOpt = {
-    parser: 'html',
-    printWidth: 120,
-    singleQuote: true
-  };
-  const prettierCssOpt = {
-    parser: 'css'
-  };
-  const prettierJsOpt = {
-    parser: 'babel',
-    printWidth: 120,
-    singleQuote: true
-  };
+
   const indexValue = prettier.format(
     `
   <!DOCTYPE html>
@@ -193,7 +149,7 @@ function exportMod(schema, option) {
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>${schema.name || 'Page Title'}</title>
     ${links.map((i) => i).join('\n')}
     <script src="./index.js"></script>
   </head>
@@ -211,7 +167,6 @@ function exportMod(schema, option) {
 };`, prettierJsOpt);
 
 
-
 const panelDisplay =  [
     {
       panelName: `${fileName}.html`,
@@ -226,23 +181,16 @@ const panelDisplay =  [
     },
     {
       panelName: `${fileName}.css`,
-      panelValue: prettier.format(styles.join('\n'), prettierCssOpt),
+      panelValue: prettier.format(
+        `${generateCSS(style, '')}`,
+        prettierCssOpt
+      ),
       panelType: 'css'
     }
   ]
 
-// 只有一个模块时，生成到当前模块
-if (isExportGlobalFile && schema.css) {
-  panelDisplay.push({
-    panelName: `global.css`,
-    panelValue: prettier.format(schema.css || '', prettierCssOpt),
-    panelType: 'css',
-    // folder: folderName,
-  });
-}
 
     
   return panelDisplay;
 }
 
-module.exports = exportMod;

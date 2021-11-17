@@ -1,31 +1,31 @@
-const {
+import {
   toString,
   isExpression,
   parseFunction,
   parseProps,
   parseCondition,
   parseLoop,
-  parseStyle
-} = require('./utils');
-const { getGlobalClassNames, genStyleClass }  = require('./cssUtils');
+  parseStyle,
+  generateCSS
+} from './utils';
 
-module.exports = function(schema, option) {
-  const { prettier, responsive, _, imgcookConfig } = option;
+export default function (schema, option) {
+  const { prettier, scale = 1, _, responsive, dslConfig } = option;
 
   const fileName = schema.fileName || 'index';
-  const cssUnit =  _.get(option, 'imgcookConfig.cssUnit');
+  const cssUnit = _.get(option, 'dslConfig.cssUnit');
 
   // imports
-  const imports = [];
+  const imports: string[]  = [];
 
   // inline style
-  const styles = [];
+  const style = {};
 
   // Global Public Functions
-  const utils = [];
+  const utils: string[]  = [];
 
-  const isExportGlobalFile = _.get(option, 'imgcookConfig.globalCss');
-  const links = [];
+  const isExportGlobalFile = _.get(option, 'dslConfig.globalCss');
+  const links: string[] = [];
   if (isExportGlobalFile) {
     links.push(` <link rel="stylesheet" href="./global.css" />`);
   }
@@ -33,12 +33,12 @@ module.exports = function(schema, option) {
 
 
   // Classes
-  const classes = [];
+  const classes: string[]  = [];
 
   // events
-  const events = [];
+  const events: string[]  = [];
 
-  let classNames = [];
+  let classNames: string[]  = [];
 
   const globalCss = schema.css || '';
 
@@ -91,9 +91,8 @@ module.exports = function(schema, option) {
 
     // params parse should in string template
     if (params && method !== 'GET') {
-      payload = `${toString(payload).slice(0, -1)} ,body: ${
-        isExpression(params) ? parseProps(params) : toString(params)
-      }}`;
+      payload = `${toString(payload).slice(0, -1)} ,body: ${isExpression(params) ? parseProps(params) : toString(params)
+        }}`;
     } else {
       payload = toString(payload);
     }
@@ -123,45 +122,18 @@ module.exports = function(schema, option) {
   const generateRender = (schema) => {
     const type = schema.componentName.toLowerCase();
     const className = schema.props && schema.props.className;
-    let classString = '';
     let elementId = '';
-    let elementIdString = ''; 
+    let elementIdString = '';
 
-    if (imgcookConfig.globalCss) {
-      const cssResults = getGlobalClassNames(schema.props.style, globalCss);
-      if (cssResults.names.length > 0) {
-        classString = ` class="${cssResults.names.join(' ')} ${className}"`;
+    let classString = schema.classString;
 
-      } else {
-        className && (classString = ` class="${className}"`);
-      }
-      schema.props.style = cssResults.style;
-    }else{
-      className && (classString = ` class="${className}"`);
+    if (className) {
+      style[className] = parseStyle(schema.props.style, {
+        scale,
+        cssUnit,
+      });
     }
 
-
-    let commonStyles = {};
-    let codeStyles = {};
-    Object.keys(schema.props.style || {}).forEach((key) => {
-      if (key === 'lines') return;
-      if (isExpression(schema.props.style[key])) {
-        codeStyles[key] = schema.props.style[key];
-      } else {
-        commonStyles[key] = schema.props.style[key];
-      }
-    });
-
-    schema.props.codeStyle = codeStyles;
-
-    if (className && classNames.indexOf(className) === -1) {
-      classNames.push(className);
-      styles.push(`
-        .${className} {
-          ${parseStyle(commonStyles, { cssUnit: cssUnit, _, responsive })}
-        }
-      `);
-    }
 
 
     let xml;
@@ -172,14 +144,14 @@ module.exports = function(schema, option) {
         if (/^on/.test(key) && typeof schema.props[key] === 'function') {
           const { params, content } = parseFunction(schema.props[key]);
           elementId = `${schema.componentName.toLowerCase()}_${parseInt(
-            Math.random() * 1000
+            String(Math.random() * 1000)
           )}`;
           elementIdString = ` data-id="${elementId}"`;
           events.push(`
             document.querySelectorAll('[data-id="${elementId}"]').forEach(function(element) {
               element.addEventListener('${key
-                .slice(2)
-                .toLowerCase()}', function(${params}) {
+              .slice(2)
+              .toLowerCase()}', function(${params}) {
                 ${content}
               });
             });
@@ -190,7 +162,7 @@ module.exports = function(schema, option) {
             if (JSON.stringify(schema.props[key]) !== '{}') {
               props += ` style={${parseProps(schema.props[key])}}`;
             }
-          }else{
+          } else {
             props += ` ${key}=${parseProps(schema.props[key])}`;
           }
 
@@ -200,11 +172,11 @@ module.exports = function(schema, option) {
     switch (type) {
       case 'text':
         const innerText = parseProps(schema.props.text, true);
-        xml = `<span${elementIdString}${classString}${props}>${innerText}</span>`;
+        xml = `<span${elementIdString} ${classString} ${props}>${innerText}</span>`;
         break;
       case 'image':
         const source = parseProps(schema.props.src);
-        xml = `<img${elementIdString}${classString}${props} src=${source} />`;
+        xml = `<img${elementIdString} ${classString} ${props} src=${source} />`;
         break;
       case 'div':
       case 'page':
@@ -229,7 +201,11 @@ module.exports = function(schema, option) {
     }
 
     if (schema.loop) {
-      const parseLoopData = parseLoop(schema.loop, schema.loopArgs, xml, null, schema);
+      const parseLoopData = parseLoop(schema.loop, schema.loopArgs, xml, {
+        formatRender: (str)=>{
+          return '`' + str + '`'
+        }
+      });
       xml = parseLoopData.value;
     }
     if (schema.condition) {
@@ -240,7 +216,6 @@ module.exports = function(schema, option) {
     }
 
 
-    console.log('xml', xml)
     return xml;
   };
 
@@ -257,10 +232,10 @@ module.exports = function(schema, option) {
 
       if (['page', 'block', 'component'].indexOf(type) !== -1) {
         // 容器组件处理: state/method/dataSource/lifeCycle/render
-        const states = [];
-        const lifeCycles = [];
-        const methods = [];
-        const init = [];
+        const states: string[]  = [];
+        const lifeCycles: string[]  = [];
+        const methods: string[]  = [];
+        const init: string[]  = [];
         const render = [
           `render(){ 
           const state = this.state;
@@ -285,8 +260,7 @@ module.exports = function(schema, option) {
               init.push(`this.state.${item.id} =  await this.${item.id}();`);
             } else if (typeof item.isInit === 'string') {
               init.push(
-                `if (${parseProps(item.isInit)}) { this.state.${
-                  item.id
+                `if (${parseProps(item.isInit)}) { this.state.${item.id
                 } =  await this.${item.id}(); }`
               );
             }
@@ -303,10 +277,9 @@ module.exports = function(schema, option) {
 
         methods.push(`async __init(){
           ${init.join('\n')}
-          ${
-            schema.dataSource && schema.dataSource.dataHandler
-              ? `this.state = this.dataHandler(this.state)`
-              : ''
+          ${schema.dataSource && schema.dataSource.dataHandler
+            ? `this.state = this.dataHandler(this.state)`
+            : ''
           };
           this.render();
         }`);
@@ -401,19 +374,14 @@ module.exports = function(schema, option) {
     },
     {
       panelName: `${fileName}.css`,
-      panelValue: prettier.format(styles.join('\n'), prettierCssOpt),
+      panelValue: prettier.format(
+        `${generateCSS(style, '')}`,
+        prettierCssOpt
+      ),
       panelType: 'css'
     }
 
   ];
-
-  if (imgcookConfig.globalCss) {
-    panelDisplay.push({
-      panelName: `global.css`,
-      panelValue: prettier.format(schema.css, prettierCssOpt),
-      panelType: 'css',
-    });
-  }
 
   return panelDisplay;
 };

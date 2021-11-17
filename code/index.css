@@ -1,0 +1,100 @@
+.mod {
+  width: 95.6vw;
+  height: 121.07vw;
+}
+.rowI0 {
+  border-radius: 3.2vw;
+  width: 95.2vw;
+  height: 39.33vw;
+}
+.itemWrapper {
+  margin-top: 2.4vw;
+  margin-right: 2.4vw;
+  border-radius: 1.6vw;
+  height: 34.67vw;
+}
+.item {
+  margin-left: 0.93vw;
+  width: 33.73vw;
+  height: 32.27vw;
+}
+.wrapper {
+  margin-top: 4.53vw;
+  margin-right: 0.13vw;
+}
+.title {
+  max-width: 32.53vw;
+  height: 4.53vw;
+  line-height: 4.53vw;
+  font-size: 4vw;
+}
+.buttonWrapper {
+  margin-top: 1.33vw;
+  border-radius: 0.53vw;
+  padding-right: 1.2vw;
+  padding-left: 1.07vw;
+  height: 4.8vw;
+  line-height: 3.2vw;
+}
+.button {
+  font-size: 3.2vw;
+}
+.tag {
+  margin-top: 1.33vw;
+  margin-left: 0.27vw;
+  max-width: 32vw;
+  height: 3.73vw;
+  line-height: 3.73vw;
+  font-size: 3.2vw;
+}
+.wrapperInner {
+  margin-top: 6.4vw;
+  width: 32.53vw;
+  height: 10.4vw;
+  line-height: 3.2vw;
+}
+.priceWrapper {
+  margin-top: 0.53vw;
+  margin-left: 1.6vw;
+  height: 5.33vw;
+}
+.label {
+  margin-top: 0.53vw;
+  font-size: 3.2vw;
+}
+.yuan {
+  margin-top: 1.07vw;
+  margin-right: -0.27vw;
+  font-size: 3.2vw;
+}
+.price {
+  line-height: 4.8vw;
+  font-size: 4.8vw;
+}
+.group {
+  margin-top: -0.27vw;
+  margin-left: 1.6vw;
+}
+.moneyInfo {
+  font-size: 3.2vw;
+}
+.money {
+  font-size: 3.2vw;
+}
+.wrapper1 {
+  margin-top: 26.67vw;
+  width: 20.53vw;
+  height: 10.4vw;
+}
+.shopLogo {
+  top: 0;
+  left: 0;
+  width: 20.53vw;
+  height: 10.4vw;
+}
+.caption {
+  margin-top: 2.53vw;
+  max-width: 18.93vw;
+  text-shadow: 0 0.27vw 0.53vw rgba(255, 219, 60, 1);
+  font-size: 4.53vw;
+}
