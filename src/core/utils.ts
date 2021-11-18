@@ -146,8 +146,22 @@ const getCounter = (key) => {
   return counter[key];
 }
 
-// 处理schema一些常见问题
+export const resetCounter = (key) => {
+  counter[key] = 0;
+}
+
+/**
+ * 处理schema一些常见问题
+ * @param schema 
+ * 1. 清理 class 空格
+ * 2. 关键节点命名兜底
+ */
 export const initSchema = (schema) => {
+  //  重置计数器
+  resetCounter('page');
+  resetCounter('block');
+  resetCounter('component');
+
   // 清理 class 空格
   traverse(schema, (node) => {
     if (node && node.props && node.props.className) {
@@ -220,7 +234,6 @@ export const genStyleCode = (styles, key) => {
 };
 
 export const parseNumberValue = (value, { cssUnit = 'px', scale }) => {
-
   value = String(value).replace(/\b[\d\.]+(px|rem|rpx|vw)?\b/, (v) => {
     const nv = parseFloat(v);
     if (!isNaN(nv) && nv !== 0) {
@@ -229,7 +242,6 @@ export const parseNumberValue = (value, { cssUnit = 'px', scale }) => {
       return 0;
     }
   });
-
   if (/^\-?[\d\.]+$/.test(value)) {
     value = parseFloat(value);
     if (cssUnit == 'rpx') {
@@ -283,15 +295,12 @@ export const parseStyle = (style, params) => {
         }
         break;
       default:
-        if (style[key]) {
-          if (String(style[key]).includes('px')) {
-            resultStyle[key] = String(style[key]).replace(/[\d\.]+px/g, (v) => {
-              return /^[\d\.]+px$/.test(v) ? parseNumberValue(v, params) : v;
-            })
-          }
-        } else {
-          resultStyle[key] = style[key]
+        if (style[key] && String(style[key]).includes('px')) {
+          resultStyle[key] = String(style[key]).replace(/[\d\.]+px/g, (v) => {
+            return /^[\d\.]+px$/.test(v) ? parseNumberValue(v, params) : v;
+          })
         }
+        resultStyle[key] = resultStyle[key] || style[key]
     }
   }
 
@@ -371,8 +380,9 @@ export const generateCSS = (style, prefix) => {
   return css;
 };
 
+
 // parse loop render
-export const parseLoop = (loop, loopArg, render, { formatRender }) => {
+export const parseLoop = (loop, loopArg, render, params = {}) => {
   let data;
   let loopArgItem = (loopArg && loopArg[0]) || 'item';
   let loopArgIndex = (loopArg && loopArg[1]) || 'index';
@@ -397,7 +407,7 @@ export const parseLoop = (loop, loopArg, render, { formatRender }) => {
     stateValue = `state.${data.split('.').pop()}`;
   }
 
-  formatRender = formatRender || function (str) { return str };
+  const formatRender = params['formatRender'] || function (str) { return str };
   return {
     hookState: [],
     value: `${stateValue}.map((${loopArgItem}, ${loopArgIndex}) => {
@@ -572,7 +582,7 @@ export const parseDataSource = (data, imports: {
 };
 
 // get children text
-const getText = (schema) => {
+export const getText = (schema) => {
   let text = '';
 
   const getChildrenText = (schema) => {
