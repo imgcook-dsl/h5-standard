@@ -17,6 +17,7 @@ import exportGlobalCss from './exportGlobalCss'
 module.exports = function (schema, option) {
 
   const dslConfig = Object.assign({}, DSL_CONFIG, option._.get(schema, 'imgcook.dslConfig')); 
+  option.scale = 750 / ((option.responsive && option.responsive.width) || 750);
   option.dslConfig = dslConfig;
   initConfig(dslConfig);
 

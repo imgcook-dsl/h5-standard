@@ -48,8 +48,8 @@ export default function exportMod(schema, option) {
 
   // generate render xml
   const generateRender = (schema) => {
-    const componentName = schema.componentName;
-    const type = schema.componentName.toLowerCase();
+    let componentName = schema.componentName || '';
+    const type = componentName.toLowerCase();
     const className = schema.props && schema.props.className;
     let classString = schema.classString;
 
@@ -82,6 +82,7 @@ export default function exportMod(schema, option) {
         xml = `<span ${classString}${props}>${innerText || ''}</span>`;
         break;
       case 'image':
+      case 'picture':
         if (schema.props.source && schema.props.source.uri) {
           xml = `<img ${classString}${props} />`;
         } else {
@@ -100,6 +101,7 @@ export default function exportMod(schema, option) {
         }
         break;
       default:
+        componentName = 'div'
         if (schema.children && schema.children.length && Array.isArray(schema.children)) {
           xml = `<${componentName}${classString}${props}>${transform(schema.children)}</${componentName}>`;
         } else if (typeof schema.children === 'string') {

@@ -9,6 +9,9 @@ import {
   generateCSS
 } from './utils';
 
+import { prettierJsOpt, prettierHtmlOpt, prettierCssOpt } from './consts';
+
+
 export default function (schema, option) {
   const { prettier, scale = 1, _, responsive, dslConfig } = option;
 
@@ -45,15 +48,6 @@ export default function (schema, option) {
   // 1vw = width / 100
   const _w = ((option.responsive && option.responsive.width) || 750) / 100;
 
-  const prettierHtmlOpt = {
-    parser: 'html',
-  };
-  const prettierJsOpt = {
-    parser: 'babel',
-  };
-  const prettierCssOpt = {
-    parser: 'css',
-  };
 
 
   // parse async dataSource
@@ -175,7 +169,8 @@ export default function (schema, option) {
         xml = `<span${elementIdString} ${classString} ${props}>${innerText}</span>`;
         break;
       case 'image':
-        const source = parseProps(schema.props.src);
+      case 'picture':
+        const source = parseProps(_.get(schema, 'props.src') || _.get(schema, 'props.source.uri'));
         xml = `<img${elementIdString} ${classString} ${props} src=${source} />`;
         break;
       case 'div':
