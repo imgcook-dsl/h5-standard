@@ -17,6 +17,8 @@ import exportGlobalCss from './exportGlobalCss'
 module.exports = function (schema, option) {
 
   const dslConfig = Object.assign({}, DSL_CONFIG, option._.get(schema, 'imgcook.dslConfig')); 
+
+  console.log('初始化', dslConfig)
   option.scale = 750 / ((option.responsive && option.responsive.width) || 750);
   option.dslConfig = dslConfig;
   initConfig(dslConfig);
@@ -66,7 +68,11 @@ module.exports = function (schema, option) {
   let panelDisplay;
 
   schema.fileName = 'index';
+  console.log('动态', dslConfig)
+  console.log('动态', dslConfig.renderType )
   if (dslConfig.renderType == 'javascript') {
+
+    console.log('动态', dslConfig)
     panelDisplay = exportDynamic(schema, option);
   } else {
     panelDisplay = exportStatic(schema, option);

@@ -2,7 +2,7 @@ import {
   toString,
   isExpression,
   parseFunction,
-  parseProps,
+  parseProps as _parseProps,
   parseCondition,
   parseLoop,
   parseStyle,
@@ -11,6 +11,16 @@ import {
 
 import { prettierJsOpt, prettierHtmlOpt, prettierCssOpt } from './consts';
 
+
+const parseProps =  function(value, isReactNode?){
+  const result = _parseProps(value, isReactNode);
+  if(isExpression(value)){
+    return `\$\{${result}\}`
+  }else{
+    return result
+  }
+
+}
 
 export default function (schema, option) {
   const { prettier, scale = 1, _, responsive, dslConfig } = option;
@@ -166,19 +176,19 @@ export default function (schema, option) {
     switch (type) {
       case 'text':
         const innerText = parseProps(schema.props.text, true);
-        xml = `<span${elementIdString} ${classString} ${props}>${innerText}</span>`;
+        xml = `<span ${elementIdString} ${classString} ${props}>${innerText}</span>`;
         break;
       case 'image':
       case 'picture':
         const source = parseProps(_.get(schema, 'props.src') || _.get(schema, 'props.source.uri'));
-        xml = `<img${elementIdString} ${classString} ${props} src=${source} />`;
+        xml = `<img ${elementIdString} ${classString} ${props} src=${source} />`;
         break;
       case 'div':
       case 'page':
       case 'block':
       case 'component':
         if (schema.children && schema.children.length) {
-          xml = `<div${elementIdString}${classString}${props}>${transform(
+          xml = `<div ${elementIdString} ${classString} ${props} >${transform(
             schema.children
           )}</div>`;
         } else {
@@ -201,7 +211,7 @@ export default function (schema, option) {
           return '`' + str + '`'
         }
       });
-      xml = parseLoopData.value;
+      xml = parseLoopData.value + '.join("")';
     }
     if (schema.condition) {
       xml = parseCondition(schema.condition, xml);
@@ -231,13 +241,13 @@ export default function (schema, option) {
         const lifeCycles: string[]  = [];
         const methods: string[]  = [];
         const init: string[]  = [];
+        let  html = '';
         const render = [
           `render(){ 
           const state = this.state;
           const html = \``,
         ];
         let classData = [`class ${schema.componentName}_${classes.length} {`];
-
         if (schema.state) {
           states.push(`state = ${toString(schema.state)}`);
         }
@@ -295,8 +305,9 @@ export default function (schema, option) {
           });
         }
 
-        render.push(generateRender(schema));
-        render.push('`;  document.querySelector("body").innerHTML = html; }');
+        html =  prettier.format(generateRender(schema), prettierHtmlOpt);
+        render.push(html);
+        render.push('`;\n  document.querySelector("body").innerHTML = html; }');
 
         classData = classData
           .concat(states)
@@ -358,8 +369,7 @@ export default function (schema, option) {
     {
       panelName: `${fileName}.js`,
       panelValue: prettier.format(
-        `
-        ${utils.join('\n')}
+        `${utils.join('\n')}
         ${classes.join('\n')}
         var page = new ${schema.componentName}_0;
       `,
