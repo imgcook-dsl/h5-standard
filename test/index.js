@@ -3,7 +3,7 @@ const xtpl = require('xtpl');
 const fs = require('fs');
 const thunkify = require('thunkify');
 const path = require('path');
-const prettier = require('prettier');
+
 const { NodeVM } = require('vm2');
 const _ = require('lodash');
 const data = require('./data');
@@ -11,6 +11,25 @@ const componentsMap = require('./components-map');
 const helper = require('@imgcook/dsl-helper');
 
 // const entry = require('../src/entry');
+
+const prettier = require('prettier/standalone');
+
+const parserHtml =require('prettier/parser-html');
+const parserBabel= require('prettier/parser-babel');
+const parserCss =require('prettier/parser-postcss');
+const parserMarkDown=require('prettier/parser-markdown');
+
+const browerParser = {
+  babel: parserBabel,
+  json: parserBabel,
+  vue: parserHtml,
+  css: parserCss,
+  scss: parserCss,
+  less: parserCss,
+  html: parserHtml,
+  md: parserMarkDown
+}
+
 
 const vm = new NodeVM({
   console: 'inherit',
@@ -27,13 +46,19 @@ const runCode = (data, dslConfig)=>{
     path.resolve(__dirname, '../src/index.js'),
     'utf8'
   );
+
   const files = vm.run(code)(data, {
     prettier: {
       format: (str, opt) => {
+        if (opt && browerParser[opt.parser]) {
+          opt.plugins = [browerParser[opt.parser]]
+        } else {
+          return str
+        }
         try{
           return prettier.format(str, opt)
         }catch(e){
-          console.error('format 失败',e)
+          console.error('format error', e)
           return str
         }
 
@@ -68,7 +93,7 @@ const runCode = (data, dslConfig)=>{
 
 
 co(function*() {
-  const panelDisplay = runCode(data, { cssUnit: 'vw', renderType: 'html', globalCss: true})
+  const panelDisplay = runCode(data, { cssUnit: 'vw', renderType: 'javascript', globalCss: true, responseWidth: 375})
   // const renderInfo = vm.run(code)(data, {
   //   prettier: prettier,
   //   _: _,
@@ -100,6 +125,7 @@ co(function*() {
   if (fs.existsSync(  path.join(__dirname, baseDir))) {
     fs.rmdirSync( path.join(__dirname, baseDir), { recursive: true });
   }
+  console.log('创建 ')
   mkDirsSync(  path.join(__dirname, baseDir));
 
 

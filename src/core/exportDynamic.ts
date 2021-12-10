@@ -380,7 +380,7 @@ export default function (schema, option) {
     {
       panelName: `${fileName}.css`,
       panelValue: prettier.format(
-        `${generateCSS(style, '')}`,
+        `${generateCSS(schema.commonStyles, '')}${generateCSS(style, '')}`,
         prettierCssOpt
       ),
       panelType: 'css'

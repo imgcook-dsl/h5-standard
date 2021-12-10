@@ -1,5 +1,7 @@
 const find = require('lodash/find');
 const unset = require('lodash/unset');
+const set = require('lodash/set');
+const get = require('lodash/get');
 const camelCase = require('lodash/camelCase');
 const kebabCase = require('lodash/kebabCase');
 const snakeCase = require('lodash/snakeCase');
@@ -150,6 +152,97 @@ export const resetCounter = (key) => {
   counter[key] = 0;
 }
 
+// 精简样式
+export const simpleStyle = (schema) => {
+
+  function getMaxRepeatItem(array) {
+    let a = {}
+    let max = 0;
+    let maxele = null;
+    for (let i = 0; i < array.length; i++) {
+      a[array[i]] == undefined ? a[array[i]] = 1 : a[array[i]]++;
+      if (a[array[i]] > max) {
+        maxele = array[i];
+        max = a[array[i]];
+      }
+    }
+    return maxele;
+  }
+  function isAllEqual(array) {
+    if (array.length > 0) {
+      return !array.some(function (value, index) {
+        return value !== array[0];
+      });
+    } else {
+      return true;
+    }
+  }
+
+  function getMaxSameStyles(array) {
+    if (array.length < 2) {
+      return {}
+    }
+    let maxStyle = {}
+    const keys = Object.keys(array[0])
+    // JSON.parse(JSON.stringify(array[0]));
+    for (let key of keys) {
+      if (isAllEqual(array.map(item => item[key]))) {
+        maxStyle[key] = array[0][key]
+      }
+    }
+
+    return maxStyle
+  }
+
+  // 统计出现字体最多的，放到根节点
+  let fontFamilys: string[] = []
+  traverse(schema, (node) => {
+    const ft = get(node, 'props.style.fontFamily');
+    if (ft) {
+      fontFamilys.push(ft)
+    }
+  });
+
+  const rootFont = get(schema, 'props.style.fontFamily') || getMaxRepeatItem(fontFamilys);
+  if (rootFont) {
+    traverse(schema, (node) => {
+      const ft = get(node, 'props.style.fontFamily');
+      if (ft == rootFont) {
+        unset(node, 'props.style.fontFamily');
+      }
+    });
+    set(schema, 'props.style.fontFamily', rootFont);
+  }
+
+  // 删除 font-weight 400 或者 normal
+  traverse(schema, (node) => {
+    const fw = get(node, 'props.style.fontWeight');
+    if (['400', 'normal'].includes(String(fw) || '')) {
+      unset(node, 'props.style.fontWeight');
+    }
+  });
+
+
+
+  traverseBrother(schema, function (nodes) {
+    const sameStyle = getMaxSameStyles(nodes.map(item => item.props.style));
+    if (Object.keys(sameStyle).length > 3) {
+      const commonClassName = genStyleClass(
+        nodes[0].props.className + '_common',
+        DSL_CONFIG.cssStyle
+      );
+
+      set(schema, `commonStyles.${commonClassName}`, parseStyle(sameStyle, { scale: DSL_CONFIG.scale, cssUnit: DSL_CONFIG.cssUnit }))
+      for (let node of nodes) {
+        for (let key of Object.keys(sameStyle)) {
+          unset(node, `props.style.${key}`)
+        }
+        node.classnames = [commonClassName]
+      }
+    }
+  })
+
+}
 /**
  * 处理schema一些常见问题
  * @param schema 
@@ -161,13 +254,19 @@ export const initSchema = (schema) => {
   resetCounter('page');
   resetCounter('block');
   resetCounter('component');
+  resetCounter('classname');
 
-  // 清理 class 空格
+  // 清理 class 空格// 初始化名称
   traverse(schema, (node) => {
     if (node && node.props && node.props.className) {
       node.props.className = node.props.className.trim();
+    }else{
+      const cmp = (node.componentName || '').toLowerCase();
+      set(node, 'props.className', `class_${cmp}_${getCounter(cmp)}`)
     }
   });
+
+  simpleStyle(schema)
 
   // 关键节点命名兜底
   traverse(schema, (json) => {
@@ -196,7 +295,6 @@ export const traverse = (json, callback) => {
     return
   }
 
-  // 去除 class 空格
   if (json && callback) {
     callback(json)
   }
@@ -208,6 +306,30 @@ export const traverse = (json, callback) => {
   ) {
     json.children.forEach((child) => {
       traverse(child, callback);
+    });
+  }
+};
+
+// 遍历兄弟节点
+export const traverseBrother = (json, callback) => {
+  if (Array.isArray(json)) {
+    json.forEach((node) => {
+      traverseBrother(node, callback)
+    });
+    return
+  }
+
+  if (json && Array.isArray(json.children) && callback) {
+    callback(json.children)
+  }
+
+  if (
+    json.children &&
+    json.children.length > 0 &&
+    Array.isArray(json.children)
+  ) {
+    json.children.forEach((child) => {
+      traverseBrother(child, callback);
     });
   }
 };
@@ -251,8 +373,7 @@ export const parseNumberValue = (value, { cssUnit = 'px', scale }) => {
       value = parseFloat((value / htmlFontSize).toFixed(2));
       value = value ? `${value}rem` : value;
     } else if (cssUnit == 'vw') {
-      const _w = 750 / scale
-      value = (100 * parseInt(value) / _w).toFixed(2);
+      value = (100 * value / (DSL_CONFIG.responseWidth || 750)).toFixed(2);
       value = value == 0 ? value : value + 'vw';
     } else {
       value += cssUnit;
@@ -263,7 +384,7 @@ export const parseNumberValue = (value, { cssUnit = 'px', scale }) => {
 
 // convert to responsive unit, such as vw
 export const parseStyle = (style, params) => {
-  const { scale, cssUnit } = params
+  const { scale } = params
   const resultStyle = {}
   for (let key in style) {
     switch (key) {

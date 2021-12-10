@@ -19,7 +19,12 @@ module.exports = function (schema, option) {
   const dslConfig = Object.assign({}, DSL_CONFIG, option._.get(schema, 'imgcook.dslConfig')); 
 
   console.log('初始化', dslConfig)
-  option.scale = 750 / ((option.responsive && option.responsive.width) || 750);
+
+  
+  option.scale = 750 / ((option.responsive && option.responsive.width || dslConfig.responseWidth) || 750);
+
+  dslConfig.scale = option.scale;
+
   option.dslConfig = dslConfig;
   initConfig(dslConfig);
 
@@ -44,7 +49,7 @@ module.exports = function (schema, option) {
     let style = json.props.style;
    
     // inline 
-    let classnames: string[] = []
+    let classnames: string[] = json.classnames || []
     let enableGlobalCss = dslConfig.globalCss && schema.css
  
     // 计算全局样式类名

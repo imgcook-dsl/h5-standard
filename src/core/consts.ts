@@ -29,7 +29,9 @@ export let DSL_CONFIG: IDslConfig = {
   cssUnit: 'px',
   renderType: 'html',
   cssStyle: 'camelCase',
-  htmlFontSize: 16
+  htmlFontSize: 16,
+  scale: 1,
+  responseWidth: 750
 };
 
 
