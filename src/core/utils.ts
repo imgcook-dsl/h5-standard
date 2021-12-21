@@ -496,15 +496,74 @@ export const generateCSS = (style, prefix) => {
 
   for (let layer in style) {
     css += `${prefix && prefix !== layer ? '.' + prefix + ' ' : ''}.${layer} {`;
-    for (let key in style[layer]) {
-      css += `${parseCamelToLine(key)}: ${style[layer][key]};\n`;
-    }
-    css += '}';
+    css += generateCssString(style[layer])
+    css += '}'
   }
 
   return css;
 };
 
+/**
+ * （1）定位属性：position  display  float  left  top  right  bottom   overflow  clear   z-index
+（2）自身属性：width  height  padding  border  margin   background
+（3）文字样式：font-family   font-size   font-style   font-weight   font-varient   color   
+（4）文本属性：text-align   vertical-align   text-wrap   text-transform   text-indent    text-decoration   letter-spacing    word-spacing    white-space   text-overflow
+（5）css3中新增属性：content   box-shadow   border-radius  transform……
+ */
+const orderMap = [
+  "position", "display", "float", "left", "top", "right", "bottom", 
+  "flex-direction", "justify-content", "align-items", "align-self", "overflow", "clear", "z-index",
+  "width", "height", "max-width", "max-height", "padding", "padding-bottom", "padding-left", "padding-right", "padding-left", "border", "margin", "margin-top", "margin-bottom", "margin-left", "margin-right", "background", 
+  "background-color", "background-image", "background-size",
+  "font-family", "font-size", "font-style", "font-weight", "font-varient", "line-height", "color", "text-align", "vertical-align", "text-wrap", "text-transform", "text-indent", "text-decoration",
+  "letter-spacing", "word-spacing", "white-space", "text-overflow",
+  "content", "box-shadow", "border-radius", "transform"
+]
+// genrate css object string
+export const generateCssString = (style) => {
+  let css = '';
+  let array: any[] = [];
+
+  // 缩写margin
+  const margin = Object.keys(style).filter(item=>item.startsWith("margin"));
+  if(!style['margin'] &&margin.length >2){
+    style["margin"] = `${style["marginTop"] || 0} ${style["marginRight"] || 0} ${style["marginBottom"] || 0} ${style["marginLeft"] || 0}`
+    delete style["marginTop"];
+    delete style["marginLeft"];
+    delete style["marginBottom"];
+    delete style["marginRight"];
+  }
+
+    // 缩写 padding
+  const padding = Object.keys(style).filter(item=>item.startsWith("padding"));
+  if(!style['padding'] && padding.length >2){
+    style["padding"] = `${style["paddingTop"] || 0} ${style["paddingRight"] || 0} ${style["paddingBottom"] || 0} ${style["paddingLeft"] || 0}`
+    delete style["paddingTop"];
+    delete style["paddingLeft"];
+    delete style["paddingBottom"];
+    delete style["paddingRight"];
+  }
+
+  for (let key in style) {
+    const cssKey = parseCamelToLine(key);
+    const orderIndex = orderMap.indexOf(cssKey);
+    array.push({
+      key: cssKey,
+      value: style[key],
+      index: orderIndex == -1 ? 100 : orderIndex
+    })
+  }
+
+  array.sort((a, b) => {
+    return a.index - b.index
+  })
+
+  css = array.map(item => {
+    return `${item.key}: ${item.value};`
+  }).join('');
+
+  return css
+}
 
 // parse loop render
 export const parseLoop = (loop, loopArg, render, params = {}) => {
