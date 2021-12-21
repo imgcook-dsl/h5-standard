@@ -216,10 +216,14 @@ export const simpleStyle = (schema) => {
 
   // 删除 font-weight 400 或者 normal
   traverse(schema, (node) => {
-    const fw = get(node, 'props.style.fontWeight');
-    if (['400', 'normal'].includes(String(fw) || '')) {
-      unset(node, 'props.style.fontWeight');
+    const removeStyle = (node, styleName, values)=>{
+      const fw = get(node, `props.style.${styleName}`);
+      if (values.includes(String(fw) || '')) {
+        unset(node, `props.style.${styleName}`);
+      }
     }
+    removeStyle(node, 'fontWeight', ['400', 400, 'normal']);
+    removeStyle(node, 'flexDirection', ['row']);
   });
 
 
