@@ -3,3 +3,5 @@ node_modules
 test/template*
 .vscode/settings.json
 dist
+code
+test/data.js

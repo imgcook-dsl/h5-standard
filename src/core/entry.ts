@@ -13,6 +13,7 @@ import { CSS_TYPE, DSL_CONFIG,initConfig } from './consts';
 import exportStatic from './exportStatic';
 import exportDynamic from './exportDynamic';
 import exportGlobalCss from './exportGlobalCss'
+import exportNormalize from './exportNormalize'
 
 module.exports = function (schema, option) {
 
@@ -73,11 +74,7 @@ module.exports = function (schema, option) {
   let panelDisplay;
 
   schema.fileName = 'index';
-  console.log('动态', dslConfig)
-  console.log('动态', dslConfig.renderType )
   if (dslConfig.renderType == 'javascript') {
-
-    console.log('动态', dslConfig)
     panelDisplay = exportDynamic(schema, option);
   } else {
     panelDisplay = exportStatic(schema, option);
@@ -87,7 +84,8 @@ module.exports = function (schema, option) {
       
   // 全局样式
   panelDisplay = panelDisplay.concat(exportGlobalCss(schema, option));
-
+  panelDisplay = panelDisplay.concat(exportNormalize(schema, option));
+  
 
   return {
     panelDisplay: panelDisplay,

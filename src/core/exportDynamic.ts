@@ -307,7 +307,7 @@ export default function (schema, option) {
 
         html =  prettier.format(generateRender(schema), prettierHtmlOpt);
         render.push(html);
-        render.push('`;\n  document.querySelector("body").innerHTML = html; }');
+        render.push('`;\n  console.log(html);\n document.querySelector("#container").innerHTML = html; }');
 
         classData = classData
           .concat(states)
@@ -355,6 +355,7 @@ export default function (schema, option) {
           ${imports.join('\n')}
         </head>
         <body>
+        <div id="container"></div>
         </body>
         <script src="./index.js"></script>
         <script>

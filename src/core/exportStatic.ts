@@ -23,11 +23,14 @@ export default function exportMod(schema, option) {
   let style = {}
 
   // styles
-
   const links: string[] = [];
   if (isExportGlobalFile) {
     links.push(` <link rel="stylesheet" href="./global.css" />`);
   }
+  if(dslConfig.defaultCss !== false ){
+    links.push(`<link rel="stylesheet" href="./normalize.min.css" />`);
+  }
+
   links.push(`<link rel="stylesheet" href="./${fileName}.css" />`);
 
 
@@ -143,6 +146,7 @@ export default function exportMod(schema, option) {
 
   // start parse schema
   htmlBody = transform(schema, true);
+
 
   const indexValue = prettier.format(
     `
