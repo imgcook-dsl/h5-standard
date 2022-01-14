@@ -19,6 +19,6 @@ export interface IDslConfig {
   renderType?: 'javascript' | 'html';
   cssStyle?: 'kebabCase' | 'camelCase' | 'snakeCase',
   responseWidth?: number;
-  scale?: number;
+  scale: number;
   htmlFontSize?: number
 }

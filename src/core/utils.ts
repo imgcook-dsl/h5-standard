@@ -1,3 +1,4 @@
+import { IImport } from './interface';
 const find = require('lodash/find');
 const unset = require('lodash/unset');
 const set = require('lodash/set');
@@ -179,6 +180,7 @@ export const simpleStyle = (schema) => {
   }
 
   function getMaxSameStyles(array) {
+    console.log('array', array)
     if (array.length < 2) {
       return {}
     }
@@ -229,14 +231,14 @@ export const simpleStyle = (schema) => {
 
 
   traverseBrother(schema, function (nodes) {
-    const sameStyle = getMaxSameStyles(nodes.map(item => item.props.style));
+    const sameStyle = getMaxSameStyles(nodes.filter(item=> item.props && item.props.style).map(item => item.props.style));
     if (Object.keys(sameStyle).length > 3) {
       const commonClassName = genStyleClass(
         nodes[0].props.className + '_common',
         DSL_CONFIG.cssStyle
       );
 
-      set(schema, `commonStyles.${commonClassName}`, parseStyle(sameStyle, { scale: DSL_CONFIG.scale, cssUnit: DSL_CONFIG.cssUnit }))
+      set(schema, `commonStyles.${commonClassName}`, parseStyle(sameStyle))
       for (let node of nodes) {
         for (let key of Object.keys(sameStyle)) {
           unset(node, `props.style.${key}`)
@@ -247,6 +249,7 @@ export const simpleStyle = (schema) => {
   })
 
 }
+
 /**
  * 处理schema一些常见问题
  * @param schema 
@@ -258,22 +261,20 @@ export const initSchema = (schema) => {
   resetCounter('page');
   resetCounter('block');
   resetCounter('component');
-  resetCounter('classname');
 
-  // 清理 class 空格// 初始化名称
+  // 清理 class 空格
   traverse(schema, (node) => {
     if (node && node.props && node.props.className) {
-      node.props.className = node.props.className.trim();
-    }else{
-      const cmp = (node.componentName || '').toLowerCase();
-      set(node, 'props.className', `class_${cmp}_${getCounter(cmp)}`)
+      node.props.className = String(node.props.className).trim();
     }
+    node.componentName = node.componentName || 'div'
   });
 
   simpleStyle(schema)
 
   // 关键节点命名兜底
   traverse(schema, (json) => {
+    json.componentName = json.componentName || ''
     switch (json.componentName.toLowerCase()) {
       case 'page':
         json.fileName = line2Hump(json.fileName || `page_${getCounter('page')}`);
@@ -299,6 +300,7 @@ export const traverse = (json, callback) => {
     return
   }
 
+  // 去除 class 空格
   if (json && callback) {
     callback(json)
   }
@@ -313,6 +315,7 @@ export const traverse = (json, callback) => {
     });
   }
 };
+
 
 // 遍历兄弟节点
 export const traverseBrother = (json, callback) => {
@@ -338,6 +341,7 @@ export const traverseBrother = (json, callback) => {
   }
 };
 
+
 export const genStyleClass = (string, type) => {
   let classArray = string.split(' ');
   classArray = classArray.filter(name => !!name);
@@ -353,13 +357,14 @@ export const genStyleClass = (string, type) => {
   return classArray.join(' ')
 }
 
-export const genStyleCode = (styles, key) => {
+export const genStyleCode = (styles, key = '') => {
   return !/-/.test(key) && key.trim()
     ? `${styles}.${key}`
     : `${styles}['${key}']`;
 };
 
-export const parseNumberValue = (value, { cssUnit = 'px', scale }) => {
+export const parseNumberValue = (value) => {
+  const { cssUnit = 'px', scale, responseWidth } = DSL_CONFIG
   value = String(value).replace(/\b[\d\.]+(px|rem|rpx|vw)?\b/, (v) => {
     const nv = parseFloat(v);
     if (!isNaN(nv) && nv !== 0) {
@@ -371,13 +376,15 @@ export const parseNumberValue = (value, { cssUnit = 'px', scale }) => {
   if (/^\-?[\d\.]+$/.test(value)) {
     value = parseFloat(value);
     if (cssUnit == 'rpx') {
-      value += 'rpx';
+      value = 750 * value / Number(responseWidth);
+      value = value == 0 ? value : value + 'rpx';
     } else if (cssUnit == 'rem') {
       const htmlFontSize = DSL_CONFIG.htmlFontSize || 16;
       value = parseFloat((value / htmlFontSize).toFixed(2));
       value = value ? `${value}rem` : value;
     } else if (cssUnit == 'vw') {
-      value = (100 * value / (DSL_CONFIG.responseWidth || 750)).toFixed(2);
+      const _w = 750 / scale
+      value = (100 * parseInt(value) / _w).toFixed(2);
       value = value == 0 ? value : value + 'vw';
     } else {
       value += cssUnit;
@@ -387,8 +394,8 @@ export const parseNumberValue = (value, { cssUnit = 'px', scale }) => {
 };
 
 // convert to responsive unit, such as vw
-export const parseStyle = (style, params) => {
-  const { scale } = params
+export const parseStyle = (style) => {
+  const { scale, cssUnit } = DSL_CONFIG
   const resultStyle = {}
   for (let key in style) {
     switch (key) {
@@ -416,13 +423,13 @@ export const parseStyle = (style, params) => {
       case 'borderRadius':
         resultStyle[key] = parseInt(style[key]) * scale;
         if (style[key]) {
-          resultStyle[key] = parseNumberValue(style[key], params);
+          resultStyle[key] = parseNumberValue(style[key]);
         }
         break;
       default:
         if (style[key] && String(style[key]).includes('px')) {
           resultStyle[key] = String(style[key]).replace(/[\d\.]+px/g, (v) => {
-            return /^[\d\.]+px$/.test(v) ? parseNumberValue(v, params) : v;
+            return /^[\d\.]+px$/.test(v) ? parseNumberValue(v) : v;
           })
         }
         resultStyle[key] = resultStyle[key] || style[key]
@@ -447,7 +454,7 @@ export const parseFunction = (func) => {
 };
 
 // parse layer props(static values or expression)
-export const parseProps = (value, isReactNode?) => {
+export const parseProps = (value, isReactNode = false) => {
   if (typeof value === 'string') {
     if (isExpression(value)) {
       if (isReactNode) {
@@ -554,6 +561,7 @@ export const generateCssString = (style) => {
     })
   }
 
+
   array.sort((a, b) => {
     return a.index - b.index
   })
@@ -564,6 +572,36 @@ export const generateCssString = (style) => {
 
   return css
 }
+
+// 根据 schema 生成 scss 或者 less
+export const generateScss = (schema) => {
+  let scss = '';
+
+  function walk(json) {
+    if (json.props.className) {
+      let className = json.props.className;
+      scss += `.${className}{`;
+      scss += `${generateCssString(parseStyle(json.props.style))};`;
+    }
+
+    if (json.children && json.children.length > 0) {
+      json.children.forEach((child) => {
+        if (!['block', 'component', 'page'].includes(child.componentName.toLowerCase())) {
+          walk(child)
+        }
+      });
+    }
+
+    if (json.props.className) {
+      scss += '}';
+    }
+  }
+
+  walk(schema);
+
+  return scss;
+};
+
 
 // parse loop render
 export const parseLoop = (loop, loopArg, render, params = {}) => {
@@ -683,11 +721,7 @@ export const existImport = (imports, singleImport) => {
 };
 
 // parse async dataSource
-export const parseDataSource = (data, imports: {
-  _import: string,
-  package: string,
-  version: string,
-}[] = []) => {
+export const parseDataSource = (data, imports: IImport[] = []) => {
   const name = data.id;
   const { uri, method, params } = data.options;
   const action = data.type;
@@ -710,14 +744,14 @@ export const parseDataSource = (data, imports: {
 
       break;
     case 'jsonp':
-      // singleImport = `import {fetchJsonp} from 'fetch-jsonp';`;
-      // if (!existImport(imports, singleImport)) {
-      //   imports.push({
-      //     _import: singleImport,
-      //     package: 'fetch-jsonp',
-      //     version: '^1.1.3',
-      //   });
-      // }
+      singleImport = `import {fetchJsonp} from 'fetch-jsonp';`;
+      if (!existImport(imports, singleImport)) {
+        imports.push({
+          _import: singleImport,
+          package: 'fetch-jsonp',
+          version: '^1.1.3',
+        });
+      }
       break;
   }
 

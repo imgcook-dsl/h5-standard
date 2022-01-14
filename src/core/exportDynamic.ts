@@ -123,19 +123,25 @@ export default function (schema, option) {
   };
 
   // generate render xml
-  const generateRender = (schema) => {
-    const type = schema.componentName.toLowerCase();
-    const className = schema.props && schema.props.className;
+  const generateRender = (json) => {
+    if(typeof json == 'string'){
+      return json
+    }
+    if(Array.isArray(json)){
+      return (json.map(item=>{
+        return generateRender(item)
+      })).join('')
+    }
+
+    const type = json.componentName.toLowerCase();
+    const className = json.props && json.props.className;
     let elementId = '';
     let elementIdString = '';
 
-    let classString = schema.classString;
+    let classString = json.classString || '';
 
     if (className) {
-      style[className] = parseStyle(schema.props.style, {
-        scale,
-        cssUnit,
-      });
+      style[className] = parseStyle(json.props.style);
     }
 
 

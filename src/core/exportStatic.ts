@@ -50,35 +50,41 @@ export default function exportMod(schema, option) {
   let htmlBody = '';
 
   // generate render xml
-  const generateRender = (schema) => {
-    let componentName = schema.componentName || '';
+  const generateRender = (json) => {
+    if(typeof json == 'string'){
+      return json
+    }
+    if(Array.isArray(json)){
+      return (json.map(item=>{
+        return generateRender(item)
+      })).join('')
+    }
+
+    let componentName = json.componentName || '';
     const type = componentName.toLowerCase();
-    const className = schema.props && schema.props.className;
-    let classString = schema.classString;
+    const className = json.props && json.props.className;
+    let classString = json.classString || '';
 
     if (className) {
-      style[className] = parseStyle(schema.props.style, {
-        scale,
-        cssUnit,
-      });
+      style[className] = parseStyle(json.props.style);
     }
 
     let xml;
     let props = '';
 
-    Object.keys(schema.props).forEach((key) => {
+    Object.keys(json.props).forEach((key) => {
       if ([ 'className', 'style', 'text', 'key', 'codeStyle', 'onClick', 'lines', 'dealGradient' ].indexOf(key) === -1) {
-        props += ` ${key}=${parseProps(schema.props[key])}`;
+        props += ` ${key}=${parseProps(json.props[key])}`;
       }
       if (key === 'codeStyle') {
-        if (JSON.stringify(schema.props[key]) !== '{}') {
-          props += ` style={${parseProps(schema.props[key])}}`;
+        if (JSON.stringify(json.props[key]) !== '{}') {
+          props += ` style={${parseProps(json.props[key])}}`;
         }
       }
     });
     switch (type) {
       case 'text':
-        let innerText = parseProps(schema.props.text || schema.text, true);
+        let innerText = parseProps(json.props.text || json.text, true);
         if (innerText.match(/this\.props/)) {
           innerText = innerText.replace(/this\./, '');
         }
@@ -86,7 +92,7 @@ export default function exportMod(schema, option) {
         break;
       case 'image':
       case 'picture':
-        if (schema.props.source && schema.props.source.uri) {
+        if (json.props.source && json.props.source.uri) {
           xml = `<img ${classString}${props} />`;
         } else {
           xml = `<img ${classString}${props} />`;
@@ -97,18 +103,18 @@ export default function exportMod(schema, option) {
       case 'page':
       case 'block':
       case 'component':
-        if (schema.children && schema.children.length) {
-          xml = `<div${classString}${props}>${transform(schema.children)}</div>`;
+        if (json.children && json.children.length) {
+          xml = `<div${classString}${props}>${transform(json.children)}</div>`;
         } else {
           xml = `<div${classString}${props} ></div>`;
         }
         break;
       default:
         componentName = 'div'
-        if (schema.children && schema.children.length && Array.isArray(schema.children)) {
-          xml = `<${componentName}${classString}${props}>${transform(schema.children)}</${componentName}>`;
-        } else if (typeof schema.children === 'string') {
-          xml = `<${componentName}${classString}${props} >${schema.children}</${componentName}>`;
+        if (json.children && json.children.length && Array.isArray(json.children)) {
+          xml = `<${componentName}${classString}${props}>${transform(json.children)}</${componentName}>`;
+        } else if (typeof json.children === 'string') {
+          xml = `<${componentName}${classString}${props} >${json.children}</${componentName}>`;
         } else {
           xml = `<${componentName}${classString}${props} />`;
         }

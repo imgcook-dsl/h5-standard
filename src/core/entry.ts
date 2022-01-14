@@ -48,6 +48,9 @@ module.exports = function (schema, option) {
     let className = json.props && json.props.className;
     let classString = '';
     let style = json.props.style;
+    if(!className){
+      return
+    }
    
     // inline 
     let classnames: string[] = json.classnames || []
